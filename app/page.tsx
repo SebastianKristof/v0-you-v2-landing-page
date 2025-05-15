@@ -10,6 +10,7 @@ import FAQAccordion from "@/components/faq-accordion"
 import MobileNav from "@/components/mobile-nav"
 import ImageModal from "@/components/image-modal"
 import { useLanguage } from "@/contexts/language-context"
+import WhatMakesDifferent from "./components/what-makes-different"
 
 export default function Home() {
   const { t } = useLanguage()
@@ -180,6 +181,9 @@ export default function Home() {
             </div>
           </ScrollReveal>
         </section>
+
+        {/* What Makes You.v2 Different Section */}
+        <WhatMakesDifferent />
 
         {/* Problem Section */}
         <section
