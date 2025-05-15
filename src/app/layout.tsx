@@ -4,6 +4,7 @@ import { Inter, IBM_Plex_Sans } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/contexts/language-context"
+import enTranslations from "@/translations/en.json"
 
 // Initialize the fonts
 const inter = Inter({
@@ -20,9 +21,8 @@ const ibmPlexSans = IBM_Plex_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "You V2 - 17-Day Subconscious Reprogramming Protocol",
-  description:
-    "You V2 is a 17-day subconscious reprogramming protocol for high-performing individuals who feel inexplicably blocked by old patterns.",
+  title: enTranslations.meta.title,
+  description: enTranslations.meta.description,
     generator: 'v0.dev'
 }
 
