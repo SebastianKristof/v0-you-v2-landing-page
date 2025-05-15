@@ -27,6 +27,7 @@
 
     /* Custom colors */
     --executive-blue: 210 65% 50%;
+    --executive-blue-dark: 210 80% 30%;
     --executive-light-blue: 203 60% 97%;
     --executive-dark: 222 25% 20%;
     --executive-text: 215 16% 47%;
@@ -115,7 +116,7 @@
 
   /* Write out the CSS properties directly instead of using @apply */
   .gradient-text {
-    background-image: linear-gradient(to right, hsl(var(--executive-blue)), hsl(var(--executive-dark)));
+    background-image: linear-gradient(90deg, hsl(var(--executive-blue-dark)) 0%, hsl(var(--executive-blue)) 70%, black 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

@@ -9,7 +9,7 @@ const ICONS = {
   'lock': <Lock className="text-executive-gold w-7 h-7" />,
 };
 
-export default function WhatMakesDifferent() {
+export function WhatMakesDifferentSection() {
   const { t } = useLanguage();
   const differentiators = t('whatMakesDifferent.differentiators', { returnObjects: true }) || [];
   const quote = t('whatMakesDifferent.quote');
@@ -32,14 +32,27 @@ export default function WhatMakesDifferent() {
         </div>
         {/* Text content on the right (on desktop) */}
         <div className="md:w-3/5 w-full">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            {title}
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">
+            {(() => {
+              if (!title) return null;
+              const parts = title.split('You.v2');
+              return (
+                <>
+                  {parts[0]}
+                  <span className="relative text-[hsl(var(--executive-blue-dark))] font-bold inline-block">
+                    You.v2
+                    <span className="block h-2 w-full mt-1 rounded-full bg-gradient-to-r from-[hsl(var(--executive-blue-dark))] via-[hsl(var(--executive-blue))] to-transparent opacity-80 scale-x-110 -skew-x-12"></span>
+                  </span>
+                  {parts[1]}
+                </>
+              );
+            })()}
           </h2>
           <ul className="space-y-6 mb-8">
             {Array.isArray(differentiators) && differentiators.map((item, i) => (
               <li key={i} className="flex items-start gap-4 group">
                 <span className="shrink-0 transition-transform group-hover:scale-110">
-                  {ICONS[item.icon]}
+                  {ICONS[item.icon] || <CheckCircle className="text-executive-blue w-7 h-7" />}
                 </span>
                 <div>
                   <div className="font-semibold text-lg mb-1">{item.title}</div>
