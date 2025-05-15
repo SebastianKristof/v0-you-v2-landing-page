@@ -20,9 +20,9 @@ const ibmPlexSans = IBM_Plex_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "You V2 - 17-Day Subconscious Reprogramming Protocol",
+  title: "You.v2 - 17-Day Subconscious Reprogramming Protocol",
   description:
-    "You V2 is a 17-day subconscious reprogramming protocol for high-performing individuals who feel inexplicably blocked by old patterns.",
+    "You.v2 is a 17-day subconscious reprogramming protocol for high-performing individuals who feel inexplicably blocked by old patterns.",
     generator: 'v0.dev'
 }
 

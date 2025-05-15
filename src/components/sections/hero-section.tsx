@@ -60,7 +60,7 @@ export function HeroSection() {
         </div>
       </div>
       {/* Quick ROI preview */}
-      <ScrollReveal className="mt-8 md:mt-12 overflow-hidden rounded-xl border bg-card/50 backdrop-blur-sm">
+      <ScrollReveal className="mt-8 md:mt-12 overflow-hidden bg-card/50 backdrop-blur-sm">
         <QuickRoiSection />
       </ScrollReveal>
     </section>
