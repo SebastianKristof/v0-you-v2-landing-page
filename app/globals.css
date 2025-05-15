@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 25% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 25% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 25% 20%;
+    --primary: 210 65% 50%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 25% 20%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222 25% 20%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 210 65% 50%;
+    --radius: 0.75rem;
+
+    /* Custom colors */
+    --executive-blue: 210 65% 50%;
+    --executive-light-blue: 203 60% 97%;
+    --executive-dark: 222 25% 20%;
+    --executive-text: 215 16% 47%;
+    --executive-gold: 36 80% 65%;
+  }
+
+  .dark {
+    --background: 222 25% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 25% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 25% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 65% 50%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217 19% 27%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 19% 27%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 19% 27%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 19% 27%;
+    --input: 217 19% 27%;
+    --ring: 224 76% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-ibm-plex-sans), system-ui, sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-inter), system-ui, sans-serif;
+    @apply font-medium tracking-tight;
+  }
+
+  /* Custom animations */
+  .fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  .slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply container px-4 md:px-6 mx-auto max-w-[1000px];
+  }
+
+  .section-title {
+    @apply text-2xl font-bold tracking-tighter md:text-3xl lg:text-4xl/tight mb-6 md:mb-8;
+  }
+
+  /* Write out the CSS properties directly instead of using @apply */
+  .gradient-text {
+    background-image: linear-gradient(to right, hsl(var(--executive-blue)), hsl(var(--executive-dark)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-bottom: 0.25rem; /* Ensure descenders aren't cut off */
+    line-height: 1.2; /* Improved line height for better readability */
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .executive-tab {
+    color: hsl(var(--executive-text));
+    padding-bottom: 1rem;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+
+  .executive-tab.active {
+    color: hsl(var(--executive-blue));
+    border-bottom-color: hsl(var(--executive-blue));
+  }
+
+  .executive-tab:hover:not(.active) {
+    color: hsl(var(--executive-dark));
+    border-bottom-color: hsl(var(--border));
+  }
+
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    color: hsl(var(--executive-blue));
+    background-color: hsl(var(--executive-light-blue));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .executive-button {
+    @apply rounded-full text-white font-medium transition-all duration-300 w-full md:w-auto text-center py-3 px-4 md:py-3 md:px-6;
+    background-color: hsl(var(--executive-blue));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .executive-button:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+  }
+
+  .executive-card {
+    @apply bg-white rounded-xl p-4 md:p-6 transition-all duration-300;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .executive-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Mobile optimizations */
+  .mobile-section-spacing {
+    @apply py-10 md:py-16 lg:py-24;
+  }
+
+  .mobile-container {
+    @apply px-4 md:px-6;
+  }
+
+  .mobile-text {
+    @apply text-base md:text-lg;
+  }
+
+  .mobile-heading {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

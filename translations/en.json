@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "title": "You.v2 - 17-Day Subconscious Reprogramming Protocol",
+    "description": "You.v2 is a 17-day subconscious reprogramming protocol for high-performing individuals who feel inexplicably blocked by old patterns."
+  },
+  "nav": {
+    "howItWorks": "How It Works",
+    "timeline": "Timeline",
+    "roi": "ROI",
+    "about": "About",
+    "faq": "FAQ",
+    "bookCall": "Book Strategy Call"
+  },
+  "hero": {
+    "title": "You overcame everything. But the past still haunts you.",
+    "subtitle": "You.v2 is a 17-day deep subconscious reprogramming protocol. Built for those who are done guessing, pushing, and repeating loops that no longer make sense.",
+    "description1": "Old internal rules protected you once. Now they distort your clarity, energy, and connection.",
+    "description2": "You thought this would go on forever. What if it doesn't have to?"
+  },
+  "quickRoi": {
+    "therapy": {
+      "title": "Traditional Therapy",
+      "duration": "6-12 months"
+    },
+    "coaching": {
+      "title": "Coaching",
+      "duration": "2-6 months"
+    },
+    "selfHelp": {
+      "title": "Self-Help",
+      "duration": "Years (or never)"
+    },
+    "youv2": {
+      "title": "You.v2",
+      "duration": "17 days"
+    }
+  },
+  "problem": {
+    "quote": "\"You did everything to break the cycle. But when your kid looks at you with that same anger or withdrawal you used to feel — you wonder if the cycle is breaking you.\"",
+    "title": "You're not lazy. You're not broken. You're running old code.",
+    "cards": [
+      "You built your success by fighting through every obstacle. Now it feels like the fight is inside you.",
+      "You swore not to become like your parents — and yet you see it leak out in moments with your kids.",
+      "You've made it, but can't relax. Or connect. Or feel.",
+      "You feel time passing. Success behind you. But what's next?",
+      "You've done therapy. You've read the books. Still, something holds.",
+      "You've tried to stay in control — but the pressure leaks sideways: into food, distractions, work, sex, compulsive habits."
+    ],
+    "conclusion1": "What you're dealing with isn't lack of discipline. It's legacy code — strategies that once helped you cope but now sabotage your clarity and drive.",
+    "conclusion2": "Most people never question that internal noise — they just push through it. But pushing only takes you so far."
+  },
+  "howItWorks": {
+    "title": "This isn't therapy. It's reprogramming.",
+    "description1": "Your subconscious is your internal operating system — and it was installed before you had a say. It runs your emotions, your impulses, your loyalties.",
+    "description2": "Logic doesn't reach it. Coaching can't override it. Motivation bounces off it. That's why most change fails — or exhausts you.",
+    "callout": "Between your conscious and your subconscious is a firewall: the critical factor. It protects old identity code. Until we bypass it, you'll stay loyal to beliefs you no longer need.",
+    "description3": "You.v2 uses deep system-level interventions to rewrite that code — precisely, calmly, permanently.",
+    "tagline": "We don't fix symptoms. We reprogram the system.",
+    "levels": {
+      "behavior": "Behavior",
+      "capabilities": "Capabilities",
+      "beliefs": "Beliefs",
+      "identity": "Identity",
+      "purpose": "Purpose"
+    },
+    "quote": "\"You've worked hard at the behavior level. It's time to reset where it actually matters.\""
+  },
+  "timeline": {
+    "title": "You.v2 Protocol — 17 Days to Reclaim Yourself",
+    "steps": [
+      {
+        "day": "Start",
+        "icon": "🔍",
+        "text": "Strategic Mapping Call",
+        "desc": "Define the internal architecture. Identify core old logic."
+      },
+      {
+        "day": "Day 1",
+        "icon": "🎨",
+        "text": "Symbolic Map & Mental Terrain",
+        "desc": "Light trance imagery to map your mental landscape"
+      },
+      {
+        "day": "Day 3",
+        "icon": "🌊",
+        "text": "Deep Trance Entry & Positive Regression",
+        "desc": "Access deeper subconscious patterns"
+      },
+      {
+        "day": "Day 6",
+        "icon": "🧱",
+        "text": "Root Pattern Uncovered",
+        "desc": "Identify and address core limiting beliefs"
+      },
+      {
+        "day": "Day 9",
+        "icon": "🕳️",
+        "text": "Secondary Layer Revealed",
+        "desc": "Work with supporting patterns and structures"
+      },
+      {
+        "day": "Day 13",
+        "icon": "🤝",
+        "text": "Parts Work / Internal Negotiation",
+        "desc": "Resolve internal conflicts and resistance"
+      },
+      {
+        "day": "Day 17",
+        "icon": "🔁",
+        "text": "Integration / Optional Access Protocol",
+        "desc": "Solidify changes and create ongoing access"
+      }
+    ]
+  },
+  "roi": {
+    "title": "Return on Investment",
+    "table": {
+      "headers": {
+        "approach": "Approach",
+        "depth": "Depth of Work",
+        "time": "Avg Time to Results",
+        "cost": "Cost Over Time"
+      },
+      "rows": [
+        {
+          "approach": "Traditional Therapy",
+          "depth": "Emotional insight",
+          "time": "6–12 months+",
+          "cost": "$5,000–10,000"
+        },
+        {
+          "approach": "Coaching",
+          "depth": "Motivation + Strategy",
+          "time": "2–6 months",
+          "cost": "$1,500–5,000"
+        },
+        {
+          "approach": "Medication",
+          "depth": "Symptom suppression",
+          "time": "Ongoing",
+          "cost": "$2,400–6,000+/year"
+        },
+        {
+          "approach": "Self-Help / Inaction",
+          "depth": "Surface-level awareness",
+          "time": "Years (or never)",
+          "cost": "Opportunity cost + wasted time"
+        },
+        {
+          "approach": "You.v2",
+          "depth": "Subconscious reprogramming",
+          "time": "17 days",
+          "cost": "$2,500 one-time"
+        }
+      ]
+    }
+  },
+  "about": {
+    "title": "About the Creator",
+    "name": "Dr. Sebastian Kristof",
+    "credentials": [
+      "Former psychiatrist with postdoctoral training at Yale and UCSD",
+      "Clinical researcher & software engineer",
+      "Subconscious strategist for high-performing clients who need deep, fast change"
+    ],
+    "quote": "\"I don't hold space. I change internal architecture. Quietly. Precisely. Permanently.\""
+  },
+  "session": {
+    "title": "What Happens in a Session?",
+    "features": [
+      {
+        "title": "Private Online Meeting",
+        "description": "We meet privately online"
+      },
+      {
+        "title": "Focused Trance State",
+        "description": "You enter a focused trance-like state — safe, present, clear"
+      },
+      {
+        "title": "Deep Reprogramming",
+        "description": "Structured subconscious work that creates lasting change"
+      }
+    ],
+    "work": {
+      "intro": "I guide you through structured subconscious work:",
+      "types": ["regression", "identity mapping", "emotional realignment", "symbolic negotiation"],
+      "result": "You return with clarity — and often visible behavioral shifts by the next session"
+    }
+  },
+  "clientStory": {
+    "title": "Client Story",
+    "quote": "\"I was stuck for 7 months, circling the same project and feeling blocked. By the third session, something unhooked — I launched it, and we did $90k. But more than that? I actually felt calm doing it.\"",
+    "author": "— Anonymous founder, Berlin"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Is this therapy?",
+        "answer": "No. It's faster, deeper, and structurally targeted."
+      },
+      {
+        "question": "Is this remote?",
+        "answer": "Yes. All sessions are online and timezone-flexible."
+      },
+      {
+        "question": "Do I need to believe in anything for it to work?",
+        "answer": "No. The process works whether or not you believe in it. You just need to show up."
+      },
+      {
+        "question": "What if I've already done a lot of therapy?",
+        "answer": "Perfect. That means you've cleared the surface. This goes deeper."
+      },
+      {
+        "question": "How soon will I notice changes?",
+        "answer": "Most clients report noticeable shifts after the first or second session. The full protocol ensures these changes are structural and lasting."
+      }
+    ]
+  },
+  "pricing": {
+    "price": "$2500 USD",
+    "description": "for the complete private 17-day protocol",
+    "includes": {
+      "title": "Includes:",
+      "features": ["6 private deep sessions", "Between-session voice support", "Personalized audio recording"]
+    },
+    "quote": "\"This isn't therapy. It's a structural reset. For people who've survived enough — and are ready to actually live.\"",
+    "cta": {
+      "primary": "Book Strategy Call",
+      "secondary": "Let's Talk First"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "links": {
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "contact": "Contact"
+    }
+  }
+}
