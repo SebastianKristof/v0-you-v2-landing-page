@@ -12,27 +12,37 @@
     "bookCall": "Book Strategy Call"
   },
   "hero": {
-    "title": "You overcame everything. But the past still haunts you.",
-    "subtitle": "You.v2 is a 17-day deep subconscious reprogramming protocol. Built for those who are done guessing, pushing, and repeating loops that no longer make sense.",
-    "description1": "Old internal rules protected you once. Now they distort your clarity, energy, and connection.",
-    "description2": "You thought this would go on forever. What if it doesn't have to?"
+    "title": "You made it. But your mind is still in survival mode.",
+    "subtitle": "You.v2 is a 17-day protocol to rewrite the internal code that's holding you back. Built for those who are ready to grow further - and actually enjoy it.",
+    "description1": "Old internal programs protected you once and made you who you are today. Now they distort your clarity and block your progress.",
+    "description2": "You thought this would go on forever. What if it doesn't have to?",
+    "ctaMicrocopy": "No obligation. 100% confidential. Best for those who've already tried the traditional approaches."
   },
   "quickRoi": {
     "therapy": {
       "title": "Traditional Therapy",
-      "duration": "6-12 months"
+      "duration": "6-12 months",
+      "comment": "progress, maybe"
     },
     "coaching": {
       "title": "Coaching",
-      "duration": "2-6 months"
+      "duration": "2-6 months",
+      "comment": "try harder, again"
+    },
+    "medication": {
+      "title": "Medication",
+      "duration": "Indefinitely",
+      "comment": "numb the symptoms"
     },
     "selfHelp": {
-      "title": "Self-Help",
-      "duration": "Years (or never)"
+      "title": "Books, Videos, Podcasts",
+      "duration": "Years (or never)",
+      "comment": "still looking for answers"
     },
     "youv2": {
       "title": "You.v2",
-      "duration": "17 days"
+      "duration": "17 days",
+      "comment": "deep, lasting change!"
     }
   },
   "problem": {
@@ -150,10 +160,12 @@
           "approach": "You.v2",
           "depth": "Subconscious reprogramming",
           "time": "17 days",
-          "cost": "$2,500 one-time"
+          "cost": "from $2,500 one time"
         }
       ]
-    }
+    },
+    "supporting": "Everything else is maintenance. You.v2 is a solution.",
+    "tagline": "Stop coping – start living."
   },
   "about": {
     "title": "About the Creator",
@@ -164,6 +176,20 @@
       "Subconscious strategist for high-performing clients who need deep, fast change"
     ],
     "quote": "\"I don't hold space. I change internal architecture. Quietly. Precisely. Permanently.\""
+  },
+  "globalHighPerformers": {
+    "title": "Why It Works for Global High Performers",
+    "subtitle": "For global citizens who live between worlds and languages",
+    "points": [
+      "I work in English, Russian, or any mix of both—whatever feels natural.",
+      "I know what it's like to be raised under pressure to succeed and hide your feelings.",
+      "I have overcome the legacy of a difficult childhood—and I can help you do the same."
+    ],
+    "quote": "You are successful in English, but your inner child still needs help in your first language.",
+    "prelude": "You work and think in English. But your subconscious mind was programmed in your first language. Therapy or coaching in English misses your roots. Therapy in your first language misses your real life now.",
+    "preludeHighlight": "You need someone who understands both the challenges you face in a Western world—and the way your subconscious mind was programmed by your native culture.",
+    "ctaPrompt": "Ready to take the first step?",
+    "ctaButton": "Book Strategy Call"
   },
   "session": {
     "title": "What Happens in a Session?",
@@ -218,13 +244,29 @@
     ]
   },
   "pricing": {
-    "price": "$2500 USD",
-    "description": "for the complete private 17-day protocol",
-    "includes": {
-      "title": "Includes:",
-      "features": ["6 private deep sessions", "Between-session voice support", "Personalized audio recording"]
+    "core": {
+      "title": "Core Protocol",
+      "price": "$2,500 USD",
+      "description": "The essential 17-day reprogramming experience.",
+      "features": [
+        "6 private deep sessions (video optional)",
+        "Voice support between sessions",
+        "Personalized audio reprogramming track"
+      ]
     },
-    "quote": "\"This isn't therapy. It's a structural reset. For people who've survived enough — and are ready to actually live.\"",
+    "full": {
+      "title": "Full Executive Tier",
+      "price": "$3,500 USD",
+      "description": "Everything in Core, plus exclusive upgrades for maximum transformation.",
+      "features": [
+        "Everything in Core Protocol",
+        "Strategic Mapping Diagnostic (pre-launch session)",
+        "✨ 1x 30-minute follow-up session (2–3 weeks post close)",
+        "🎧 Personalized audio reprogramming track",
+        "📘 Pre-release chapter from Dr. Kristof's upcoming book"
+      ]
+    },
+    "quote": "This isn't therapy. It's a structural reset. For people who've survived enough — and are ready to actually live.",
     "cta": {
       "primary": "Book Strategy Call",
       "secondary": "Let's Talk First"
@@ -237,5 +279,31 @@
       "terms": "Terms",
       "contact": "Contact"
     }
+  },
+  "whatMakesDifferent": {
+    "title": "What Makes You.v2 Different?",
+    "differentiators": [
+      {
+        "icon": "timer",
+        "title": "Structured 17-day sprint",
+        "desc": "Not an open-ended process—get results fast with a proven protocol."
+      },
+      {
+        "icon": "cog",
+        "title": "Personal engineering, not therapy",
+        "desc": "Uses subconscious methods (regression, parts work) for real, structural change."
+      },
+      {
+        "icon": "check-circle",
+        "title": "Clear, lasting outcome",
+        "desc": "Internal reprogramming that sticks—not just coping tools or advice."
+      },
+      {
+        "icon": "lock",
+        "title": "Confidential & deep",
+        "desc": "A safe space for complex emotional, behavioral, or compulsive patterns."
+      }
+    ],
+    "quote": "Other methods help you cope. I help you rewrite the code."
   }
 }
