@@ -140,43 +140,59 @@ export default function Home() {
             </div>
 
             {/* Text content with padding to make room for the image */}
-            <div className="md:max-w-[60%] space-y-6">
-              <div className="space-y-4">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl/none gradient-text">
+            <div className="md:max-w-[60%] space-y-8">
+              <div className="space-y-3">
+                <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight gradient-text">
                   {t("hero.title")}
                 </h1>
-                <p className="text-base md:text-xl text-muted-foreground">{t("hero.subtitle")}</p>
+                <div className="h-1 w-12 bg-executive-gold rounded mb-2" />
+                <p className="text-xl md:text-2xl font-semibold text-executive-blue">
+                  {t("hero.subtitle")}
+                </p>
                 <p className="text-base md:text-lg text-muted-foreground">{t("hero.description1")}</p>
-                <p className="text-base md:text-xl text-muted-foreground">{t("hero.description2")}</p>
+                <p className="text-base md:text-lg text-muted-foreground">{t("hero.description2")}</p>
               </div>
-              <div className="flex flex-col gap-3 min-[400px]:flex-row">
+              <div className="flex flex-col gap-3 min-[400px]:flex-row mt-4">
                 <button className="executive-button">
                   <CalendarDays className="mr-2 h-4 w-4 inline" /> {t("nav.bookCall")}
                 </button>
+                <a href="#how-it-works" className="executive-button-outline border border-executive-blue text-executive-blue font-semibold rounded-full py-3 px-4 md:px-6 text-center transition-colors hover:bg-executive-blue/10">
+                  {t("nav.howItWorks")}
+                </a>
               </div>
+              <p className="text-xs text-muted-foreground mt-2">{t("hero.ctaMicrocopy")}</p>
             </div>
           </div>
 
           {/* Quick ROI preview */}
           <ScrollReveal className="mt-8 md:mt-12 overflow-hidden rounded-xl border bg-card/50 backdrop-blur-sm">
-            <div className="grid grid-cols-2 md:grid-cols-4 divide-x text-sm md:text-base">
+            <div className="grid grid-cols-2 md:grid-cols-5 divide-x text-sm md:text-base">
               <div className="p-3 md:p-4 text-center">
                 <p className="text-xs md:text-sm text-muted-foreground">{t("quickRoi.therapy.title")}</p>
                 <p className="font-medium">{t("quickRoi.therapy.duration")}</p>
+                <p className="text-xs italic text-muted-foreground mt-1">{t("quickRoi.therapy.comment")}</p>
               </div>
               <div className="p-3 md:p-4 text-center">
                 <p className="text-xs md:text-sm text-muted-foreground">{t("quickRoi.coaching.title")}</p>
                 <p className="font-medium">{t("quickRoi.coaching.duration")}</p>
+                <p className="text-xs italic text-muted-foreground mt-1">{t("quickRoi.coaching.comment")}</p>
+              </div>
+              <div className="p-3 md:p-4 text-center">
+                <p className="text-xs md:text-sm text-muted-foreground">{t("quickRoi.medication.title")}</p>
+                <p className="font-medium">{t("quickRoi.medication.duration")}</p>
+                <p className="text-xs italic text-muted-foreground mt-1">{t("quickRoi.medication.comment")}</p>
               </div>
               <div className="p-3 md:p-4 text-center">
                 <p className="text-xs md:text-sm text-muted-foreground">{t("quickRoi.selfHelp.title")}</p>
                 <p className="font-medium">{t("quickRoi.selfHelp.duration")}</p>
+                <p className="text-xs italic text-muted-foreground mt-1">{t("quickRoi.selfHelp.comment")}</p>
               </div>
               <div className="p-3 md:p-4 text-center" style={{ backgroundColor: "hsla(var(--executive-blue), 0.05)" }}>
                 <p className="text-xs md:text-sm font-medium" style={{ color: "hsl(var(--executive-blue))" }}>
                   {t("quickRoi.youv2.title")}
                 </p>
                 <p className="font-bold">{t("quickRoi.youv2.duration")}</p>
+                <p className="text-xs italic text-muted-foreground mt-1">{t("quickRoi.youv2.comment")}</p>
               </div>
             </div>
           </ScrollReveal>

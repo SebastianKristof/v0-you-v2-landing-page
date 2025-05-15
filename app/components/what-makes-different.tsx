@@ -1,30 +1,20 @@
+import { useLanguage } from '@/contexts/language-context';
 import { CheckCircle, Timer, Cog, Lock } from 'lucide-react';
 import Image from 'next/image';
 
-const DIFFERENTIATORS = [
-  {
-    icon: <Timer className="text-executive-blue w-7 h-7" />,
-    title: 'Structured 17-day sprint',
-    desc: 'Not an open-ended process—get results fast with a proven protocol.'
-  },
-  {
-    icon: <Cog className="text-executive-gold w-7 h-7" />,
-    title: 'Personal engineering, not therapy',
-    desc: 'Uses subconscious methods (regression, parts work) framed as personal engineering.'
-  },
-  {
-    icon: <CheckCircle className="text-executive-blue w-7 h-7" />,
-    title: 'Clear, lasting outcome',
-    desc: 'Internal reprogramming that sticks—not just coping tools or advice.'
-  },
-  {
-    icon: <Lock className="text-executive-gold w-7 h-7" />,
-    title: 'Confidential & deep',
-    desc: 'A safe space for complex emotional, behavioral, or compulsive patterns.'
-  },
-];
+const ICONS = {
+  'timer': <Timer className="text-executive-blue w-7 h-7" />,
+  'cog': <Cog className="text-executive-gold w-7 h-7" />,
+  'check-circle': <CheckCircle className="text-executive-blue w-7 h-7" />,
+  'lock': <Lock className="text-executive-gold w-7 h-7" />,
+};
 
 export default function WhatMakesDifferent() {
+  const { t } = useLanguage();
+  const differentiators = t('whatMakesDifferent.differentiators', { returnObjects: true }) || [];
+  const quote = t('whatMakesDifferent.quote');
+  const title = t('whatMakesDifferent.title');
+
   return (
     <section className="w-full py-16 bg-white">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
@@ -43,13 +33,13 @@ export default function WhatMakesDifferent() {
         {/* Text content on the right (on desktop) */}
         <div className="md:w-3/5 w-full">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            What Makes <span className="gradient-text">You.v2</span> Different?
+            {title}
           </h2>
           <ul className="space-y-6 mb-8">
-            {DIFFERENTIATORS.map((item, i) => (
+            {Array.isArray(differentiators) && differentiators.map((item, i) => (
               <li key={i} className="flex items-start gap-4 group">
                 <span className="shrink-0 transition-transform group-hover:scale-110">
-                  {item.icon}
+                  {ICONS[item.icon]}
                 </span>
                 <div>
                   <div className="font-semibold text-lg mb-1">{item.title}</div>
@@ -59,7 +49,7 @@ export default function WhatMakesDifferent() {
             ))}
           </ul>
           <blockquote className="border-l-4 border-executive-blue pl-4 italic text-lg text-executive-blue bg-executive-light-blue/30 py-3 rounded-md">
-            "Other programs help you cope. We rewrite the code."
+            {quote}
           </blockquote>
         </div>
       </div>
