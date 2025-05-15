@@ -61,8 +61,10 @@ export function WhatMakesDifferentSection() {
               </li>
             ))}
           </ul>
-          <blockquote className="border-l-4 border-executive-blue pl-4 italic text-lg text-executive-blue bg-executive-light-blue/30 py-3 rounded-md">
-            {quote}
+          <blockquote>
+            <span className="inline-flex items-center italic text-lg text-executive-blue bg-executive-light-blue/30 py-2 px-4 rounded-md border-l-4 border-executive-blue pl-4">
+              {quote}
+            </span>
           </blockquote>
         </div>
       </div>

@@ -42,8 +42,19 @@ export function RoiSection() {
           </div>
         </ScrollReveal>
         <ScrollReveal className="mx-auto max-w-[600px] mt-8">
-          <div className="text-center text-base md:text-lg italic text-muted-foreground">
-            {t("roi.supporting")}
+          <div className="text-center text-base md:text-lg font-medium bg-executive-light-blue/60 text-executive-dark rounded-md px-4 py-3 inline-block mx-auto">
+            {(() => {
+              const supporting = t("roi.supporting");
+              // Highlight 'You.v2' in the supporting text
+              const parts = supporting.split('You.v2');
+              return (
+                <>
+                  {parts[0]}
+                  <span className="text-executive-blue font-bold">You.v2</span>
+                  {parts[1]}
+                </>
+              );
+            })()}
           </div>
         </ScrollReveal>
       </div>
