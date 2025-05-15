@@ -15,15 +15,21 @@ export function ProblemSection() {
             <p className="text-base md:text-lg lg:text-xl italic text-muted-foreground">{t("problem.quote")}</p>
             <h2 className="section-title">{t("problem.title")}</h2>
           </div>
-          <div className="grid gap-4 md:gap-6 md:grid-cols-2">
-            {Array.isArray(problemCards) &&
-              problemCards.map((text: string, index: number) => (
-                <ScrollReveal key={index} delay={index * 100}>
-                  <div className="executive-card h-full">
-                    <p className="text-sm md:text-base text-muted-foreground">{text}</p>
-                  </div>
-                </ScrollReveal>
-              ))}
+          <div className="relative">
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/60 via-executive-light-blue/60 to-white/80 pointer-events-none -z-10" />
+            <div className="grid gap-4 md:gap-6 md:grid-cols-2">
+              {Array.isArray(problemCards) &&
+                problemCards.map((text: string, index: number) => (
+                  <ScrollReveal key={index} delay={index * 100}>
+                    <div
+                      className={`executive-card h-full flex items-start gap-3 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${index % 2 === 1 ? 'md:mt-8' : ''}`}
+                    >
+                      <div className="w-1.5 h-8 md:h-12 rounded-full bg-executive-blue mr-3 mt-1" />
+                      <p className="text-sm md:text-base text-muted-foreground flex-1">{text}</p>
+                    </div>
+                  </ScrollReveal>
+                ))}
+            </div>
           </div>
           <div className="space-y-4">
             <p className="text-base md:text-lg">{t("problem.conclusion1")}</p>

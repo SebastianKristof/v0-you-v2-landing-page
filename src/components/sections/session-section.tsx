@@ -7,7 +7,7 @@ export function SessionSection() {
   const sessionFeatures = t("session.features", { returnObjects: true }) || [];
   const sessionWorkTypes = t("session.work.types", { returnObjects: true }) || [];
   return (
-    <section className="w-full py-10 md:py-16 lg:py-24 bg-white">
+    <section className="w-full py-10 md:py-16 lg:py-24 bg-executive-light-blue">
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-4 text-center">

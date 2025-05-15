@@ -16,7 +16,7 @@
     "subtitle": "You.v2 is a 17-day protocol to rewrite the internal code that's holding you back. Built for those who are ready to grow further - and actually enjoy it.",
     "description1": "Old internal programs protected you once and made you who you are today. Now they distort your clarity and block your progress.",
     "description2": "You thought this would go on forever. What if it doesn't have to?",
-    "ctaMicrocopy": "No obligation. 100% confidential. For those who've already tried the traditional approaches."
+    "ctaMicrocopy": "No obligation. 100% confidential. Best for those who've already tried the traditional approaches."
   },
   "quickRoi": {
     "therapy": {
@@ -244,13 +244,29 @@
     ]
   },
   "pricing": {
-    "price": "$2500 USD",
-    "description": "for the complete private 17-day protocol",
-    "includes": {
-      "title": "Includes:",
-      "features": ["6 private deep sessions", "Between-session voice support", "Personalized audio recording"]
+    "core": {
+      "title": "Core Protocol",
+      "price": "$2,500 USD",
+      "description": "The essential 17-day reprogramming experience.",
+      "features": [
+        "6 private deep sessions (video optional)",
+        "Voice support between sessions",
+        "Personalized audio reprogramming track"
+      ]
     },
-    "quote": "\"This isn't therapy. It's a structural reset. For people who've survived enough — and are ready to actually live.\"",
+    "full": {
+      "title": "Full Executive Tier",
+      "price": "$3,500 USD",
+      "description": "Everything in Core, plus exclusive upgrades for maximum transformation.",
+      "features": [
+        "Everything in Core Protocol",
+        "Strategic Mapping Diagnostic (pre-launch session)",
+        "✨ 1x 30-minute follow-up session (2–3 weeks post close)",
+        "🎧 Personalized audio reprogramming track",
+        "📘 Pre-release chapter from Dr. Kristof's upcoming book"
+      ]
+    },
+    "quote": "This isn't therapy. It's a structural reset. For people who've survived enough — and are ready to actually live.",
     "cta": {
       "primary": "Book Strategy Call",
       "secondary": "Let's Talk First"

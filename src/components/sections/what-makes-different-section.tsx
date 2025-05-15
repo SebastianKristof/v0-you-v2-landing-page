@@ -17,15 +17,15 @@ export function WhatMakesDifferentSection() {
 
   return (
     <section className="w-full py-16 bg-white">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-20">
         {/* Illustration on the left (on desktop) */}
-        <div className="md:w-2/5 w-full flex justify-center">
-          <div className="relative w-72 h-72 md:w-96 md:h-96">
+        <div className="md:w-2/5 w-full flex justify-center items-center">
+          <div className="relative w-full max-w-[36rem] aspect-[16/9] rounded-2xl overflow-hidden shadow-lg bg-executive-light-blue/40">
             <Image
-              src="/images/placeholder-logo.png"
+              src="/images/ChatGPT_Image_Mind_Engineering.png"
               alt="System Reprogramming Illustration"
               fill
-              className="object-contain rounded-xl shadow-lg bg-executive-light-blue/40"
+              className="object-cover rounded-2xl"
               priority
             />
           </div>

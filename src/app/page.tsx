@@ -153,11 +153,11 @@ export default function Home() {
         {/* Client Story */}
         <ClientStorySection />
 
-        {/* FAQ Section */}
-        <FaqSection />
-
         {/* Pricing & CTA */}
         <PricingSection />
+
+        {/* FAQ Section */}
+        <FaqSection />
       </main>
 
       <footer className="w-full border-t py-6 md:py-8 bg-white">
