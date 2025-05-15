@@ -22,6 +22,7 @@ import { WhatMakesDifferentSection } from "@/components/sections/what-makes-diff
 import { ClientStorySection } from "@/components/sections/client-story-section"
 import { FaqSection } from "@/components/sections/faq-section"
 import { PricingSection } from "@/components/sections/pricing-section"
+import { GlobalHighPerformersSection } from "@/components/sections/global-high-performers-section"
 
 export default function Home() {
   const { t } = useLanguage()
@@ -142,6 +143,9 @@ export default function Home() {
 
         {/* About the Creator */}
         <AboutSection />
+
+        {/* Global High Performers Section */}
+        <GlobalHighPerformersSection />
 
         {/* What Happens in a Session */}
         <SessionSection />
