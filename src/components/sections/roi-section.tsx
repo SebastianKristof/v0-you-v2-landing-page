@@ -1,5 +1,6 @@
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
+import { CalendarDays } from "lucide-react";
 
 export function RoiSection() {
   const { t } = useLanguage();
@@ -42,7 +43,7 @@ export function RoiSection() {
           </div>
         </ScrollReveal>
         <ScrollReveal className="mx-auto max-w-[600px] mt-8">
-          <div className="text-center text-base md:text-lg font-medium bg-executive-light-blue/60 text-executive-dark rounded-md px-4 py-3 inline-block mx-auto">
+          <div className="text-center text-base md:text-lg font-medium bg-executive-light-blue/60 text-executive-dark rounded-md px-4 py-3 mx-auto">
             {(() => {
               const supporting = t("roi.supporting");
               // Highlight 'You.v2' in the supporting text
@@ -57,6 +58,12 @@ export function RoiSection() {
             })()}
           </div>
         </ScrollReveal>
+        <div className="flex justify-center mt-8 mb-4">
+          <button className="executive-button flex items-center gap-2 px-8 py-3 text-lg" type="button">
+            <CalendarDays className="w-5 h-5" />
+            {t("pricing.cta.primary")}
+          </button>
+        </div>
       </div>
     </section>
   );

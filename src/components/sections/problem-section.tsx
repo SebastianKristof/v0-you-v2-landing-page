@@ -1,5 +1,6 @@
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
+import { CalendarDays } from "lucide-react";
 
 export function ProblemSection() {
   const { t } = useLanguage();
@@ -34,6 +35,12 @@ export function ProblemSection() {
           <div className="space-y-4">
             <p className="text-base md:text-lg">{t("problem.conclusion1")}</p>
             <p className="text-base md:text-lg">{t("problem.conclusion2")}</p>
+          </div>
+          <div className="flex justify-center mt-8 mb-4">
+            <button className="executive-button flex items-center gap-2 px-8 py-3 text-lg" type="button">
+              <CalendarDays className="w-5 h-5" />
+              {t("pricing.cta.primary")}
+            </button>
           </div>
         </ScrollReveal>
       </div>
