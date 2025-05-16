@@ -8,7 +8,7 @@ export function ProblemSection() {
   return (
     <section
       className="w-full py-10 md:py-16 lg:py-24"
-      style={{ backgroundColor: "hsl(var(--executive-light-blue))" }}
+      style={{ backgroundColor: "hsl(var(--white))" }}
     >
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">

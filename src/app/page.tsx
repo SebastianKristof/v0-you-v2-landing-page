@@ -122,9 +122,9 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <HeroSection />
-
-        {/* What Makes You.v2 Different Section */}
-        <WhatMakesDifferentSection />
+        
+        {/* How It Works Section */}
+        <HowItWorksSection />
 
         {/* Quick ROI preview */}
         {/* Quick ROI is now part of HeroSection */}
@@ -132,8 +132,8 @@ export default function Home() {
         {/* Problem Section */}
         <ProblemSection />
 
-        {/* How It Works Section */}
-        <HowItWorksSection />
+        {/* What Makes You.v2 Different Section */}
+        <WhatMakesDifferentSection />
 
         {/* Timeline Section */}
         <TimelineSection />

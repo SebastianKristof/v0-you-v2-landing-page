@@ -16,7 +16,7 @@ export function WhatMakesDifferentSection() {
   const title = t('whatMakesDifferent.title');
 
   return (
-    <section className="w-full py-16 bg-white">
+    <section className="w-full py-16 bg-executive-light-blue">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-20">
         {/* Illustration on the left (on desktop) */}
         <div className="md:w-2/5 w-full flex justify-center items-center">
