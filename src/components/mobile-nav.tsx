@@ -57,7 +57,7 @@ export default function MobileNav({ className = "" }: MobileNavProps) {
                 className="text-xs font-semibold uppercase px-2 py-0.5 rounded-md"
                 style={{ backgroundColor: "hsl(var(--executive-gold))", color: "hsl(var(--executive-dark))" }}
               >
-                Executive
+                Intensive
               </span>
             </div>
             <nav className="flex flex-col items-center gap-8 text-lg">

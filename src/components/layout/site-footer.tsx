@@ -13,7 +13,7 @@ export function SiteFooter() {
               className="text-xs font-semibold uppercase px-1.5 py-0.5 rounded-md"
               style={{ backgroundColor: "hsl(var(--executive-gold))", color: "hsl(var(--executive-dark))" }}
             >
-              Executive
+              Intensive
             </span>
           </div>
           <p className="text-xs md:text-sm text-muted-foreground">

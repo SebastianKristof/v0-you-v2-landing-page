@@ -46,18 +46,18 @@
     }
   },
   "problem": {
-    "quote": "\"You did everything to break the cycle. But when your kid looks at you with that same anger or withdrawal you used to feel — you wonder if the cycle is breaking you.\"",
+    "quote": "You went further than anyone expected. You won against all odds. But now you feel your past is catching up with you. It's the little things that get to you. Strange patterns that don't make sense. The silly things you should be able to overcome but can't.",
     "title": "You're not lazy. You're not broken. You're running old code.",
     "cards": [
       "You built your success by fighting through every obstacle. Now it feels like the fight is inside you.",
       "You swore not to become like your parents — and yet you see it leak out in moments with your kids.",
-      "You've made it, but can't relax. Or connect. Or feel.",
-      "You feel time passing. Success behind you. But what's next?",
+      "You've achieved everything you set out to do, but can't relax. Or connect. Or feel.",
       "You've done therapy. You've read the books. Still, something holds.",
-      "You've tried to stay in control — but the pressure leaks sideways: into food, distractions, work, sex, compulsive habits."
+      "You've tried to stay in control — but the pressure leaks sideways: into food, distractions, work, sex, compulsive habits.",
+      "You carry authority - but also invisible guilt, shame, or fear. You lead with strength while holding back tears no one sees."
     ],
     "conclusion1": "What you're dealing with isn't lack of discipline. It's legacy code — strategies that once helped you cope but now sabotage your clarity and drive.",
-    "conclusion2": "Most people never question that internal noise — they just push through it. But pushing only takes you so far."
+    "conclusion2": "Most people never question that internal noise — they just push through it. But pushing only takes you so far. Your body knows before your mind does. That tightness, restlessness, or exhaustion — it's your nervous system asking for a different kind of power."
   },
   "howItWorks": {
     "title": "This isn't therapy. It's reprogramming.",
@@ -216,7 +216,8 @@
   "clientStory": {
     "title": "Client Story",
     "quote": "\"I was stuck for 7 months, circling the same project and feeling blocked. By the third session, something unhooked — I launched it, and we did $90k. But more than that? I actually felt calm doing it.\"",
-    "author": "— Anonymous founder, Berlin"
+    "author": "— Anonymous founder, Berlin",
+    "femalePerspective": "\"I held everyone else together, balancing leadership and personal well-being felt impossible until I found a space to truly reset.\" — Anonymous You V2 Client"
   },
   "faq": {
     "title": "Frequently Asked Questions",
