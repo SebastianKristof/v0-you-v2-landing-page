@@ -27,6 +27,7 @@ import { IsThisForYouSection } from "@/components/sections/is-this-for-you-secti
 import { ClientStoriesSection } from "@/components/sections/client-stories-section"
 import { IssuesSection } from "@/components/sections/issues-section"
 import { PrecisionSection } from "@/components/sections/precision-section"
+import { WhyMeSection } from "@/components/sections/why-me-section"
 
 export default function Home() {
   const { t } = useLanguage()
@@ -168,6 +169,9 @@ export default function Home() {
 
         {/* Pricing & CTA */}
         <PricingSection />
+
+        {/* Why Work With Me Section */}
+        <WhyMeSection />
 
         {/* FAQ Section */}
         <FaqSection />

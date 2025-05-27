@@ -240,91 +240,121 @@
   "session": {
     "title": "What Happens in a Session?",
     "features": [
-        {
-          "title": "Online Meeting",
-          "description": "We meet privately online, without need to travel"
-        },
-        {
-          "title": "Focused Trance State",
-          "description": "You enter a focused trance-like state — safe, present, clear"
-        },
-        {
-          "title": "Deep Reprogramming",
-          "description": "Structured subconscious work that creates lasting change"
-        }
+      {
+        "title": "Online Meeting",
+        "description": "We meet privately online, without need to travel"
+      },
+      {
+        "title": "Focused Trance State",
+        "description": "You enter a focused trance-like state — safe, present, clear"
+      },
+      {
+        "title": "Deep Reprogramming",
+        "description": "Structured subconscious work that creates lasting change"
+      }
+    ],
+    "work": {
+      "intro": "I guide you through structured subconscious work:",
+      "types": [
+        "regression",
+        "identity mapping",
+        "emotional realignment",
+        "symbolic negotiation"
       ],
-      "work": {
-        "intro": "I guide you through structured subconscious work:",
-        "types": ["regression", "identity mapping", "emotional realignment", "symbolic negotiation"],
-        "result": "You return with clarity — and often visible behavioral shifts by the next session"
-      }
-    },
-    "clientStory": {
-      "title": "Client Story",
-      "quote": "\"I was stuck for 7 months, circling the same project and feeling blocked. By the third session, something unhooked — I launched it, and we did $90k. But more than that? I actually felt calm doing it.\"",
-      "author": "— Anonymous founder, Berlin",
-      "femalePerspective": "\"I held everyone else together, balancing leadership and personal well-being felt impossible until I found a space to truly reset.\" — Anonymous You V2 Client"
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "items": [
-        {
-          "question": "Is this therapy?",
-          "answer": "No. It's faster, deeper, and structurally targeted."
-        },
-        {
-          "question": "Is this remote?",
-          "answer": "Yes. All sessions are online and timezone-flexible."
-        },
-        {
-          "question": "Do I need to believe in anything for it to work?",
-          "answer": "No. The process works whether or not you believe in it. You just need to show up."
-        },
-        {
-          "question": "What if I've already done a lot of therapy?",
-          "answer": "Perfect. That means you've cleared the surface. This goes deeper."
-        },
-        {
-          "question": "How soon will I notice changes?",
-          "answer": "Most clients report noticeable shifts after the first or second session. The full protocol ensures these changes are structural and lasting."
-        }
-      ]
-    },
-    "pricing": {
-      "core": {
-        "title": "Core Protocol",
-        "price": "$2,500 USD",
-        "description": "The essential 17-day reprogramming experience.",
-        "features": [
-          "6 private deep sessions (video optional)",
-          "Voice support between sessions",
-          "Personalized audio reprogramming track"
-        ]
+      "result": "You return with clarity — and often visible behavioral shifts by the next session"
+    }
+  },
+  "clientStory": {
+    "title": "Client Story",
+    "quote": "\"I was stuck for 7 months, circling the same project and feeling blocked. By the third session, something unhooked — I launched it, and we did $90k. But more than that? I actually felt calm doing it.\"",
+    "author": "— Anonymous founder, Berlin",
+    "femalePerspective": "\"I held everyone else together, balancing leadership and personal well-being felt impossible until I found a space to truly reset.\" — Anonymous You V2 Client"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Is this therapy?",
+        "answer": "No. It's faster, deeper, and structurally targeted."
       },
-      "full": {
-        "title": "Full Executive Tier",
-        "price": "$3,500 USD",
-        "description": "Everything in Core, plus exclusive upgrades for maximum transformation.",
-        "features": [
-          "Everything in Core Protocol",
-          "Strategic Mapping Diagnostic (pre-launch session)",
-          "✨ 1x 30-minute follow-up session (2–3 weeks post close)",
-          "🎧 Personalized audio reprogramming track",
-          "📘 Pre-release chapter from Dr. Kristof's upcoming book"
-        ]
+      {
+        "question": "Is this remote?",
+        "answer": "Yes. All sessions are online and timezone-flexible."
       },
-      "quote": "This isn't therapy. It's a structural reset. For people who've survived enough — and are ready to actually live.",
-      "cta": {
-        "primary": "Book Strategy Call",
-        "secondary": "Let's Talk First"
+      {
+        "question": "Do I need to believe in anything for it to work?",
+        "answer": "No. The process works whether or not you believe in it. You just need to show up."
+      },
+      {
+        "question": "What if I've already done a lot of therapy?",
+        "answer": "Perfect. That means you've cleared the surface. This goes deeper."
+      },
+      {
+        "question": "How soon will I notice changes?",
+        "answer": "Most clients report noticeable shifts after the first or second session. The full protocol ensures these changes are structural and lasting."
       }
+    ]
+  },
+  "pricing": {
+    "intro": "Two Paths, One Transformation",
+    "description": "You.v2 is a high-touch, personalized hypnotherapy experience designed for powerful, high-functioning people who are ready to stop self-sabotage and step fully into aligned living. Some prefer an immersive experience. Others need spacious integration. That's why I offer two pathways to the same transformation:",
+    "premium": {
+      "title": "🔥 The 17-Day Intensive (Premium Tier)",
+      "description": "For those who are ready to go all in.",
+      "features": [
+        "Fast, immersive format — sessions every 2–3 days",
+        "Deep containment and momentum",
+        "Requires full emotional commitment and calendar priority",
+        "Ideal for founders, creatives, and leaders in transition or crisis"
+      ],
+      "quote": "If you want a complete system reset — and you're ready now — this is the path.",
+      "pricing": "Premium-tier investment. Only 2 clients accepted per month."
     },
-    "footer": {
-      "rights": "All rights reserved.",
-      "links": {
-        "privacy": "Privacy",
-        "terms": "Terms",
-        "contact": "Contact"
-      }
+    "core": {
+      "title": "🌱 The 6-Week Repatterning (Core Tier)",
+      "description": "For those who want transformation with integration.",
+      "features": [
+        "Weekly 1:1 sessions over 6 weeks",
+        "Time to reflect, observe, and stabilize between sessions",
+        "Same framework, adapted to your nervous system's pace",
+        "Ideal for high-achievers managing life demands alongside deep work"
+      ],
+      "quote": "If you want to go deep without overwhelm, this is your space.",
+      "pricing": "Core-tier investment. Only 4 clients accepted per month."
+    },
+    "framework": {
+      "title": "Same Framework. Two Paces.",
+      "bullets": [
+        "Mapping your symbolic and emotional terrain",
+        "Uncovering root beliefs and patterns",
+        "Rewiring subconscious pathways through trance-based work",
+        "Integrating new internal logic and long-term access tools"
+      ],
+      "note": "This is not mindset coaching. This is subconscious repatterning — done with surgical precision and deep containment."
+    },
+    "cta": {
+      "primary": "Book Strategy Call",
+      "secondary": "Let's Talk First"
+    }
+  },
+  "whyMe": {
+    "title": "Why Work With Me",
+    "intro": "My role is not to fix you. It's to help you unlock what's already within. I live and thrive between worlds — between English and Russian, medicine and engineering, the scientific and the spiritual. That's why I can guide you through transformation that's not only deep - but precise, not just emotional - but effective.",
+    "bullets": [
+      "Depth and speed: Profound change doesn't need to take years. My clients experience deep shifts in weeks, not months.",
+      "Clinical rigor meets inner wisdom: As a physician with postdoctoral training at Yale and UCSD, I integrate scientific depth with intuitive precision — minus the fluff.",
+      "Safe masculine presence: For both powerful women and high-performing men — I create a judgment-free and non-threatening space where you can feel safe, supported, and respected.",
+      "Bilingual and bicultural: This program was specifically developed for Russian speaking expats navigating life between two cultures. Even if you think in English today, your inner child still speaks Russian. But you also need someone who can understand the realities of your today's life.",
+      "Nothing is too much: We'll address the things you've never said out loud — without fear, shame, or avoidance. The work can be context-free: you only share what you can safely share.",
+      "Both art and science: No pre-determined templates or scripts, because every person is different and every session is different. Together, we will craft and go through a process which reflects your mind and your life - not somebody else's."
+    ]
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "links": {
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "contact": "Contact"
     }
   }
+}
