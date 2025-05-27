@@ -16,23 +16,8 @@ export function PricingSection() {
             <p className="text-lg md:text-xl text-muted-foreground mt-2">{t("pricing.description")}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Core Tier Card */}
-            <div className="executive-card bg-white shadow-lg border-2 border-executive-blue flex flex-col items-center p-6">
-              <h3 className="text-2xl font-bold text-executive-blue mb-2">{core.title}</h3>
-              <div className="text-base text-muted-foreground mb-4 text-center">{core.description}</div>
-              <ul className="space-y-2 mb-4 w-full">
-                {Array.isArray(core.features) && core.features.map((feature: string, i: number) => (
-                  <li key={i} className="flex items-start gap-2 text-executive-dark">
-                    <Check className="h-5 w-5 text-executive-blue mt-1" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="italic text-executive-blue mb-2">{core.quote}</div>
-              <div className="font-semibold text-executive-dark mb-4">{core.pricing}</div>
-            </div>
             {/* Premium Tier Card */}
-            <div className="executive-card bg-card/80 backdrop-blur-sm flex flex-col items-center p-6">
+            <div className="executive-card bg-card/80 backdrop-blur-sm border-2 border-executive-blue flex flex-col items-center p-6">
               <h3 className="text-2xl font-bold text-executive-blue mb-2">{premium.title}</h3>
               <div className="text-base text-muted-foreground mb-4 text-center">{premium.description}</div>
               <ul className="space-y-2 mb-4 w-full">
@@ -45,6 +30,21 @@ export function PricingSection() {
               </ul>
               <div className="italic text-executive-blue mb-2">{premium.quote}</div>
               <div className="font-semibold text-executive-dark mb-4">{premium.pricing}</div>
+            </div>
+            {/* Core Tier Card */}
+            <div className="executive-card bg-white shadow-lg flex flex-col items-center p-6">
+              <h3 className="text-2xl font-bold text-executive-blue mb-2">{core.title}</h3>
+              <div className="text-base text-muted-foreground mb-4 text-center">{core.description}</div>
+              <ul className="space-y-2 mb-4 w-full">
+                {Array.isArray(core.features) && core.features.map((feature: string, i: number) => (
+                  <li key={i} className="flex items-start gap-2 text-executive-dark">
+                    <Check className="h-5 w-5 text-executive-blue mt-1" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="italic text-executive-blue mb-2">{core.quote}</div>
+              <div className="font-semibold text-executive-dark mb-4">{core.pricing}</div>
             </div>
           </div>
           {/* Framework Section */}
