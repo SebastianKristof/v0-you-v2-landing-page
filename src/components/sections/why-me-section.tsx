@@ -31,20 +31,12 @@ export function WhyMeSection() {
             {splitBullets.map((item, i) => (
               <li key={i} className="mb-4">
                 <span
-                  className="font-semibold text-executive-blue text-lg md:text-xl inline-block"
+                  className="font-bold text-executive-blue text-lg md:text-xl pl-4"
                   style={{
-                    textDecoration: "underline",
-                    textDecorationThickness: "3px",
-                    textUnderlineOffset: "6px",
-                    textDecorationColor: "transparent",
-                    backgroundImage:
-                      "linear-gradient(90deg, hsl(var(--executive-gold)) 0%, hsl(var(--executive-gold)/.2) 100%)",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "100% 6px",
-                    backgroundPosition: "0 100%",
-                    filter: "drop-shadow(0 1px 2px hsl(var(--executive-gold)/.25))",
-                    paddingLeft: "0.5rem",
-                    borderRadius: "0.25rem",
+                    borderLeft: "6px solid hsl(var(--executive-gold))",
+                    background: "none",
+                    display: "inline-block",
+                    lineHeight: 1.3,
                   }}
                 >
                   {item.heading}
