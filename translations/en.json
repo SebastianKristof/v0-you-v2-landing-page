@@ -12,10 +12,12 @@
     "bookCall": "Book Strategy Call"
   },
   "hero": {
-    "title": "You made it. But your mind is still in survival mode.",
-    "subtitle": "You.v2 is a 17-day protocol to rewrite the internal code that's holding you back. Built for those who are ready to grow further - and actually enjoy it.",
-    "description1": "Old internal programs protected you once and made you who you are today. Now they distort your clarity and block your progress.",
-    "description2": "You thought this would go on forever. What if it doesn't have to?",
+    "title": "You lead, guide, and support others — but you know it's time to focus on yourself.",
+    "subtitle": "A structured and personalized hypnotherapy approach to end self-sabotage by working directly with your subconscious — where real change begins.",
+    "description1": "Your subconscious mind holds the patterns that keep you stuck — and the power to change everything.",
+    "description2": "You don't need more willpower. You need access to the part of your mind where real change begins.",
+    "description3": "You've done the mindset work. You've tried therapy. But something deeper still holds you back.",
+    "description4": "It's time to work with your subconscious mind — where lasting change begins.",
     "ctaMicrocopy": "No obligation. 100% confidential. Best for those who've already tried the traditional approaches."
   },
   "quickRoi": {
@@ -45,20 +47,6 @@
       "comment": "deep, lasting change!"
     }
   },
-  "problem": {
-    "quote": "You went further than anyone expected. You won against all odds. Yet here you are—stuck haunted by the past in ways that make no logical sense. Those \"small\" triggers. The reactions you can't explain. The patterns you know are irrational but can't seem to break.",
-    "title": "You're not lazy. You're not broken. You're running old code.",
-    "cards": [
-      "You built your success by fighting through every obstacle. Now it feels like the fight is inside you.",
-      "You swore not to become like your parents — and yet you see it leak out in moments with your kids.",
-      "You've achieved everything you set out to do, but can't relax. Or connect. Or feel.",
-      "You've done therapy. You've read the books. Still, something holds.",
-      "You've tried to stay in control — but the pressure leaks sideways: into food, distractions, work, sex, compulsive habits.",
-      "You carry authority - but also invisible guilt, shame, or fear. You lead with strength while holding back tears no one sees."
-    ],
-    "conclusion1": "What you're dealing with isn't lack of discipline. It's legacy code — strategies that once helped you cope but now sabotage your clarity and drive.",
-    "conclusion2": "Most people never question that internal noise — they just push through it. But pushing only takes you so far. Your body knows before your mind does. That tightness, restlessness, or exhaustion — it's your nervous system asking for a different kind of power."
-  },
   "howItWorks": {
     "title": "This isn't therapy. It's reprogramming.",
     "description1": "Your subconscious is your internal operating system — and it was installed before you had a say. It runs your emotions, your impulses, your loyalties.",
@@ -74,6 +62,90 @@
       "purpose": "Purpose"
     },
     "quote": "\"You've worked hard at the behavior level. It's time to reset where it actually matters.\""
+  },
+  "theWhy": {
+    "title": "The Why",
+    "promiseTitle": "My Promise to You",
+    "promise": "Through this work, I'll teach you how to access and use the power of your own subconscious mind — so that you can stop self-sabotaging, achieve your goals more easily, and continue creating meaningful change long after our work is done.",
+    "visionTitle": "My Vision",
+    "vision": "My work is about more than personal change. It's about breaking generational patterns, removing invisible blocks, and making sure that the pain you carry doesn't get passed down to your children. I do this because I like to create more happy people around me by liberating them from their subconscious limiting beliefs and patterns that no longer serve them."
+  },
+  "isThisForYou": {
+    "title": "Is This For You?",
+    "bullets": [
+      "You've outgrown traditional mindset tools",
+      "You feel stuck despite external success",
+      "You're ready to do deep work with lasting impact",
+      "You help others every day, but have no one to help you"
+    ],
+    "description1": "This work is especially effective for people in helping roles — coaches, therapists, doctors, lawyers, business leaders — because you understand change, and you're ready to do the work that goes beyond what most methods can reach.",
+    "description2": "This work is for people who are truly ready. Not to talk, cope, or hope — but to actually change."
+  },
+  "clientStories": {
+    "title": "Client Stories",
+    "stories": [
+      "After just one session, I felt like years of emotional weight lifted off. — Anna, Executive Coach",
+      "This work gave me tools I still use every day — real transformation. — Jordan, Tech Founder",
+      "I've done coaching, therapy, even retreats. Nothing got to the root like this did. The shifts were deep and lasting. — Elena, Entrepreneur",
+      "I didn't expect to feel this clear after just two weeks. I finally stopped repeating the same self-destructive cycle. — Dmitry, Product Manager"
+    ]
+  },
+  "whatMakesDifferent": {
+    "title": "What Makes You.v2 Different?",
+    "differentiators": [
+      {
+        "icon": "timer",
+        "title": "Structured work with defined time frame",
+        "desc": "Not an open-ended process—get results fast with a proven protocol."
+      },
+      {
+        "icon": "cog",
+        "title": "Personal engineering, not therapy",
+        "desc": "Uses subconscious methods (regression, parts work) for real, structural change."
+      },
+      {
+        "icon": "check-circle",
+        "title": "Clear, lasting outcome",
+        "desc": "Internal reprogramming that sticks—not just coping tools or advice."
+      },
+      {
+        "icon": "lock",
+        "title": "Confidential & deep",
+        "desc": "A safe space for complex emotional, behavioral, or compulsive patterns."
+      }
+    ],
+    "quote": "Other methods help you cope. I help you rewrite the code."
+  },
+  "issues": {
+    "title": "Issues We Can Address",
+    "intro": "I work with professionals who have achieved a lot — yet still feel that something isn't right beneath the surface. Here are just a few areas where subconscious reprogramming can create powerful change:",
+    "items": [
+      {
+        "title": "External success — but love feels impossible",
+        "desc": "You've built a career, solved big problems, earned respect. But in relationships, you keep hitting the same walls: distance, pain, self-doubt. It's not bad luck — it reflects a root issue."
+      },
+      {
+        "title": "Money comes — and then disappears",
+        "desc": "You earn well, but you can't grow further. Fear of big numbers, guilt around success, inner conflict between safety and freedom — this isn't about the market. It's about your internal structure."
+      },
+      {
+        "title": "You — or someone close — suddenly changed",
+        "desc": "After an illness, surgery, accident, or even intense stress, something feels off. Like part of you is missing. This work helps with what logic can't explain."
+      },
+      {
+        "title": "You don't want to become your parents — but you're already repeating them",
+        "desc": "Guilt, frustration, emotional distance with your child — these often echo patterns you lived through yourself. We can stop inherited pain from passing forward."
+      },
+      {
+        "title": "Irrational moods, fears, or desires",
+        "desc": "Anxiety, irritability, mood swings, irrational fears and urges — these aren’t flaws in your personality. They’re often signs your subconscious is working overtime to manage something unresolved."
+      },
+      {
+        "title": "Unexplained physical symptoms or habits",
+        "desc": "Compulsive behaviors, physical tension, headaches, and unexplained symptoms often start as the subconscious trying to protect you. They need to be decoded and processed — not ignored."
+      }
+    ],
+    "outro": "Every person is different. If you don't see your situation here — reach out. I don't treat diagnoses or give labels. Every story can be rewritten."
   },
   "timeline": {
     "title": "You.v2 Protocol — 17 Days to Reclaim Yourself",
@@ -280,31 +352,5 @@
       "terms": "Terms",
       "contact": "Contact"
     }
-  },
-  "whatMakesDifferent": {
-    "title": "What Makes You.v2 Different?",
-    "differentiators": [
-      {
-        "icon": "timer",
-        "title": "Structured 17-day sprint",
-        "desc": "Not an open-ended process—get results fast with a proven protocol."
-      },
-      {
-        "icon": "cog",
-        "title": "Personal engineering, not therapy",
-        "desc": "Uses subconscious methods (regression, parts work) for real, structural change."
-      },
-      {
-        "icon": "check-circle",
-        "title": "Clear, lasting outcome",
-        "desc": "Internal reprogramming that sticks—not just coping tools or advice."
-      },
-      {
-        "icon": "lock",
-        "title": "Confidential & deep",
-        "desc": "A safe space for complex emotional, behavioral, or compulsive patterns."
-      }
-    ],
-    "quote": "Other methods help you cope. I help you rewrite the code."
   }
 }

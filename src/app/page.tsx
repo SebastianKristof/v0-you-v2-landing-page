@@ -12,7 +12,6 @@ import ImageModal from "@/components/image-modal"
 import { useLanguage } from "@/contexts/language-context"
 import { HeroSection } from "@/components/sections/hero-section"
 import { QuickRoiSection } from "@/components/sections/quick-roi-section"
-import { ProblemSection } from "@/components/sections/problem-section"
 import { HowItWorksSection } from "@/components/sections/how-it-works-section"
 import { TimelineSection } from "@/components/sections/timeline-section"
 import { RoiSection } from "@/components/sections/roi-section"
@@ -23,6 +22,10 @@ import { ClientStorySection } from "@/components/sections/client-story-section"
 import { FaqSection } from "@/components/sections/faq-section"
 import { PricingSection } from "@/components/sections/pricing-section"
 import { GlobalHighPerformersSection } from "@/components/sections/global-high-performers-section"
+import { TheWhySection } from "@/components/sections/the-why-section"
+import { IsThisForYouSection } from "@/components/sections/is-this-for-you-section"
+import { ClientStoriesSection } from "@/components/sections/client-stories-section"
+import { IssuesSection } from "@/components/sections/issues-section"
 
 export default function Home() {
   const { t } = useLanguage()
@@ -126,14 +129,20 @@ export default function Home() {
         {/* How It Works Section */}
         <HowItWorksSection />
 
-        {/* Quick ROI preview */}
-        {/* Quick ROI is now part of HeroSection */}
+        {/* The Why Section */}
+        <TheWhySection />
 
-        {/* Problem Section */}
-        <ProblemSection />
+        {/* Is This For You Section */}
+        <IsThisForYouSection />
+
+        {/* Client Stories Section */}
+        <ClientStoriesSection />
 
         {/* What Makes You.v2 Different Section */}
         <WhatMakesDifferentSection />
+
+        {/* Issues Section */}
+        <IssuesSection />
 
         {/* Timeline Section */}
         <TimelineSection />
