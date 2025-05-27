@@ -210,3 +210,34 @@ To give you my full presence and focus, I never do back-to-back sessions. I work
 ---
 
 **You.v2 — Your next version isn’t out there. It’s already within. Let’s unlock it.**
+
+
+"faq": {
+  "title": "What You Might Be Wondering",
+  "items": [
+    {
+      "question": "Is this therapy?",
+      "answer": "No. This is not psychotherapy, and I don’t treat mental illness. This is structural subconscious work — faster, deeper, and focused on transformation, not support."
+    },
+    {
+      "question": "Is it safe to go that deep?",
+      "answer": "Yes — when done with the right experience and boundaries. I’ve worked with complex psychological cases and know when to slow down, when to pause, and when to refer out."
+    },
+    {
+      "question": "Does this work if I’ve already done therapy or coaching?",
+      "answer": "Yes — and it often works better. Most clients come to me after years of personal work. That means you're ready to go deeper — and this work doesn’t repeat what you’ve already done."
+    },
+    {
+      "question": "Do I have to believe in hypnosis for it to work?",
+      "answer": "No. This is about how your nervous system and subconscious actually function — not belief or ritual. If you're ready to engage, it works."
+    },
+    {
+      "question": "How many sessions do I need?",
+      "answer": "The full structure includes six weekly sessions. Some clients feel major shifts within one or two. But long-term change needs all six — that’s when the new structure locks in."
+    },
+    {
+      "question": "Is this really worth the price?",
+      "answer": "Only if you're ready to change. This isn't priced for curiosity — it's priced for commitment. My clients don’t come to talk — they come to shift what runs their life."
+    }
+  ]
+}

@@ -28,6 +28,7 @@ import { ClientStoriesSection } from "@/components/sections/client-stories-secti
 import { IssuesSection } from "@/components/sections/issues-section"
 import { PrecisionSection } from "@/components/sections/precision-section"
 import { WhyMeSection } from "@/components/sections/why-me-section"
+import { ReadyToChooseSection } from "@/components/sections/ready-to-choose-section"
 
 export default function Home() {
   const { t } = useLanguage()
@@ -175,10 +176,18 @@ export default function Home() {
 
         {/* FAQ Section */}
         <FaqSection />
+
+        {/* Ready to Choose Your Path Section */}
+        <ReadyToChooseSection />
       </main>
 
       <footer className="w-full border-t py-6 md:py-8 bg-white">
         <div className="section-container">
+          <div className="text-center mb-6">
+            <span className="block text-lg md:text-xl font-semibold italic" style={{ color: "hsl(var(--executive-gold))" }}>
+              You.v2 — Your next version isn't out there. It's already within. Let's unlock it.
+            </span>
+          </div>
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <div className="flex items-center gap-2">
               <span className="font-medium text-lg">You.v2</span>

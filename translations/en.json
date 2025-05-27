@@ -271,38 +271,50 @@
     "femalePerspective": "\"I held everyone else together, balancing leadership and personal well-being felt impossible until I found a space to truly reset.\" — Anonymous You V2 Client"
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "items": [
-      {
-        "question": "Is this therapy?",
-        "answer": "No. It's faster, deeper, and structurally targeted."
-      },
-      {
-        "question": "Is this remote?",
-        "answer": "Yes. All sessions are online and timezone-flexible."
-      },
-      {
-        "question": "Do I need to believe in anything for it to work?",
-        "answer": "No. The process works whether or not you believe in it. You just need to show up."
-      },
-      {
-        "question": "What if I've already done a lot of therapy?",
-        "answer": "Perfect. That means you've cleared the surface. This goes deeper."
-      },
-      {
-        "question": "How soon will I notice changes?",
-        "answer": "Most clients report noticeable shifts after the first or second session. The full protocol ensures these changes are structural and lasting."
-      }
-    ]
+  "title": "What You Might Be Wondering",
+  "items": [
+    {
+      "question": "Is this therapy?",
+      "answer": "No. This is not psychotherapy, and I don’t treat mental illness. This is structural subconscious work — faster, deeper, and focused on transformation, not support."
+    },
+    {
+      "question": "Is it safe to go that deep?",
+      "answer": "Yes — when done with the right experience and boundaries. I’ve worked with complex psychological cases and know when to slow down, when to pause, and when to refer out."
+    },
+    {
+      "question": "I’ve already done therapy or coaching.",
+      "answer": "Yes — and it often works better. Most clients come to me after years of personal work and trying different things. That means you're ready to go deeper, and this work will build on - not devalue - what you’ve already done."
+    },
+    {
+      "question": "Do I have to believe in hypnosis?",
+      "answer": "No. Hypnosis is a natural state of mind. It is about how your nervous system and subconscious actually function — not belief or ritual. The only thing you need to do is to be open to the process."
+    },
+    {
+      "question": "How many sessions do I need?",
+      "answer": "The full structure includes six weekly sessions. Some clients feel major shifts within one or two. But long-term change needs all six — that’s when the new structure locks in."
+    },
+    {
+      "question": "Will I give out all my secrets?",
+      "answer": "No. You will be fully aware of what is happening and you will be able to control your thoughts and actions. You will have full discretion over what you are willing to share and what ideas you are willing to incorporate."
+    },
+    {
+      "question": "So do I just relax and let you do the work?",
+      "answer": "Not quite! Every session is a collaboration. You will need to participate and do your part of the work. You will need to be open to the process and to the ideas that will be presented to you. You will need to be willing to change and to grow."
+    },
+    {
+      "question": "Do you offer refunds?",
+    "answer": "I stand by the depth and quality of this work. If, after the first two sessions, we both agree that it’s not a fit, I’ll refund the remaining portion of the program. This protects both your investment and my time — and ensures we’re aligned from the start."
+    }
+  ]
   },
   "pricing": {
     "intro": "Two Paths, One Transformation",
     "description": "You.v2 is a high-touch, personalized hypnotherapy experience designed for powerful, high-functioning people who are ready to stop self-sabotage and step fully into aligned living. Some prefer an immersive experience. Others need spacious integration. That's why I offer two pathways to the same transformation:",
     "premium": {
-      "title": "🔥 The 17-Day Intensive (Premium Tier)",
+      "title": "🔥 The 17-Day Intensive",
       "description": "For those who are ready to go all in.",
       "features": [
-        "Fast, immersive format — sessions every 2–3 days",
+        "Fast, immersive format — 90 minute 1:1 sessions every 2–3 days",
         "Deep containment and momentum",
         "Requires full emotional commitment and calendar priority",
         "Ideal for founders, creatives, and leaders in transition or crisis"
@@ -311,10 +323,10 @@
       "pricing": "Premium-tier investment. Only 2 clients accepted per month."
     },
     "core": {
-      "title": "🌱 The 6-Week Repatterning (Core Tier)",
+      "title": "🌱 The 6-Week Repatterning",
       "description": "For those who want transformation with integration.",
       "features": [
-        "Weekly 1:1 sessions over 6 weeks",
+        "Weekly 1:1 90-minute sessions over 6 weeks",
         "Time to reflect, observe, and stabilize between sessions",
         "Same framework, adapted to your nervous system's pace",
         "Ideal for high-achievers managing life demands alongside deep work"
@@ -356,5 +368,12 @@
       "terms": "Terms",
       "contact": "Contact"
     }
+  },
+  "readyToChoose": {
+    "title": "Ready to Choose Your Path?",
+    "cta": "Book Your $100 Strategy Call",
+    "p1": "This is not a sales pitch — it's a discovery conversation. You'll gain visibility into what's truly going on beneath the surface and map your best next step.",
+    "p2": "This 60-minute strategy call is $100 — credited toward your program if you choose to continue. You'll walk away with clear insight into what's keeping you stuck, and what needs to shift at the subconscious level. My pledge is that this conversation will be deeply useful to you — even if you don't decide to go through the full program at this time.",
+    "p3": "To give you my full presence and focus, I never do back-to-back sessions. I work with two clients per day max — so your transformation gets everything I've got. As a result, I can only accept up to 4 new clients per month for deep, individualized transformation. Spots fill quickly — if you feel you're ready, book now and let's talk."
   }
 }
