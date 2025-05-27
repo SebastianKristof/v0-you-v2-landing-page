@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "You.v2 - 17-Day Subconscious Reprogramming Protocol",
-    "description": "You.v2 is a 17-day subconscious reprogramming protocol for high-performing individuals who feel inexplicably blocked by old patterns."
+    "title": "You.v2 - Rapid Subconscious Reprogramming Program",
+    "description": "You.v2 is a rapid and gentle subconscious reprogramming program for Russian-speaking global leaders and helping professionals who feel inexplicably blocked by old patterns and beliefs despite external success."
   },
   "nav": {
     "howItWorks": "How It Works",
     "timeline": "Timeline",
-    "roi": "ROI",
+    "roi": "Cost",
     "about": "About",
     "faq": "FAQ",
     "bookCall": "Book Strategy Call"
@@ -43,7 +43,7 @@
     },
     "youv2": {
       "title": "You.v2",
-      "duration": "17 days",
+      "duration": "From 17 days",
       "comment": "deep, lasting change!"
     }
   },
@@ -138,64 +138,39 @@
       },
       {
         "title": "Irrational moods, fears, or desires",
-        "desc": "Anxiety, irritability, mood swings, irrational fears and urges — these aren’t flaws in your personality. They’re often signs your subconscious is working overtime to manage something unresolved."
+        "desc": "Anxiety, irritability, mood swings, irrational fears and urges — these aren't flaws in your personality. They're often signs your subconscious is working overtime to manage something unresolved."
       },
       {
         "title": "Unexplained physical symptoms or habits",
         "desc": "Compulsive behaviors, physical tension, headaches, and unexplained symptoms often start as the subconscious trying to protect you. They need to be decoded and processed — not ignored."
       }
     ],
-    "outro": "Every person is different. If you don't see your situation here — reach out. I don't treat diagnoses or give labels. Every story can be rewritten."
+    "outro": "Every person is different. If you don't see your situation here — reach out. I work with people, not labels. Every story can be rewritten."
   },
-  "timeline": {
-    "title": "You.v2 Protocol — 17 Days to Reclaim Yourself",
-    "steps": [
+  "precision": {
+    "title": "This Isn't Coaching. This Is Clinical-Grade Precision.",
+    "intro": "I don't follow scripts. I don't work from templates. This isn't about motivation or mindset — it's about reprogramming the systems that run your inner world.",
+    "bullets": [
       {
-        "day": "Start",
-        "icon": "🔍",
-        "text": "Strategic Mapping Call",
-        "desc": "Define the internal architecture. Identify core old logic."
+        "heading": "It's deep because it has to be.",
+        "desc": "I work at the level where real patterns live — and that takes more skill, more care, and more responsibility than surface-level tools."
       },
       {
-        "day": "Day 1",
-        "icon": "🎨",
-        "text": "Symbolic Map & Mental Terrain",
-        "desc": "Light trance imagery to map your mental landscape"
+        "heading": "I've seen the edge — and know when to stop.",
+        "desc": "I've worked with real psychiatric and cognitive cases. I know when something is outside scope — and I know what's safe."
       },
       {
-        "day": "Day 3",
-        "icon": "🌊",
-        "text": "Deep Trance Entry & Positive Regression",
-        "desc": "Access deeper subconscious patterns"
+        "heading": "This isn't just knowledge. It's lived expertise.",
+        "desc": "Medical training. Systems thinking. Subconscious work. Clinical research. This isn't a method I bought — it's the result of everything I've studied, seen, and tested in real life."
       },
       {
-        "day": "Day 6",
-        "icon": "🧱",
-        "text": "Root Pattern Uncovered",
-        "desc": "Identify and address core limiting beliefs"
-      },
-      {
-        "day": "Day 9",
-        "icon": "🕳️",
-        "text": "Secondary Layer Revealed",
-        "desc": "Work with supporting patterns and structures"
-      },
-      {
-        "day": "Day 13",
-        "icon": "🤝",
-        "text": "Parts Work / Internal Negotiation",
-        "desc": "Resolve internal conflicts and resistance"
-      },
-      {
-        "day": "Day 17",
-        "icon": "🔁",
-        "text": "Integration / Optional Access Protocol",
-        "desc": "Solidify changes and create ongoing access"
+        "heading": "I've Been There — That's Why I Know It Works.",
+        "desc": "I've done this work myself. I know what it's like to carry patterns you didn't choose — and to break them. That's why I take this process seriously. It's not theory. It's personal."
       }
     ]
   },
   "roi": {
-    "title": "Return on Investment",
+    "title": "Cost Comparison",
     "table": {
       "headers": {
         "approach": "Approach",
@@ -230,9 +205,9 @@
         },
         {
           "approach": "You.v2",
-          "depth": "Subconscious reprogramming",
-          "time": "17 days",
-          "cost": "from $2,500 one time"
+          "depth": "Deep, ecological, and complete resolution of your issue",
+          "time": "Weeks",
+          "cost": "What is it worth to you?"
         }
       ]
     },
@@ -247,110 +222,109 @@
       "Clinical researcher & software engineer",
       "Subconscious strategist for high-performing clients who need deep, fast change"
     ],
-    "quote": "\"I don't hold space. I change internal architecture. Quietly. Precisely. Permanently.\""
+    "quote": "\"I don't give advice or teach to think positively. I change internal architecture. Gently. Precisely. Permanently.\""
   },
-  "globalHighPerformers": {
-    "title": "Why It Works for Global High Performers",
-    "subtitle": "For global citizens who live between worlds and languages",
+  "globalPros": {
+    "title": "Built for Global Russian-Speaking Professionals",
+    "subtitle": "You work and think in English. But your subconscious mind was programmed in your first language. Therapy in English misses your roots. Therapy in Russian misses your real life.",
+    "preludeHighlight": "In short, you need someone who understands both the life you live now — and the \"multiki\" you watched as a kid.",
     "points": [
-      "I work in English, Russian, or any mix of both—whatever feels natural.",
-      "I know what it's like to be raised under pressure to succeed and hide your feelings.",
-      "I have overcome the legacy of a difficult childhood—and I can help you do the same."
+      "I work in English, Russian, or both — whatever your mind needs.",
+      "I was raised to succeed and stay silent — I know what that costs.",
+      "I've worked through the legacy of a difficult past — and I'll help you do the same."
     ],
-    "quote": "You are successful in English, but your inner child still needs help in your first language.",
-    "prelude": "You work and think in English. But your subconscious mind was programmed in your first language. Therapy or coaching in English misses your roots. Therapy in your first language misses your real life now.",
-    "preludeHighlight": "You need someone who understands both the challenges you face in a Western world—and the way your subconscious mind was programmed by your native culture.",
-    "ctaPrompt": "Ready to take the first step?",
+    "quote": "You succeed in English, but your inner child still speaks Russian.",
+    "ctaPrompt": "Ready to integrate both sides of yourself?",
     "ctaButton": "Book Strategy Call"
   },
   "session": {
     "title": "What Happens in a Session?",
     "features": [
-      {
-        "title": "Private Online Meeting",
-        "description": "We meet privately online"
-      },
-      {
-        "title": "Focused Trance State",
-        "description": "You enter a focused trance-like state — safe, present, clear"
-      },
-      {
-        "title": "Deep Reprogramming",
-        "description": "Structured subconscious work that creates lasting change"
+        {
+          "title": "Online Meeting",
+          "description": "We meet privately online, without need to travel"
+        },
+        {
+          "title": "Focused Trance State",
+          "description": "You enter a focused trance-like state — safe, present, clear"
+        },
+        {
+          "title": "Deep Reprogramming",
+          "description": "Structured subconscious work that creates lasting change"
+        }
+      ],
+      "work": {
+        "intro": "I guide you through structured subconscious work:",
+        "types": ["regression", "identity mapping", "emotional realignment", "symbolic negotiation"],
+        "result": "You return with clarity — and often visible behavioral shifts by the next session"
       }
-    ],
-    "work": {
-      "intro": "I guide you through structured subconscious work:",
-      "types": ["regression", "identity mapping", "emotional realignment", "symbolic negotiation"],
-      "result": "You return with clarity — and often visible behavioral shifts by the next session"
-    }
-  },
-  "clientStory": {
-    "title": "Client Story",
-    "quote": "\"I was stuck for 7 months, circling the same project and feeling blocked. By the third session, something unhooked — I launched it, and we did $90k. But more than that? I actually felt calm doing it.\"",
-    "author": "— Anonymous founder, Berlin",
-    "femalePerspective": "\"I held everyone else together, balancing leadership and personal well-being felt impossible until I found a space to truly reset.\" — Anonymous You V2 Client"
-  },
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "items": [
-      {
-        "question": "Is this therapy?",
-        "answer": "No. It's faster, deeper, and structurally targeted."
-      },
-      {
-        "question": "Is this remote?",
-        "answer": "Yes. All sessions are online and timezone-flexible."
-      },
-      {
-        "question": "Do I need to believe in anything for it to work?",
-        "answer": "No. The process works whether or not you believe in it. You just need to show up."
-      },
-      {
-        "question": "What if I've already done a lot of therapy?",
-        "answer": "Perfect. That means you've cleared the surface. This goes deeper."
-      },
-      {
-        "question": "How soon will I notice changes?",
-        "answer": "Most clients report noticeable shifts after the first or second session. The full protocol ensures these changes are structural and lasting."
-      }
-    ]
-  },
-  "pricing": {
-    "core": {
-      "title": "Core Protocol",
-      "price": "$2,500 USD",
-      "description": "The essential 17-day reprogramming experience.",
-      "features": [
-        "6 private deep sessions (video optional)",
-        "Voice support between sessions",
-        "Personalized audio reprogramming track"
+    },
+    "clientStory": {
+      "title": "Client Story",
+      "quote": "\"I was stuck for 7 months, circling the same project and feeling blocked. By the third session, something unhooked — I launched it, and we did $90k. But more than that? I actually felt calm doing it.\"",
+      "author": "— Anonymous founder, Berlin",
+      "femalePerspective": "\"I held everyone else together, balancing leadership and personal well-being felt impossible until I found a space to truly reset.\" — Anonymous You V2 Client"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "Is this therapy?",
+          "answer": "No. It's faster, deeper, and structurally targeted."
+        },
+        {
+          "question": "Is this remote?",
+          "answer": "Yes. All sessions are online and timezone-flexible."
+        },
+        {
+          "question": "Do I need to believe in anything for it to work?",
+          "answer": "No. The process works whether or not you believe in it. You just need to show up."
+        },
+        {
+          "question": "What if I've already done a lot of therapy?",
+          "answer": "Perfect. That means you've cleared the surface. This goes deeper."
+        },
+        {
+          "question": "How soon will I notice changes?",
+          "answer": "Most clients report noticeable shifts after the first or second session. The full protocol ensures these changes are structural and lasting."
+        }
       ]
     },
-    "full": {
-      "title": "Full Executive Tier",
-      "price": "$3,500 USD",
-      "description": "Everything in Core, plus exclusive upgrades for maximum transformation.",
-      "features": [
-        "Everything in Core Protocol",
-        "Strategic Mapping Diagnostic (pre-launch session)",
-        "✨ 1x 30-minute follow-up session (2–3 weeks post close)",
-        "🎧 Personalized audio reprogramming track",
-        "📘 Pre-release chapter from Dr. Kristof's upcoming book"
-      ]
+    "pricing": {
+      "core": {
+        "title": "Core Protocol",
+        "price": "$2,500 USD",
+        "description": "The essential 17-day reprogramming experience.",
+        "features": [
+          "6 private deep sessions (video optional)",
+          "Voice support between sessions",
+          "Personalized audio reprogramming track"
+        ]
+      },
+      "full": {
+        "title": "Full Executive Tier",
+        "price": "$3,500 USD",
+        "description": "Everything in Core, plus exclusive upgrades for maximum transformation.",
+        "features": [
+          "Everything in Core Protocol",
+          "Strategic Mapping Diagnostic (pre-launch session)",
+          "✨ 1x 30-minute follow-up session (2–3 weeks post close)",
+          "🎧 Personalized audio reprogramming track",
+          "📘 Pre-release chapter from Dr. Kristof's upcoming book"
+        ]
+      },
+      "quote": "This isn't therapy. It's a structural reset. For people who've survived enough — and are ready to actually live.",
+      "cta": {
+        "primary": "Book Strategy Call",
+        "secondary": "Let's Talk First"
+      }
     },
-    "quote": "This isn't therapy. It's a structural reset. For people who've survived enough — and are ready to actually live.",
-    "cta": {
-      "primary": "Book Strategy Call",
-      "secondary": "Let's Talk First"
-    }
-  },
-  "footer": {
-    "rights": "All rights reserved.",
-    "links": {
-      "privacy": "Privacy",
-      "terms": "Terms",
-      "contact": "Contact"
+    "footer": {
+      "rights": "All rights reserved.",
+      "links": {
+        "privacy": "Privacy",
+        "terms": "Terms",
+        "contact": "Contact"
+      }
     }
   }
-}
