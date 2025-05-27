@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { CalendarDays, Check, Clock, Layers, MessageCircle, Award } from "lucide-react"
@@ -31,7 +31,8 @@ import { WhyMeSection } from "@/components/sections/why-me-section"
 import { ReadyToChooseSection } from "@/components/sections/ready-to-choose-section"
 
 export default function Home() {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
+  const [showMore, setShowMore] = useState(false)
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -82,6 +83,23 @@ export default function Home() {
   // Get FAQ items safely
   const faqItems = t("faq.items", { returnObjects: true }) || []
 
+  if (language === "ru") {
+    return (
+      <div className="flex min-h-screen flex-col items-center justify-center bg-executive-light-blue">
+        <div className="text-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-executive-blue mb-4">Сайт в разработке</h1>
+          <p className="text-lg md:text-2xl text-executive-dark">
+            The Russian version of this site is under construction.<br />
+            Please check back soon or switch to English.
+          </p>
+          <div className="mt-8 flex justify-center">
+            <LanguageSwitcher />
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="flex min-h-screen flex-col">
       {/* Header */}
@@ -102,11 +120,8 @@ export default function Home() {
             <Link href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.howItWorks")}
             </Link>
-            <Link href="#timeline" className="text-sm font-medium hover:text-primary transition-colors">
-              {t("nav.timeline")}
-            </Link>
-            <Link href="#roi" className="text-sm font-medium hover:text-primary transition-colors">
-              {t("nav.roi")}
+            <Link href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
+              Packages
             </Link>
             <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.about")}
@@ -114,6 +129,33 @@ export default function Home() {
             <Link href="#faq" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.faq")}
             </Link>
+            {/* More Dropdown */}
+            <div className="relative">
+              <button
+                className="text-sm font-medium hover:text-primary transition-colors flex items-center gap-1"
+                onClick={() => setShowMore((v) => !v)}
+                onBlur={() => setTimeout(() => setShowMore(false), 150)}
+                type="button"
+              >
+                More
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </button>
+              {showMore && (
+                <div className="absolute right-0 mt-2 w-56 bg-white border rounded shadow-lg z-50 py-2">
+                  <Link href="#the-why" className="block px-4 py-2 text-sm hover:bg-muted">The Why</Link>
+                  <Link href="#is-this-for-you" className="block px-4 py-2 text-sm hover:bg-muted">Is This For You?</Link>
+                  <Link href="#client-stories" className="block px-4 py-2 text-sm hover:bg-muted">Client Stories</Link>
+                  <Link href="#what-makes-different" className="block px-4 py-2 text-sm hover:bg-muted">What Makes You.v2 Different?</Link>
+                  <Link href="#issues" className="block px-4 py-2 text-sm hover:bg-muted">Issues We Can Address</Link>
+                  <Link href="#precision" className="block px-4 py-2 text-sm hover:bg-muted">Precision</Link>
+                  <Link href="#why-me" className="block px-4 py-2 text-sm hover:bg-muted">Why Work With Me</Link>
+                  <Link href="#global-pros" className="block px-4 py-2 text-sm hover:bg-muted">Global Pros</Link>
+                  <Link href="#session" className="block px-4 py-2 text-sm hover:bg-muted">What Happens in a Session?</Link>
+                  <Link href="#client-story" className="block px-4 py-2 text-sm hover:bg-muted">Client Story</Link>
+                  <Link href="#ready-to-choose" className="block px-4 py-2 text-sm hover:bg-muted">Ready to Choose Your Path?</Link>
+                </div>
+              )}
+            </div>
           </nav>
           <div className="flex items-center gap-4">
             <LanguageSwitcher />

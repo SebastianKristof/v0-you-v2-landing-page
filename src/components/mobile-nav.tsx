@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Menu, X, CalendarDays } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
+import LanguageSwitcher from "@/components/language-switcher"
 
 interface MobileNavProps {
   className?: string
@@ -41,7 +42,7 @@ export default function MobileNav({ className = "" }: MobileNavProps) {
 
       {/* Mobile menu overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-white">
+        <div className="fixed inset-0 z-50 bg-white/90 overflow-y-auto">
           <div className="flex justify-end p-4">
             <button onClick={closeMenu} className="p-2 text-foreground focus:outline-none">
               <X className="h-6 w-6" />
@@ -60,30 +61,29 @@ export default function MobileNav({ className = "" }: MobileNavProps) {
                 Intensive
               </span>
             </div>
-            <nav className="flex flex-col items-center gap-8 text-lg">
-              <Link
-                href="#how-it-works"
-                onClick={closeMenu}
-                className="font-medium hover:text-primary transition-colors"
-              >
-                {t("nav.howItWorks")}
-              </Link>
-              <Link href="#timeline" onClick={closeMenu} className="font-medium hover:text-primary transition-colors">
-                {t("nav.timeline")}
-              </Link>
-              <Link href="#roi" onClick={closeMenu} className="font-medium hover:text-primary transition-colors">
-                {t("nav.roi")}
-              </Link>
-              <Link href="#about" onClick={closeMenu} className="font-medium hover:text-primary transition-colors">
-                {t("nav.about")}
-              </Link>
-              <Link href="#faq" onClick={closeMenu} className="font-medium hover:text-primary transition-colors">
-                {t("nav.faq")}
-              </Link>
+            <nav className="flex flex-col items-center gap-6 text-lg w-full">
+              <Link href="#how-it-works" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">How It Works</Link>
+              <Link href="#the-why" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">The Why</Link>
+              <Link href="#is-this-for-you" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">Is This For You?</Link>
+              <Link href="#client-stories" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">Client Stories</Link>
+              <Link href="#what-makes-different" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">What Makes You.v2 Different?</Link>
+              <Link href="#issues" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">Issues We Can Address</Link>
+              <Link href="#precision" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">Precision</Link>
+              <Link href="#pricing" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">Packages</Link>
+              <Link href="#why-me" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">Why Work With Me</Link>
+              <Link href="#about" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">About</Link>
+              <Link href="#global-pros" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">Global Pros</Link>
+              <Link href="#session" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">What Happens in a Session?</Link>
+              <Link href="#client-story" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">Client Story</Link>
+              <Link href="#faq" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">FAQ</Link>
+              <Link href="#ready-to-choose" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">Ready to Choose Your Path?</Link>
               <button className="executive-button mt-4 w-full max-w-xs">
-                <CalendarDays className="mr-2 h-4 w-4 inline" /> {t("nav.bookCall")}
+                <CalendarDays className="mr-2 h-4 w-4 inline" /> Book Call
               </button>
             </nav>
+            <div className="mt-8">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       )}
