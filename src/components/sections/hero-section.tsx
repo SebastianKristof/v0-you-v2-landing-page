@@ -46,7 +46,6 @@ export function HeroSection() {
               {t("hero.subtitle")}
             </p>
             <p className="text-base md:text-lg text-muted-foreground">{t("hero.description1")}</p>
-            <p className="text-base md:text-lg text-muted-foreground">{t("hero.description2")}</p>
           </div>
           <div className="flex flex-col gap-3 min-[400px]:flex-row mt-4">
             <button className="executive-button">

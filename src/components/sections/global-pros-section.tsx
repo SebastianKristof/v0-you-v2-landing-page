@@ -2,20 +2,17 @@ import { Globe, Languages, Star, CalendarDays } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 
-export function GlobalHighPerformersSection() {
+export function GlobalProsSection() {
   const { t } = useLanguage();
-  const points = t("globalHighPerformers.points", { returnObjects: true }) || [];
+  const points = t("globalPros.points", { returnObjects: true }) || [];
   return (
     <section className="w-full py-10 md:py-16 lg:py-24 bg-white">
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-4 text-center">
-            <h2 className="section-title text-executive-blue">{t("globalHighPerformers.title")}</h2>
-            <p className="text-lg md:text-xl text-muted-foreground">{t("globalHighPerformers.subtitle")}</p>
+            <h2 className="section-title text-black">{t("globalPros.title")}</h2>
+            <p className="text-lg md:text-xl text-muted-foreground">{t("globalPros.subtitle")}</p>
           </div>
-          <p className="max-w-2xl mx-auto text-base md:text-lg text-balance text-executive-dark/90 mb-2 md:mb-4 text-center">
-            {t("globalHighPerformers.prelude")}
-          </p>
           <style jsx>{`
             .gradient-underline {
               text-decoration: underline;
@@ -30,7 +27,7 @@ export function GlobalHighPerformersSection() {
           `}</style>
           <p className="max-w-2xl mx-auto text-base md:text-lg text-executive-dark/90 mb-2 md:mb-4 text-center">
             <span className="gradient-underline">
-              {t("globalHighPerformers.preludeHighlight")}
+              {t("globalPros.preludeHighlight")}
             </span>
           </p>
           <ul className="flex flex-col gap-4 md:flex-row md:gap-6">
@@ -48,17 +45,14 @@ export function GlobalHighPerformersSection() {
               </li>
             ))}
           </ul>
-          <blockquote className="mt-8 text-xl md:text-2xl italic text-executive-blue text-center max-w-2xl mx-auto">
-            {t("globalHighPerformers.quote")}
+          <blockquote className="mt-8 text-xl md:text-2xl italic text-executive-blue text-center max-w-3xl mx-auto">
+            {t("globalPros.quote")}
           </blockquote>
-          <div className="mt-6 text-center">
-            {/* REMOVE the old CTA bubble here */}
-          </div>
           <div className="mt-12 flex flex-col items-center gap-4">
-            <span className="text-lg md:text-xl text-muted-foreground mb-1 text-center">{t("globalHighPerformers.ctaPrompt")}</span>
+            <span className="text-lg md:text-xl text-muted-foreground mb-1 text-center">{t("globalPros.ctaPrompt")}</span>
             <button className="executive-button flex items-center gap-2 justify-center" type="button">
               <CalendarDays className="w-5 h-5" />
-              {t("globalHighPerformers.ctaButton")}
+              {t("globalPros.ctaButton")}
             </button>
           </div>
         </ScrollReveal>

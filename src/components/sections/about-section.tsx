@@ -54,9 +54,9 @@ export function AboutSection() {
           {/* Certificates gallery */}
           <div className="mt-8">
             <h3 className="text-xl font-medium mb-4 text-center">Credentials & Certifications</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-2 md:gap-4">
               {/* Yale Certificate */}
-              <div className="executive-card p-0 h-40 overflow-hidden">
+              <div className="executive-card p-0 h-24 md:h-40 overflow-hidden">
                 <div className="relative h-full w-full bg-gray-100 flex items-center justify-center">
                   <Award className="h-12 w-12 text-gray-400" />
                   <div className="absolute inset-0">
@@ -71,7 +71,7 @@ export function AboutSection() {
                 </div>
               </div>
               {/* American Academy of Hypnosis Certificate */}
-              <div className="executive-card p-0 h-40 overflow-hidden">
+              <div className="executive-card p-0 h-24 md:h-40 overflow-hidden">
                 <div className="relative h-full w-full bg-gray-100 flex items-center justify-center">
                   <Award className="h-12 w-12 text-gray-400" />
                   <div className="absolute inset-0">
@@ -86,7 +86,7 @@ export function AboutSection() {
                 </div>
               </div>
               {/* Mike Mandel Hypnosis Certificate */}
-              <div className="executive-card p-0 h-40 overflow-hidden">
+              <div className="executive-card p-0 h-24 md:h-40 overflow-hidden">
                 <div className="relative h-full w-full bg-gray-100 flex items-center justify-center">
                   <Award className="h-12 w-12 text-gray-400" />
                   <div className="absolute inset-0">

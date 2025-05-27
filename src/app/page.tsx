@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { CalendarDays, Check, Clock, Layers, MessageCircle, Award } from "lucide-react"
@@ -12,7 +12,6 @@ import ImageModal from "@/components/image-modal"
 import { useLanguage } from "@/contexts/language-context"
 import { HeroSection } from "@/components/sections/hero-section"
 import { QuickRoiSection } from "@/components/sections/quick-roi-section"
-import { ProblemSection } from "@/components/sections/problem-section"
 import { HowItWorksSection } from "@/components/sections/how-it-works-section"
 import { TimelineSection } from "@/components/sections/timeline-section"
 import { RoiSection } from "@/components/sections/roi-section"
@@ -22,10 +21,18 @@ import { WhatMakesDifferentSection } from "@/components/sections/what-makes-diff
 import { ClientStorySection } from "@/components/sections/client-story-section"
 import { FaqSection } from "@/components/sections/faq-section"
 import { PricingSection } from "@/components/sections/pricing-section"
-import { GlobalHighPerformersSection } from "@/components/sections/global-high-performers-section"
+import { GlobalProsSection } from "@/components/sections/global-pros-section"
+import { TheWhySection } from "@/components/sections/the-why-section"
+import { IsThisForYouSection } from "@/components/sections/is-this-for-you-section"
+import { ClientStoriesSection } from "@/components/sections/client-stories-section"
+import { IssuesSection } from "@/components/sections/issues-section"
+import { PrecisionSection } from "@/components/sections/precision-section"
+import { WhyMeSection } from "@/components/sections/why-me-section"
+import { ReadyToChooseSection } from "@/components/sections/ready-to-choose-section"
 
 export default function Home() {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
+  const [showMore, setShowMore] = useState(false)
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -76,6 +83,23 @@ export default function Home() {
   // Get FAQ items safely
   const faqItems = t("faq.items", { returnObjects: true }) || []
 
+  if (language === "ru") {
+    return (
+      <div className="flex min-h-screen flex-col items-center justify-center bg-executive-light-blue">
+        <div className="text-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-executive-blue mb-4">Сайт в разработке</h1>
+          <p className="text-lg md:text-2xl text-executive-dark">
+            The Russian version of this site is under construction.<br />
+            Please check back soon or switch to English.
+          </p>
+          <div className="mt-8 flex justify-center">
+            <LanguageSwitcher />
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="flex min-h-screen flex-col">
       {/* Header */}
@@ -96,11 +120,11 @@ export default function Home() {
             <Link href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.howItWorks")}
             </Link>
-            <Link href="#timeline" className="text-sm font-medium hover:text-primary transition-colors">
-              {t("nav.timeline")}
+            <Link href="#is-this-for-you" className="text-sm font-medium hover:text-primary transition-colors">
+              Is This For You?
             </Link>
-            <Link href="#roi" className="text-sm font-medium hover:text-primary transition-colors">
-              {t("nav.roi")}
+            <Link href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
+              Packages
             </Link>
             <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.about")}
@@ -108,11 +132,38 @@ export default function Home() {
             <Link href="#faq" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.faq")}
             </Link>
+            {/* More Dropdown */}
+            <div className="relative">
+              <button
+                className="text-sm font-medium hover:text-primary transition-colors flex items-center gap-1"
+                onClick={() => setShowMore((v) => !v)}
+                onBlur={() => setTimeout(() => setShowMore(false), 150)}
+                type="button"
+              >
+                More
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </button>
+              {showMore && (
+                <div className="absolute right-0 mt-2 w-56 bg-white border rounded shadow-lg z-50 py-2">
+                  <Link href="#the-why" className="block px-4 py-2 text-sm hover:bg-muted">The Why</Link>
+                  <Link href="#is-this-for-you" className="block px-4 py-2 text-sm hover:bg-muted">Is This For You?</Link>
+                  <Link href="#client-stories" className="block px-4 py-2 text-sm hover:bg-muted">Client Stories</Link>
+                  <Link href="#what-makes-different" className="block px-4 py-2 text-sm hover:bg-muted">What Makes You.v2 Different?</Link>
+                  <Link href="#issues" className="block px-4 py-2 text-sm hover:bg-muted">Issues We Can Address</Link>
+                  <Link href="#precision" className="block px-4 py-2 text-sm hover:bg-muted">Precision</Link>
+                  <Link href="#why-me" className="block px-4 py-2 text-sm hover:bg-muted">Why Work With Me</Link>
+                  <Link href="#global-pros" className="block px-4 py-2 text-sm hover:bg-muted">Global Pros</Link>
+                  <Link href="#session" className="block px-4 py-2 text-sm hover:bg-muted">What Happens in a Session?</Link>
+                  <Link href="#client-story" className="block px-4 py-2 text-sm hover:bg-muted">Client Story</Link>
+                  <Link href="#ready-to-choose" className="block px-4 py-2 text-sm hover:bg-muted">Ready to Choose Your Path?</Link>
+                </div>
+              )}
+            </div>
           </nav>
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
-            <button className="executive-button hidden md:flex">
-              <CalendarDays className="mr-2 h-4 w-4 inline" /> {t("nav.bookCall")}
+            <button className="executive-button hidden md:flex items-center justify-center gap-2">
+              <CalendarDays className="h-4 w-4" /> {t("nav.bookCall")}
             </button>
             <MobileNav />
           </div>
@@ -126,17 +177,26 @@ export default function Home() {
         {/* How It Works Section */}
         <HowItWorksSection />
 
-        {/* Quick ROI preview */}
-        {/* Quick ROI is now part of HeroSection */}
+        {/* The Why Section */}
+        <TheWhySection />
 
-        {/* Problem Section */}
-        <ProblemSection />
+        {/* Is This For You Section */}
+        <IsThisForYouSection />
+
+        {/* Client Stories Section */}
+        <ClientStoriesSection />
 
         {/* What Makes You.v2 Different Section */}
         <WhatMakesDifferentSection />
 
+        {/* Issues Section */}
+        <IssuesSection />
+
+        {/* Precision Section */}
+        <PrecisionSection />
+
         {/* Timeline Section */}
-        <TimelineSection />
+        {/* <TimelineSection /> */}
 
         {/* ROI Comparison */}
         <RoiSection />
@@ -144,8 +204,8 @@ export default function Home() {
         {/* About the Creator */}
         <AboutSection />
 
-        {/* Global High Performers Section */}
-        <GlobalHighPerformersSection />
+        {/* Global Pros Section */}
+        <GlobalProsSection />
 
         {/* What Happens in a Session */}
         <SessionSection />
@@ -156,12 +216,23 @@ export default function Home() {
         {/* Pricing & CTA */}
         <PricingSection />
 
+        {/* Why Work With Me Section */}
+        <WhyMeSection />
+
         {/* FAQ Section */}
         <FaqSection />
+
+        {/* Ready to Choose Your Path Section */}
+        <ReadyToChooseSection />
       </main>
 
       <footer className="w-full border-t py-6 md:py-8 bg-white">
         <div className="section-container">
+          <div className="text-center mb-6">
+            <span className="block text-lg md:text-xl font-semibold italic" style={{ color: "hsl(var(--executive-gold))" }}>
+              You.v2 — Your next version isn't out there. It's already within. Let's unlock it.
+            </span>
+          </div>
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <div className="flex items-center gap-2">
               <span className="font-medium text-lg">You.v2</span>
