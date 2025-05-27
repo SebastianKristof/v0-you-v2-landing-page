@@ -6,7 +6,7 @@ export function IsThisForYouSection() {
   const { t } = useLanguage();
   const bullets = t("isThisForYou.bullets", { returnObjects: true }) as string[];
   return (
-    <section id="is-this-for-you" className="w-full py-16 bg-executive-light-blue">
+    <section id="is-this-for-you" className="w-full py-16 bg-executive-light-blue scroll-mt-24">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-20">
         {/* Text content on the left (on desktop) */}
         <div className="md:w-3/5 w-full">

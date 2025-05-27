@@ -8,7 +8,7 @@ export function PricingSection() {
   const core = t("pricing.core", { returnObjects: true }) || {};
   const framework = t("pricing.framework", { returnObjects: true }) || {};
   return (
-    <section className="w-full py-10 md:py-16 lg:py-24 bg-white">
+    <section id="pricing" className="w-full py-10 md:py-16 lg:py-24 bg-white">
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[900px] space-y-8 md:space-y-12">
           <div className="text-center mb-8">

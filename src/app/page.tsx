@@ -120,6 +120,9 @@ export default function Home() {
             <Link href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.howItWorks")}
             </Link>
+            <Link href="#is-this-for-you" className="text-sm font-medium hover:text-primary transition-colors">
+              Is This For You?
+            </Link>
             <Link href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
               Packages
             </Link>
