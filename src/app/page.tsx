@@ -162,8 +162,8 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
-            <button className="executive-button hidden md:flex">
-              <CalendarDays className="mr-2 h-4 w-4 inline" /> {t("nav.bookCall")}
+            <button className="executive-button hidden md:flex items-center justify-center gap-2">
+              <CalendarDays className="h-4 w-4" /> {t("nav.bookCall")}
             </button>
             <MobileNav />
           </div>
