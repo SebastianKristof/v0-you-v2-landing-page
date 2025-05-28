@@ -120,6 +120,7 @@ export default function Home() {
             <div className="relative">
               <button
                 className="text-sm font-medium hover:text-primary transition-colors flex items-center gap-1"
+                aria-label="More"
                 onClick={() => setShowMore((v: boolean) => !v)}
                 onBlur={() => setTimeout(() => setShowMore(false), 150)}
                 type="button"

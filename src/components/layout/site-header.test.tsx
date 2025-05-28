@@ -78,4 +78,34 @@ describe('MobileNav', () => {
       document.body.removeChild(section);
     }
   });
+
+  it('mobile nav links are in the same order as sections on the page', async () => {
+    renderWithProviders(<MobileNav />);
+    const openMenuButton = screen.getByRole('button', { name: /open menu/i });
+    openMenuButton.click();
+    // The expected order of nav keys as per the page
+    const navOrder = [
+      'howItWorks',
+      'theWhy',
+      'isThisForYou',
+      'clientStories',
+      'whatMakesDifferent',
+      'issues',
+      'precision',
+      'roi',
+      'about',
+      'globalPros',
+      'session',
+      'packages',
+      'whyMe',
+      'faq',
+      'readyToChoose',
+    ];
+    // Get all nav links (excluding the Book Call button)
+    const links = await screen.findAllByRole('link');
+    const linkTexts = links.map(link => link.textContent?.trim());
+    const expectedTexts = navOrder.map(key => translations.nav[key]);
+    // Only compare the first N links (skip any extra links/buttons)
+    expect(linkTexts.slice(0, expectedTexts.length)).toEqual(expectedTexts);
+  });
 }); 
