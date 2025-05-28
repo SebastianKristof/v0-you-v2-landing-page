@@ -6,18 +6,28 @@
   "nav": {
     "howItWorks": "How It Works",
     "timeline": "Timeline",
-    "roi": "Cost",
+    "roi": "Cost Comparison",
     "about": "About",
     "faq": "FAQ",
-    "bookCall": "Book Strategy Call"
+    "bookCall": "Book Strategy Call",
+    "isThisForYou": "Is This For You?",
+    "packages": "Packages",
+    "more": "More",
+    "theWhy": "The Why",
+    "clientStories": "Client Stories",
+    "whatMakesDifferent": "What Makes You.v2 Different?",
+    "issues": "Issues We Can Address",
+    "precision": "Precision",
+    "whyMe": "Why Work With Me",
+    "globalPros": "Global Pros",
+    "session": "What Happens in a Session?",
+    "clientStory": "Client Story",
+    "readyToChoose": "Ready to Begin?"
   },
   "hero": {
     "title": "You lead, guide, and support others — but you feel it's time to focus on yourself.",
-    "subtitle": "You.v2 is a structured, personalized hypnotherapy program for business leaders and helping professionals who need deep results — quickly and reliably.",
-    "description1": "You don't need more willpower. You need access to the part of your mind where real change begins.",
-    "description2": "Your subconscious mind holds the patterns that keep you stuck — and the power to change everything.",
-    "description3": "You've done the mindset work. You've tried therapy. But something deeper still holds you back.",
-    "description4": "It's time to work with your subconscious mind — where lasting change begins.",
+    "subtitle": "You.v2 is a structured, personalized subconscious change program for business leaders and helping professionals who need deep results — quickly and reliably.",
+    "description1": "You don't need more willpower or positive thinking. You need access to the part of your mind where real change begins.",
     "ctaMicrocopy": "No obligation. 100% confidential. Best for those who've already tried other approaches."
   },
   "quickRoi": {
@@ -85,7 +95,7 @@
     "title": "Client Stories",
     "stories": [
       "After just one session, I felt like years of emotional weight lifted off. — Anna, Executive Coach",
-      "This work gave me tools I still use every day — real transformation. — Jordan, Tech Founder",
+      "This work gave me tools I still use every day — real transformation. — Anthony, Tech Founder",
       "I've done coaching, therapy, even retreats. Nothing got to the root like this did. The shifts were deep and lasting. — Elena, Entrepreneur",
       "I didn't expect to feel this clear after just two weeks. I finally stopped repeating the same self-destructive cycle. — Dmitry, Product Manager"
     ]
@@ -120,6 +130,10 @@
     "title": "Issues We Can Address",
     "intro": "I work with professionals who have achieved a lot — yet still feel that something isn't right beneath the surface. Here are just a few areas where subconscious reprogramming can create powerful change:",
     "items": [
+      {
+        "title": "Everything looks fine — but you feel lost inside",
+        "desc": "You have the success, the income, the stability. But you feel numb, empty, or directionless. This isn't depression — it's often a sign you've outgrown your old identity, and it's time to build a new one."
+      },
       {
         "title": "External success — but love feels impossible",
         "desc": "You've built a career, solved big problems, earned respect. But in relationships, you keep hitting the same walls: distance, pain, self-doubt. It's not bad luck — it reflects a root issue."
@@ -271,41 +285,41 @@
     "femalePerspective": "\"I held everyone else together, balancing leadership and personal well-being felt impossible until I found a space to truly reset.\" — Anonymous You V2 Client"
   },
   "faq": {
-  "title": "What You Might Be Wondering",
-  "items": [
-    {
-      "question": "Is this therapy?",
-      "answer": "No. This is not psychotherapy, and I don’t treat mental illness. This is structural subconscious work — faster, deeper, and focused on transformation, not support."
-    },
-    {
-      "question": "Is it safe to go that deep?",
-      "answer": "Yes — when done with the right experience and boundaries. I’ve worked with complex psychological cases and know when to slow down, when to pause, and when to refer out."
-    },
-    {
-      "question": "I’ve already done therapy or coaching.",
-      "answer": "This is great, you are on the path! Most clients come to me after years of personal work and trying different things. That means you're ready to go deeper, and this work will build on - not devalue - what you’ve already done."
-    },
-    {
-      "question": "Do I have to believe in hypnosis?",
-      "answer": "No. Hypnosis is a natural state of mind. It is about how your nervous system and subconscious actually function — not belief or ritual. The only thing you need to do is to be open to the process."
-    },
-    {
-      "question": "How many sessions do I need?",
-      "answer": "The full structure includes six weekly sessions. Some clients feel major shifts within one or two. But long-term change needs all six — that’s when the new structure locks in."
-    },
-    {
-      "question": "Will I give out all my secrets?",
-      "answer": "No. You will be fully aware of what is happening and you will be able to control your thoughts and actions. You will have full discretion over what you are willing to share and what ideas you are willing to incorporate."
-    },
-    {
-      "question": "So I just relax and let you do the work?",
-      "answer": "Not quite! Every session is a collaboration. You will need to participate and do your part of the work. This is not a guided nap time! Please come to the sessions well rested and ready to rock-n-roll!"
-    },
-    {
-      "question": "Do you offer refunds?",
-    "answer": "I stand by the depth and quality of this work. My pledge to you is that the value of this transformation over time will be much more than your investment. This being said, if after the first two sessions we both feel that it’s not a fit, I’ll refund the remaining portion of the program."
-    }
-  ]
+    "title": "What You Might Be Wondering",
+    "items": [
+      {
+        "question": "Is this therapy?",
+        "answer": "No. This is not psychotherapy, and I don't treat mental illness. This is structural subconscious work — faster, deeper, and focused on transformation, not support."
+      },
+      {
+        "question": "Is it safe to go that deep?",
+        "answer": "Yes — when done with the right experience and boundaries. I've worked with complex psychological cases and know when to slow down, when to pause, and when to refer out."
+      },
+      {
+        "question": "I've already done therapy or coaching.",
+        "answer": "This is great, you are on the path! Most clients come to me after years of personal work and trying different things. That means you're ready to go deeper, and this work will build on - not devalue - what you've already done."
+      },
+      {
+        "question": "Do I have to believe in hypnosis?",
+        "answer": "No. Hypnosis is a natural state of mind. It is about how your nervous system and subconscious actually function — not belief or ritual. The only thing you need to do is to be open to the process."
+      },
+      {
+        "question": "How many sessions do I need?",
+        "answer": "The full structure includes six sessions. Some clients feel major shifts within one or two. But long-term change needs all six — that's when the new structure locks in."
+      },
+      {
+        "question": "Will I give out all my secrets?",
+        "answer": "No. You will be fully aware of what is happening and you will be able to control your thoughts and actions. You will have full discretion over what you are willing to share and what ideas you are willing to incorporate."
+      },
+      {
+        "question": "So I just relax and let you do the work?",
+        "answer": "Not quite! Every session is a collaboration. You will need to participate and do your part of the work. This is not a guided nap time! Please come to the sessions well rested and ready to rock-n-roll!"
+      },
+      {
+        "question": "Do you offer refunds?",
+        "answer": "I stand by the depth and quality of this work. My pledge to you is that the value of this transformation over time will be much more than your investment. This being said, if after the first two sessions we both feel that it's not a fit, I'll refund the remaining portion of the program."
+      }
+    ]
   },
   "pricing": {
     "intro": "Two Paths, One Transformation",
@@ -367,10 +381,11 @@
       "privacy": "Privacy",
       "terms": "Terms",
       "contact": "Contact"
-    }
+    },
+    "tagline": "You.v2 — Your next version isn't out there. It's already within. Let's unlock it."
   },
   "readyToChoose": {
-    "title": "Ready to Choose Your Path?",
+    "title": "Ready to Begin Your Path?",
     "cta": "Book Your $100 Strategy Call",
     "p1": "This is not a sales pitch — it's a discovery conversation. You'll gain visibility into what's truly going on beneath the surface and map your best next step.",
     "p2": "This 60-minute strategy call is $100 — credited toward your program if you choose to continue. You'll walk away with clear insight into what's keeping you stuck, and what needs to shift at the subconscious level. My pledge is that this conversation will be deeply useful to you — even if you don't decide to go through the full program at this time.",

@@ -1,0 +1,6 @@
+name: Playwright Integration Tests
+
+# Playwright e2e tests removed from PR workflow
+
+jobs:
+  # Playwright e2e tests removed from PR workflow 

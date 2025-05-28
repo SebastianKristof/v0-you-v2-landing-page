@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-ibm-plex-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  /* Restored original color variables */
+  --executive-blue: 210 65% 50%;
+  --executive-blue-dark: 210 80% 30%;
+  --executive-light-blue: 203 60% 97%;
+  --executive-dark: 222 25% 20%;
+  --executive-text: 215 16% 47%;
+  --executive-gold: 36 80% 65%;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -24,16 +41,8 @@
     --input: 214 32% 91%;
     --ring: 210 65% 50%;
     --radius: 0.75rem;
-
-    /* Custom colors */
-    --executive-blue: 210 65% 50%;
-    --executive-blue-dark: 210 80% 30%;
-    --executive-light-blue: 203 60% 97%;
-    --executive-dark: 222 25% 20%;
-    --executive-text: 215 16% 47%;
-    --executive-gold: 36 80% 65%;
   }
-
+ 
   .dark {
     --background: 222 25% 11%;
     --foreground: 210 40% 98%;
@@ -56,22 +65,17 @@
     --ring: 224 76% 48%;
   }
 }
-
+ 
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-ibm-plex-sans), system-ui, sans-serif;
+    font-family: var(--font-sans);
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-inter), system-ui, sans-serif;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-ibm-plex-sans);
     @apply font-medium tracking-tight;
   }
 
@@ -169,6 +173,7 @@
   .executive-button:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transform: translateY(-1px);
+    background-color: hsl(var(--executive-blue-dark));
   }
 
   .executive-card {

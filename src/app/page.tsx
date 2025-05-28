@@ -29,6 +29,7 @@ import { IssuesSection } from "@/components/sections/issues-section"
 import { PrecisionSection } from "@/components/sections/precision-section"
 import { WhyMeSection } from "@/components/sections/why-me-section"
 import { ReadyToChooseSection } from "@/components/sections/ready-to-choose-section"
+import { Footer } from "@/components/layout/footer"
 
 export default function Home() {
   const { t, language } = useLanguage()
@@ -83,23 +84,6 @@ export default function Home() {
   // Get FAQ items safely
   const faqItems = t("faq.items", { returnObjects: true }) || []
 
-  if (language === "ru") {
-    return (
-      <div className="flex min-h-screen flex-col items-center justify-center bg-executive-light-blue">
-        <div className="text-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-executive-blue mb-4">Сайт в разработке</h1>
-          <p className="text-lg md:text-2xl text-executive-dark">
-            The Russian version of this site is under construction.<br />
-            Please check back soon or switch to English.
-          </p>
-          <div className="mt-8 flex justify-center">
-            <LanguageSwitcher />
-          </div>
-        </div>
-      </div>
-    )
-  }
-
   return (
     <div className="flex min-h-screen flex-col">
       {/* Header */}
@@ -121,10 +105,10 @@ export default function Home() {
               {t("nav.howItWorks")}
             </Link>
             <Link href="#is-this-for-you" className="text-sm font-medium hover:text-primary transition-colors">
-              Is This For You?
+              {t("nav.isThisForYou")}
             </Link>
             <Link href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
-              Packages
+              {t("nav.packages")}
             </Link>
             <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.about")}
@@ -136,26 +120,26 @@ export default function Home() {
             <div className="relative">
               <button
                 className="text-sm font-medium hover:text-primary transition-colors flex items-center gap-1"
-                onClick={() => setShowMore((v) => !v)}
+                onClick={() => setShowMore((v: boolean) => !v)}
                 onBlur={() => setTimeout(() => setShowMore(false), 150)}
                 type="button"
               >
-                More
+                {t("nav.more")}
                 <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </button>
               {showMore && (
                 <div className="absolute right-0 mt-2 w-56 bg-white border rounded shadow-lg z-50 py-2">
-                  <Link href="#the-why" className="block px-4 py-2 text-sm hover:bg-muted">The Why</Link>
-                  <Link href="#is-this-for-you" className="block px-4 py-2 text-sm hover:bg-muted">Is This For You?</Link>
-                  <Link href="#client-stories" className="block px-4 py-2 text-sm hover:bg-muted">Client Stories</Link>
-                  <Link href="#what-makes-different" className="block px-4 py-2 text-sm hover:bg-muted">What Makes You.v2 Different?</Link>
-                  <Link href="#issues" className="block px-4 py-2 text-sm hover:bg-muted">Issues We Can Address</Link>
-                  <Link href="#precision" className="block px-4 py-2 text-sm hover:bg-muted">Precision</Link>
-                  <Link href="#why-me" className="block px-4 py-2 text-sm hover:bg-muted">Why Work With Me</Link>
-                  <Link href="#global-pros" className="block px-4 py-2 text-sm hover:bg-muted">Global Pros</Link>
-                  <Link href="#session" className="block px-4 py-2 text-sm hover:bg-muted">What Happens in a Session?</Link>
-                  <Link href="#client-story" className="block px-4 py-2 text-sm hover:bg-muted">Client Story</Link>
-                  <Link href="#ready-to-choose" className="block px-4 py-2 text-sm hover:bg-muted">Ready to Choose Your Path?</Link>
+                  <Link href="#the-why" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.theWhy")}</Link>
+                  <Link href="#client-stories" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.clientStories")}</Link>
+                  <Link href="#what-makes-different" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.whatMakesDifferent")}</Link>
+                  <Link href="#issues" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.issues")}</Link>
+                  <Link href="#precision" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.precision")}</Link>
+                  <Link href="#roi" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.roi")}</Link>
+                  <Link href="#why-me" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.whyMe")}</Link>
+                  <Link href="#global-pros" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.globalPros")}</Link>
+                  <Link href="#session" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.session")}</Link>
+                  <Link href="#client-story" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.clientStory")}</Link>
+                  <Link href="#ready-to-choose" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.readyToChoose")}</Link>
                 </div>
               )}
             </div>
@@ -226,49 +210,7 @@ export default function Home() {
         <ReadyToChooseSection />
       </main>
 
-      <footer className="w-full border-t py-6 md:py-8 bg-white">
-        <div className="section-container">
-          <div className="text-center mb-6">
-            <span className="block text-lg md:text-xl font-semibold italic" style={{ color: "hsl(var(--executive-gold))" }}>
-              You.v2 — Your next version isn't out there. It's already within. Let's unlock it.
-            </span>
-          </div>
-          <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <div className="flex items-center gap-2">
-              <span className="font-medium text-lg">You.v2</span>
-              <span
-                className="text-xs font-semibold uppercase px-1.5 py-0.5 rounded-md"
-                style={{ backgroundColor: "hsl(var(--executive-gold))", color: "hsl(var(--executive-dark))" }}
-              >
-                Intensive
-              </span>
-            </div>
-            <p className="text-xs md:text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} {t("footer.rights")}
-            </p>
-            <div className="flex items-center gap-4 md:gap-6">
-              <Link
-                href="/privacy"
-                className="text-xs md:text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t("footer.links.privacy")}
-              </Link>
-              <Link
-                href="/terms"
-                className="text-xs md:text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t("footer.links.terms")}
-              </Link>
-              <Link
-                href="#contact"
-                className="text-xs md:text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t("footer.links.contact")}
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
