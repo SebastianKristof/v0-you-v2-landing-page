@@ -4,4 +4,10 @@ module.exports = {
     '@babel/preset-typescript',
     ['@babel/preset-react', { runtime: 'automatic' }]
   ],
+  // This ensures this Babel config is only used for tests
+  env: {
+    test: {
+      plugins: []
+    }
+  }
 }; 

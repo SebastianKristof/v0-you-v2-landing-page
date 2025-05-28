@@ -1,4 +1,4 @@
-name: Playwright Integration Tests
+name: Jest Unit Tests
 
 on:
   pull_request:
@@ -16,7 +16,5 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
-      - name: Run Playwright tests
-        run: npm run test:e2e 
+      - name: Run Jest tests
+        run: npm test 
