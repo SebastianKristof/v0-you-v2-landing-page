@@ -59,7 +59,7 @@ export function RoiSection() {
           </div>
         </ScrollReveal>
         <div className="flex justify-center mt-8 mb-4">
-          <button className="executive-button flex items-center gap-2 px-8 py-3 text-lg" type="button">
+          <button className="executive-button flex items-center gap-2 justify-center" type="button">
             <CalendarDays className="w-5 h-5" />
             {t("pricing.cta.primary")}
           </button>
