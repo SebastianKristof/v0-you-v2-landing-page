@@ -135,10 +135,12 @@ export default function Home() {
                   <Link href="#issues" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.issues")}</Link>
                   <Link href="#precision" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.precision")}</Link>
                   <Link href="#roi" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.roi")}</Link>
-                  <Link href="#why-me" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.whyMe")}</Link>
+                  <Link href="#about" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.about")}</Link>
                   <Link href="#global-pros" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.globalPros")}</Link>
                   <Link href="#session" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.session")}</Link>
-                  <Link href="#client-story" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.clientStory")}</Link>
+                  <Link href="#pricing" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.packages")}</Link>
+                  <Link href="#why-me" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.whyMe")}</Link>
+                  <Link href="#faq" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.faq")}</Link>
                   <Link href="#ready-to-choose" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.readyToChoose")}</Link>
                 </div>
               )}

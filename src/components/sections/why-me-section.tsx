@@ -22,7 +22,7 @@ export function WhyMeSection() {
   const bullets = t("whyMe.bullets", { returnObjects: true }) as string[];
   const splitBullets = bullets.map(splitHeadingDesc);
   return (
-    <section className="w-full py-16 bg-executive-light-blue">
+    <section id="why-me" className="w-full py-16 bg-executive-light-blue">
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <h2 className="section-title text-center">{t("whyMe.title")}</h2>
