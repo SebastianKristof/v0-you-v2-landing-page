@@ -6,27 +6,15 @@ export function GlobalProsSection() {
   const { t } = useLanguage();
   const points = t("globalPros.points", { returnObjects: true }) || [];
   return (
-    <section className="w-full py-10 md:py-16 lg:py-24 bg-white">
+    <section id="global-pros" className="w-full py-10 md:py-16 lg:py-24 bg-white">
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-4 text-center">
             <h2 className="section-title text-black">{t("globalPros.title")}</h2>
             <p className="text-lg md:text-xl text-muted-foreground">{t("globalPros.subtitle")}</p>
           </div>
-          <style jsx>{`
-            .gradient-underline {
-              text-decoration: underline;
-              text-decoration-thickness: 2px;
-              text-underline-offset: 6px;
-              text-decoration-color: transparent;
-              background-image: linear-gradient(90deg, hsl(var(--executive-blue)) 0%, hsl(var(--executive-light-blue)) 100%);
-              background-repeat: no-repeat;
-              background-size: 100% 2px;
-              background-position: 0 100%;
-            }
-          `}</style>
           <p className="max-w-2xl mx-auto text-base md:text-lg text-executive-dark/90 mb-2 md:mb-4 text-center">
-            <span className="gradient-underline">
+            <span className="underline underline-offset-[6px] decoration-2 decoration-transparent bg-gradient-to-r from-executive-blue to-executive-light-blue bg-no-repeat bg-[length:100%_2px] bg-[position:0_100%]">
               {t("globalPros.preludeHighlight")}
             </span>
           </p>

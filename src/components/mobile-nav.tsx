@@ -70,12 +70,11 @@ export default function MobileNav({ className = "" }: MobileNavProps) {
               <Link href="#issues" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.issues")}</Link>
               <Link href="#precision" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.precision")}</Link>
               <Link href="#roi" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.roi")}</Link>
-              <Link href="#pricing" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.packages")}</Link>
-              <Link href="#why-me" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.whyMe")}</Link>
               <Link href="#about" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.about")}</Link>
               <Link href="#global-pros" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.globalPros")}</Link>
               <Link href="#session" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.session")}</Link>
-              <Link href="#client-story" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.clientStory")}</Link>
+              <Link href="#pricing" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.packages")}</Link>
+              <Link href="#why-me" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.whyMe")}</Link>
               <Link href="#faq" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.faq")}</Link>
               <Link href="#ready-to-choose" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.readyToChoose")}</Link>
               <button className="executive-button mt-4 w-full max-w-xs">

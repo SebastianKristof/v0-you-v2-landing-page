@@ -6,6 +6,7 @@ export function ClientStorySection() {
   const { t } = useLanguage();
   return (
     <section
+      id="client-story"
       className="w-full py-10 md:py-16 lg:py-24 relative overflow-hidden"
       style={{ backgroundColor: "hsl(var(--executive-light-blue))" }}
     >
