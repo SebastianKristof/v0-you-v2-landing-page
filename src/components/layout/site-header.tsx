@@ -24,9 +24,6 @@ export function SiteHeader() {
           <Link href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors">
             {t("nav.howItWorks")}
           </Link>
-          <Link href="#timeline" className="text-sm font-medium hover:text-primary transition-colors">
-            {t("nav.timeline")}
-          </Link>
           <Link href="#roi" className="text-sm font-medium hover:text-primary transition-colors">
             {t("nav.roi")}
           </Link>
