@@ -83,23 +83,6 @@ export default function Home() {
   // Get FAQ items safely
   const faqItems = t("faq.items", { returnObjects: true }) || []
 
-  if (language === "ru") {
-    return (
-      <div className="flex min-h-screen flex-col items-center justify-center bg-executive-light-blue">
-        <div className="text-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-executive-blue mb-4">Сайт в разработке</h1>
-          <p className="text-lg md:text-2xl text-executive-dark">
-            The Russian version of this site is under construction.<br />
-            Please check back soon or switch to English.
-          </p>
-          <div className="mt-8 flex justify-center">
-            <LanguageSwitcher />
-          </div>
-        </div>
-      </div>
-    )
-  }
-
   return (
     <div className="flex min-h-screen flex-col">
       {/* Header */}
