@@ -30,6 +30,8 @@ import { PrecisionSection } from "@/components/sections/precision-section"
 import { WhyMeSection } from "@/components/sections/why-me-section"
 import { ReadyToChooseSection } from "@/components/sections/ready-to-choose-section"
 import { Footer } from "@/components/layout/footer"
+import { FullControlSection } from "@/components/sections/full-control-section"
+import { ResultsSection } from "@/components/sections/results-section"
 
 export default function Home() {
   const { t, language } = useLanguage()
@@ -104,11 +106,20 @@ export default function Home() {
             <Link href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.howItWorks")}
             </Link>
+            <Link href="#full-control" className="text-sm font-medium hover:text-primary transition-colors">
+              {t("nav.fullControl", "Полный контроль")}
+            </Link>
             <Link href="#is-this-for-you" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.isThisForYou")}
             </Link>
-            <Link href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
-              {t("nav.packages")}
+            <Link href="#results" className="text-sm font-medium hover:text-primary transition-colors">
+              {t("nav.results", "Результат")}
+            </Link>
+            <Link href="#what-makes-different" className="text-sm font-medium hover:text-primary transition-colors">
+              {t("nav.whatMakesDifferent")}
+            </Link>
+            <Link href="#issues" className="text-sm font-medium hover:text-primary transition-colors">
+              {t("nav.issues")}
             </Link>
             <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.about")}
@@ -130,6 +141,14 @@ export default function Home() {
               </button>
               {showMore && (
                 <div className="absolute right-0 mt-2 w-56 bg-white border rounded shadow-lg z-50 py-2">
+                  <Link href="#how-it-works" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.howItWorks")}</Link>
+                  <Link href="#full-control" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.fullControl", "Полный контроль")}</Link>
+                  <Link href="#is-this-for-you" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.isThisForYou")}</Link>
+                  <Link href="#results" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.results", "Результат")}</Link>
+                  <Link href="#what-makes-different" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.whatMakesDifferent")}</Link>
+                  <Link href="#issues" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.issues")}</Link>
+                  <Link href="#about" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.about")}</Link>
+                  <Link href="#faq" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.faq")}</Link>
                   <Link href="#the-why" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.theWhy")}</Link>
                   <Link href="#client-stories" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.clientStories")}</Link>
                   <Link href="#what-makes-different" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.whatMakesDifferent")}</Link>
@@ -164,20 +183,32 @@ export default function Home() {
         {/* How It Works Section */}
         <HowItWorksSection />
 
-        {/* The Why Section */}
-        <TheWhySection />
+        {/* Full Control Section */}
+        <FullControlSection />
 
         {/* Is This For You Section */}
         <IsThisForYouSection />
 
+        {/* Results Section */}
+        <ResultsSection />
+
         {/* Client Stories Section */}
         <ClientStoriesSection />
-
+        
         {/* What Makes You.v2 Different Section */}
         <WhatMakesDifferentSection />
 
         {/* Issues Section */}
         <IssuesSection />
+
+        {/* About the Creator */}
+        <AboutSection />
+
+        {/* FAQ Section */}
+        <FaqSection />
+
+        {/* The Why Section */}
+        <TheWhySection />
 
         {/* Precision Section */}
         <PrecisionSection />
@@ -187,9 +218,6 @@ export default function Home() {
 
         {/* ROI Comparison */}
         <RoiSection />
-
-        {/* About the Creator */}
-        <AboutSection />
 
         {/* Global Pros Section */}
         <GlobalProsSection />
@@ -205,9 +233,6 @@ export default function Home() {
 
         {/* Why Work With Me Section */}
         <WhyMeSection />
-
-        {/* FAQ Section */}
-        <FaqSection />
 
         {/* Ready to Choose Your Path Section */}
         <ReadyToChooseSection />
