@@ -27,6 +27,7 @@ export function FullControlSection() {
             </div>
             <div className="space-y-6 text-base md:text-lg text-center md:text-left max-w-2xl mx-auto md:mx-0">
               <p className="font-semibold text-executive-blue">{t("fullControl.p1")}</p>
+              <p>{t("fullControl.p1b")}</p>
               <p>{t("fullControl.p2")}</p>
               <p>{t("fullControl.p3")}</p>
               <p className="font-semibold text-executive-dark">{t("fullControl.p4")}</p>

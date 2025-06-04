@@ -188,7 +188,8 @@ export default function Home() {
 
         {/* Is This For You Section */}
         <IsThisForYouSection />
-
+        {/* Issues Section */}
+        <IssuesSection />
         {/* Results Section */}
         <ResultsSection />
 
@@ -197,9 +198,6 @@ export default function Home() {
         
         {/* What Makes You.v2 Different Section */}
         <WhatMakesDifferentSection />
-
-        {/* Issues Section */}
-        <IssuesSection />
 
         {/* About the Creator */}
         <AboutSection />
