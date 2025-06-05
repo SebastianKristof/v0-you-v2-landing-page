@@ -199,18 +199,16 @@ export default function Home() {
         <GlobalProsSection />
 
         {/* The Why Section */}
-        <TheWhySection />
+        {/* <TheWhySection /> */}
 
         {/* Pricing & CTA */}
         <PricingSection />
-
 
         {/* What Happens in a Session */}
         <SessionSection />
 
         {/* Client Story */}
         <ClientStorySection />
-
 
         {/* Why Work With Me Section */}
         <WhyMeSection />
