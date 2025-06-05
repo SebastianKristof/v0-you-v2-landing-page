@@ -101,7 +101,7 @@ export function ClientStoriesSection() {
   }
 
   return (
-    <section id="client-stories" className="w-full py-16 bg-white">
+    <section id="client-stories" className="w-full py-16 bg-warm-bg">
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <h2 className="section-title text-center">{t("clientStories.title")}</h2>
@@ -175,7 +175,7 @@ export function ClientStoriesSection() {
             {stories.map((_, i) => (
               <button
                 key={i}
-                className={`w-3 h-3 rounded-full border-2 transition-all duration-200 ${i === activeIndex ? "bg-executive-blue border-executive-blue scale-110" : "bg-white border-executive-blue/40"}`}
+                className={`w-3 h-3 rounded-full border-2 transition-all duration-200 ${i === activeIndex ? "bg-executive-blue border-executive-blue scale-110" : "bg-warm-accent border-executive-blue/40"}`}
                 onClick={() => setActiveIndex(i)}
                 aria-label={`Go to story ${i + 1}`}
                 type="button"

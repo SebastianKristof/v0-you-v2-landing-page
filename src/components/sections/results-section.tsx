@@ -6,7 +6,7 @@ export function ResultsSection() {
   const { t } = useLanguage();
   const bullets = t("results.bullets", { returnObjects: true }) as string[];
   return (
-    <section id="results" className="w-full py-16 bg-executive-light-blue">
+    <section id="results" className="w-full py-16 bg-warm-bg">
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-2 text-center">

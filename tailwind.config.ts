@@ -66,6 +66,8 @@ const config = {
         "executive-dark": "hsl(var(--executive-dark))",
         "executive-gold": "hsl(var(--executive-gold))",
         "executive-text": "hsl(var(--executive-text))",
+        'warm-bg': 'var(--warm-bg)',
+        'warm-accent': 'var(--warm-accent)',
       },
       borderRadius: {
         lg: "var(--radius)",

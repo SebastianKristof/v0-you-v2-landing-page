@@ -6,7 +6,7 @@ export function GlobalProsSection() {
   const { t } = useLanguage();
   const points = t("globalPros.points", { returnObjects: true }) || [];
   return (
-    <section id="global-pros" className="w-full py-10 md:py-16 lg:py-24 bg-white">
+    <section id="global-pros" className="w-full py-10 md:py-16 lg:py-24 bg-warm-bg">
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-4 text-center">
