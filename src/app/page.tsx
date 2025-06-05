@@ -183,26 +183,27 @@ export default function Home() {
         {/* What Makes You.v2 Different Section */}
         <WhatMakesDifferentSection />
 
+        {/* ROI Comparison */}
+        <RoiSection />
+
         {/* About the Creator */}
         <AboutSection />
 
         {/* FAQ Section */}
         <FaqSection />
+        
+        {/* Precision Section */}
+        <PrecisionSection />
+        
+        {/* Global Pros Section */}
+        <GlobalProsSection />
 
         {/* The Why Section */}
         <TheWhySection />
 
-        {/* Precision Section */}
-        <PrecisionSection />
+        {/* Pricing & CTA */}
+        <PricingSection />
 
-        {/* Timeline Section */}
-        {/* <TimelineSection /> */}
-
-        {/* ROI Comparison */}
-        <RoiSection />
-
-        {/* Global Pros Section */}
-        <GlobalProsSection />
 
         {/* What Happens in a Session */}
         <SessionSection />
@@ -210,8 +211,6 @@ export default function Home() {
         {/* Client Story */}
         <ClientStorySection />
 
-        {/* Pricing & CTA */}
-        <PricingSection />
 
         {/* Why Work With Me Section */}
         <WhyMeSection />

@@ -1,5 +1,6 @@
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
+import { sectionBackgrounds } from "@/lib/section-backgrounds";
 
 function splitHeadingDesc(text: string): { heading: string; desc: string } {
   // Try to split at first period or colon
@@ -22,7 +23,7 @@ export function WhyMeSection() {
   const bullets = t("whyMe.bullets", { returnObjects: true }) as string[];
   const splitBullets = bullets.map(splitHeadingDesc);
   return (
-    <section id="why-me" className="w-full py-16 bg-executive-light-blue">
+    <section id="why-me" className={`w-full py-16 ${sectionBackgrounds.whyMe}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <h2 className="section-title text-center">{t("whyMe.title")}</h2>

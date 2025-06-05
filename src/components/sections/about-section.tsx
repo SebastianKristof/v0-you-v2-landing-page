@@ -3,15 +3,24 @@ import { Check, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 import ImageModal from "@/components/image-modal";
+import { sectionBackgrounds } from "@/lib/section-backgrounds";
 
 export function AboutSection() {
   const { t } = useLanguage();
   const aboutCredentials = t("about.credentials", { returnObjects: true }) || [];
+  // Get background config
+  const aboutBg = sectionBackgrounds.about;
+  const isStyle = aboutBg.startsWith("[style.backgroundColor=");
+  const style = isStyle ? { backgroundColor: aboutBg.match(/'([^']+)'/)?.[1] } : undefined;
+  const className = isStyle
+    ? "w-full py-10 md:py-16 lg:py-24"
+    : `w-full py-10 md:py-16 lg:py-24 ${aboutBg}`;
+
   return (
     <section
       id="about"
-      className="w-full py-10 md:py-16 lg:py-24"
-      style={{ backgroundColor: "hsl(var(--executive-light-blue))" }}
+      className={className}
+      style={style}
     >
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">

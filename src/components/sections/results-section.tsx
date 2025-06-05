@@ -1,12 +1,13 @@
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 import { Check } from "lucide-react";
+import { sectionBackgrounds } from "@/lib/section-backgrounds";
 
 export function ResultsSection() {
   const { t } = useLanguage();
   const bullets = t("results.bullets", { returnObjects: true }) as string[];
   return (
-    <section id="results" className="w-full py-16 bg-warm-bg">
+    <section id="results" className={`w-full py-16 ${sectionBackgrounds.results}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-2 text-center">
@@ -15,7 +16,7 @@ export function ResultsSection() {
           </div>
           <ul className="grid gap-6 md:gap-8 md:grid-cols-2 max-w-2xl mx-auto">
             {bullets.map((item, i) => (
-              <li key={i} className="flex items-start gap-3 bg-white/80 rounded-lg p-4 shadow">
+              <li key={i} className={`flex items-start gap-3 rounded-lg p-4 shadow ${sectionBackgrounds.resultsItem}`}>
                 <Check className="text-executive-blue w-6 h-6 mt-1 flex-shrink-0" />
                 <span className="text-base md:text-lg text-left">{item}</span>
               </li>
