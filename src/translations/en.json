@@ -1,22 +1,24 @@
 {
   "meta": {
-    "title": "You.v2 - Rapid Subconscious Reprogramming Program",
-    "description": "You.v2 is a rapid and gentle subconscious reprogramming program for Russian-speaking global leaders and helping professionals who feel inexplicably blocked by old patterns and beliefs despite external success."
+    "title": "You.v2 - Rapid Subconscious Realignment Program",
+    "description": "You.v2 is a rapid and gentle subconscious realignment program for global leaders and helping professionals who feel inexplicably blocked in some area of life despite external success."
   },
   "nav": {
-    "howItWorks": "How It Works",
+    "howItWorks": "Not Therapy",
     "timeline": "Timeline",
+    "results": "Results",
+    "fullControl": "Full Control",
     "roi": "Cost Comparison",
     "about": "About",
     "faq": "FAQ",
     "bookCall": "Book Strategy Call",
     "isThisForYou": "Is This For You?",
-    "packages": "Packages",
+    "paths": "Paths",
     "more": "More",
-    "theWhy": "The Why",
+    "theWhy": "My Vision",
     "clientStories": "Client Stories",
     "whatMakesDifferent": "What Makes You.v2 Different?",
-    "issues": "Issues We Can Address",
+    "issues": "Issues",
     "precision": "Precision",
     "whyMe": "Why Work With Me",
     "globalPros": "Global Pros",
@@ -26,8 +28,9 @@
   },
   "hero": {
     "title": "You lead, guide, and support others — but you feel it's time to focus on yourself.",
-    "subtitle": "You.v2 is a structured, personalized subconscious change program for business leaders and helping professionals who need deep results — quickly and reliably.",
+    "subtitle": "You.v2 is a structured, personalized subconscious realignment program for global leaders and professionals who feel stuck despite external success.",
     "description1": "You don't need more willpower or positive thinking. You need access to the part of your mind where real change begins.",
+    "description2": "Through this work, I'll teach you how to access and use the power of your own subconscious mind — so that you can stop self-sabotaging, achieve your goals more easily, and continue creating meaningful change long after our work is done.",
     "ctaMicrocopy": "No obligation. 100% confidential. Best for those who've already tried other approaches."
   },
   "quickRoi": {
@@ -73,8 +76,16 @@
     },
     "quote": "\"You've worked hard at the behavior level. It's time to reset where it actually matters.\""
   },
+  "fullControl": {
+    "title": "You Have Full Control",
+    "p1": "Hypnosis isn't mind control — it's a natural state of focused attention.",
+    "p1b": "It's like being deeply absorbed in a movie, but with the ability to pause or speak up at any time. You hear everything, understand where you are, and choose what you share or withhold. Actually the results will depend on how focused and present you are.",
+    "p2": "In You.v2 method, trance is simply the tool we use to bypass your inner firewall — the \"critical factor\" that defends outdated patterns. Once we pass it, your subconscious becomes available for realignment.",
+    "p3": "If you've seen hypnosis in movies or on TV, forget it — this is different. A hypnotic trance is a natural state of mind. Nothing spooky is going on. You won't accept any suggestions you are not willing to accept. You won't reveal any secrets either. ",
+    "p4": "My method is safe because it respects your values, religion, and privacy — and above all, your free will."
+  },
   "theWhy": {
-    "title": "The Why",
+    "title": "My Vision",
     "promiseTitle": "My Promise to You",
     "promise": "Through this work, I'll teach you how to access and use the power of your own subconscious mind — so that you can stop self-sabotaging, achieve your goals more easily, and continue creating meaningful change long after our work is done.",
     "visionTitle": "My Vision",
@@ -94,10 +105,26 @@
   "clientStories": {
     "title": "Client Stories",
     "stories": [
-      "After just one session, I felt like years of emotional weight lifted off. — Anna, Executive Coach",
-      "This work gave me tools I still use every day — real transformation. — Anthony, Tech Founder",
-      "I've done coaching, therapy, even retreats. Nothing got to the root like this did. The shifts were deep and lasting. — Elena, Entrepreneur",
-      "I didn't expect to feel this clear after just two weeks. I finally stopped repeating the same self-destructive cycle. — Dmitry, Product Manager"
+      {
+        "message": "After just one session, I felt like years of emotional weight lifted off. I didn't realize how much I'd been holding together with grit and control — until it all let go. For the first time in years, I could breathe fully again. It was like meeting a version of myself I thought was gone.",
+        "name": "Anna",
+        "title": "Executive Coach"
+      },
+      {
+        "message": "This work gave me tools I still use every day — real transformation. I used to bulldoze through stress and burnout until my body started breaking down. Now I know how to check in, reset, and make clear decisions without going into overdrive.",
+        "name": "Anthony",
+        "title": "Tech Founder"
+      },
+      {
+        "message": "I've done coaching, therapy, even retreats. Nothing got to the root like this did. The shifts were deep and lasting — not just emotional insight, but a complete rewiring of how I relate to people and pressure. I didn't just understand my patterns — I stopped living in them.",
+        "name": "Elena",
+        "title": "Entrepreneur"
+      },
+      {
+        "message": "I didn't expect to feel this clear after just two weeks. I was stuck in the same self-destructive loop for years, and I had no idea how to stop. Now it's like something unhooked inside me. I'm not reacting the same way — and my girlfriend noticed it before I did.",
+        "name": "Dmitry",
+        "title": "Product Manager"
+      }
     ]
   },
   "whatMakesDifferent": {
@@ -147,19 +174,34 @@
         "desc": "After an illness, surgery, accident, or even intense stress, something feels off. Like part of you is missing. This work helps with what logic can't explain."
       },
       {
-        "title": "You don't want to become your parents — but you're already repeating them",
+        "title": "You swore you'd never be like your parents — but you're already repeating them",
         "desc": "Guilt, frustration, emotional distance with your child — these often echo patterns you lived through yourself. We can stop inherited pain from passing forward."
       },
       {
-        "title": "Irrational moods, fears, or desires",
+        "title": "Irrational moods, fears, or desires take you over",
         "desc": "Anxiety, irritability, mood swings, irrational fears and urges — these aren't flaws in your personality. They're often signs your subconscious is working overtime to manage something unresolved."
       },
       {
-        "title": "Unexplained physical symptoms or habits",
+        "title": "Unexplained physical symptoms or habits make you feel like you're losing control",
         "desc": "Compulsive behaviors, physical tension, headaches, and unexplained symptoms often start as the subconscious trying to protect you. They need to be decoded and processed — not ignored."
       }
     ],
     "outro": "Every person is different. If you don't see your situation here — reach out. I work with people, not labels. Every story can be rewritten."
+  },
+  "results": {
+    "title": "Results",
+    "subheading": "Real change. Not coping.",
+    "bullets": [
+      "Let go of guilt, anxiety, and suppressed rage — before they sabotage another relationship or opportunity",
+      "Break through years of emotional fog — and finally feel like yourself again",
+      "Reclaim your sense of purpose — even when your old identity has collapsed and nothing feels real anymore",
+      "Cut through the confusion — and trust yourself to act, speak, and choose without overthinking everything",
+      "Defuse the panic, conflict, and reactivity — even if it's been wrecking your relationships or work",
+      "Pull your relationships back from the edge — when distance, resentment, or silence have taken over",
+      "Release the internal brake on your success — the one that's been quietly destroying everything you've built for years",
+      "Find a solid core of peace — even in moments that used to rip you apart"
+    ],
+    "pullQuote": "When you discover the version of yourself that was buried underneath all the noise, the change will be instantaneous and permanent."
   },
   "precision": {
     "title": "Clinical-Grade Precision",
@@ -194,34 +236,29 @@
       },
       "rows": [
         {
-          "approach": "Traditional Therapy",
-          "depth": "Emotional insight",
-          "time": "6–12 months+",
-          "cost": "$5,000–10,000"
+          "time": "12–24 months+",
+          "cost": "$8,000–15,000 and more",
+          "merged": "Traditional Therapy — Emotional insight, behavior correction, coping skills"
         },
         {
-          "approach": "Coaching",
-          "depth": "Motivation + Strategy",
-          "time": "2–6 months",
-          "cost": "$1,500–5,000"
+          "time": "6–12 months",
+          "cost": "$5,000–10,000 and more",
+          "merged": "Coaching — Motivation and strategy, helps you try harder, may exhaust you if there are deeper issues"
         },
         {
-          "approach": "Medication",
-          "depth": "Symptom suppression",
           "time": "Ongoing",
-          "cost": "$2,400–6,000+/year"
+          "cost": "$2,400–6,000+/year indefinitely",
+          "merged": "Medication — Suppresses symptoms, does not address root causes, may cause side effects and dependency"
         },
         {
-          "approach": "Self-Help / Inaction",
-          "depth": "Surface-level awareness",
           "time": "Years (or never)",
-          "cost": "Opportunity cost + wasted time"
+          "cost": "Opportunity cost + wasted time",
+          "merged": "Self-Help / Inaction — Surface-level awareness, little real change, repeated patterns despite understanding"
         },
         {
-          "approach": "You.v2",
-          "depth": "Deep, ecological, and complete resolution of your issue",
           "time": "Weeks",
-          "cost": "What is it worth to you?"
+          "cost": "Less than all other options",
+          "merged": "You.v2 — Deep, structural change at the root cause — gentle and fast!"
         }
       ]
     },
@@ -285,7 +322,7 @@
     "femalePerspective": "\"I held everyone else together, balancing leadership and personal well-being felt impossible until I found a space to truly reset.\" — Anonymous You V2 Client"
   },
   "faq": {
-    "title": "What You Might Be Wondering",
+    "title": "Frequently Asked Questions",
     "items": [
       {
         "question": "Is this therapy?",
@@ -316,8 +353,8 @@
         "answer": "Not quite! Every session is a collaboration. You will need to participate and do your part of the work. This is not a guided nap time! Please come to the sessions well rested and ready to rock-n-roll!"
       },
       {
-        "question": "Do you offer refunds?",
-        "answer": "I stand by the depth and quality of this work. My pledge to you is that the value of this transformation over time will be much more than your investment. This being said, if after the first two sessions we both feel that it's not a fit, I'll refund the remaining portion of the program."
+        "question": "Is it guaranteed to work?",
+        "answer": "I stand by the depth and quality of this work. I am fully committed to use all my experience and knowledge to get you the results you want. I've worked with many complex cases and the results are always amazing - even to me! This being said, every situation is different so there can't be any guarantees. To protect your investment, if after the first two sessions we both feel that it's not a fit, I'll refund the remaining portion of the program."
       }
     ]
   },
@@ -334,10 +371,10 @@
         "Ideal for founders, creatives, and leaders in transition or crisis"
       ],
       "quote": "If you want a complete system reset — and you're ready now — this is the path.",
-      "pricing": "Premium-tier investment. Only 2 clients accepted per month."
+      "pricing": "Premium-tier format. Only 1 client accepted per month."
     },
     "core": {
-      "title": "🌱 The 6-Week Repatterning",
+      "title": "🌱 The 6-Week Realignment",
       "description": "For those who want transformation with integration.",
       "features": [
         "Weekly 1:1 90-minute sessions over 6 weeks",
@@ -346,10 +383,10 @@
         "Ideal for high-achievers managing life demands alongside deep work"
       ],
       "quote": "If you want to go deep without overwhelm, this is your space.",
-      "pricing": "Core-tier investment. Only 4 clients accepted per month."
+      "pricing": "Core-tier format. Only 4 clients accepted per month."
     },
     "framework": {
-      "title": "Same Framework. Two Paces.",
+      "title": "Same framework, two paces — because every person is different.",
       "bullets": [
         "Mapping your symbolic and emotional terrain",
         "Uncovering root beliefs and patterns",

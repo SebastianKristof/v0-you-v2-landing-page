@@ -1,6 +1,7 @@
 import { useLanguage } from '@/contexts/language-context';
 import { CheckCircle, Timer, Cog, Lock } from 'lucide-react';
 import Image from 'next/image';
+import { sectionBackgrounds } from '@/lib/section-backgrounds';
 
 const ICONS = {
   'timer': <Timer className="text-executive-blue w-7 h-7" />,
@@ -16,22 +17,10 @@ export function WhatMakesDifferentSection() {
   const title = t('whatMakesDifferent.title');
 
   return (
-    <section id="what-makes-different" className="w-full py-16 bg-executive-light-blue">
+    <section id="what-makes-different" className={`w-full py-16 ${sectionBackgrounds.whatMakesDifferent}`}>
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-20">
-        {/* Illustration on the left (on desktop) */}
-        <div className="md:w-2/5 w-full flex justify-center items-center">
-          <div className="relative w-full max-w-[36rem] aspect-[16/9] rounded-2xl overflow-hidden shadow-lg bg-executive-light-blue/40">
-            <Image
-              src="/images/ChatGPT_Image_Mind_Engineering.png"
-              alt="System Reprogramming Illustration"
-              fill
-              className="object-cover rounded-2xl"
-              priority
-            />
-          </div>
-        </div>
-        {/* Text content on the right (on desktop) */}
-        <div className="md:w-3/5 w-full">
+        {/* Text content on the right (on desktop), on mobile order-2 */}
+        <div className="md:w-3/5 w-full order-2 md:order-1">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
             {(() => {
               if (!title) return null;
@@ -48,6 +37,18 @@ export function WhatMakesDifferentSection() {
               );
             })()}
           </h2>
+          {/* On mobile, image comes after heading, before text */}
+          <div className="block md:hidden my-6">
+            <div className="relative w-full max-w-[36rem] aspect-[16/9] rounded-2xl overflow-hidden shadow-lg bg-executive-light-blue/40 mx-auto">
+              <Image
+                src="/images/ChatGPT_Image_Mind_Engineering.png"
+                alt="System Reprogramming Illustration"
+                fill
+                className="object-cover rounded-2xl"
+                priority
+              />
+            </div>
+          </div>
           <ul className="space-y-6 mb-8">
             {Array.isArray(differentiators) && differentiators.map((item, i) => (
               <li key={i} className="flex items-start gap-4 group">
@@ -62,12 +63,26 @@ export function WhatMakesDifferentSection() {
             ))}
           </ul>
           <blockquote>
-            <span className="inline-flex items-center italic text-lg text-executive-blue bg-executive-light-blue/30 py-2 px-4 rounded-md border-l-4 border-executive-blue pl-4">
+            <span className="inline-flex items-center italic text-lg text-executive-blue bg-white py-2 px-4 rounded-md border-l-4 border-executive-blue pl-4">
               {quote}
             </span>
           </blockquote>
         </div>
+        {/* Image on the left (on desktop), on mobile hidden */}
+        <div className="md:w-2/5 w-full hidden md:flex justify-center items-center order-1 md:order-2">
+          <div className="relative w-full max-w-[36rem] aspect-[16/9] rounded-2xl overflow-hidden shadow-lg bg-executive-light-blue/40">
+            <Image
+              src="/images/ChatGPT_Image_Mind_Engineering.png"
+              alt="System Reprogramming Illustration"
+              fill
+              className="object-cover rounded-2xl"
+              priority
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
-} 
+}
+
+export default WhatMakesDifferentSection; 

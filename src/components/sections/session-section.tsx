@@ -1,13 +1,14 @@
 import { Check, Clock, Layers, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
+import { sectionBackgrounds } from "@/lib/section-backgrounds";
 
 export function SessionSection() {
   const { t } = useLanguage();
   const sessionFeatures = t("session.features", { returnObjects: true }) || [];
   const sessionWorkTypes = t("session.work.types", { returnObjects: true }) || [];
   return (
-    <section id="session" className="w-full py-10 md:py-16 lg:py-24 bg-executive-light-blue">
+    <section id="session" className={`w-full py-10 md:py-16 lg:py-24 ${sectionBackgrounds.session}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-4 text-center">

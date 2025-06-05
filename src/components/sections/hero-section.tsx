@@ -3,18 +3,19 @@ import { CalendarDays } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 import { QuickRoiSection } from "./quick-roi-section";
+import { sectionBackgrounds } from "@/lib/section-backgrounds";
 
 export function HeroSection() {
   const { t } = useLanguage();
   return (
-    <section className="w-full py-10 md:py-16 lg:py-24 overflow-hidden bg-white">
+    <section className={`w-full py-10 md:py-16 lg:py-24 overflow-hidden ${sectionBackgrounds.hero}`}>
       <div className="container px-4 md:px-6 mx-auto relative">
         {/* Image positioned absolutely on the right for larger screens */}
         <div className="hidden md:block absolute top-0 right-0 w-[45%] h-full">
           <div className="relative w-full h-full flex items-start justify-end">
             <div className="relative w-[90%] aspect-square rounded-full overflow-hidden border-4 border-white shadow-lg">
               <Image
-                src="/images/sebastian-portrait.png"
+                src="/images/sebastian-hero-photo-1.jpg"
                 alt="Dr. Sebastian Kristof"
                 fill
                 className="object-cover"
@@ -27,7 +28,7 @@ export function HeroSection() {
         <div className="md:hidden w-full mb-8">
           <div className="relative w-64 h-64 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg">
             <Image
-              src="/images/sebastian-portrait.png"
+              src="/images/sebastian-hero-photo-1.jpg"
               alt="Dr. Sebastian Kristof"
               fill
               className="object-cover"

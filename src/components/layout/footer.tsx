@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { useLanguage } from "@/contexts/language-context";
+import { sectionBackgrounds } from "@/lib/section-backgrounds";
 
 export function Footer() {
   const { t } = useLanguage();
   return (
-    <footer className="w-full border-t py-6 md:py-8 bg-white">
+    <footer className={`w-full border-t py-6 md:py-8 ${sectionBackgrounds.footer}`}>
       <div className="section-container">
         <div className="text-center mb-6">
           <span className="block text-lg md:text-xl font-semibold italic" style={{ color: "hsl(var(--executive-gold))" }}>

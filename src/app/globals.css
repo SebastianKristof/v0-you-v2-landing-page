@@ -14,6 +14,8 @@
   --executive-blue: 210 65% 50%;
   --executive-blue-dark: 210 80% 30%;
   --executive-light-blue: 203 60% 97%;
+  --executive-blue-warm: 210 55% 80%; /* lighter, warm blue */
+  --executive-light-blue-warm: 205 70% 95%; /* very light, warm blue */
   --executive-dark: 222 25% 20%;
   --executive-text: 215 16% 47%;
   --executive-gold: 36 80% 65%;

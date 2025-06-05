@@ -63,9 +63,13 @@ const config = {
         "muted-blue": "hsl(var(--muted-blue))",
         "executive-blue": "hsl(var(--executive-blue))",
         "executive-light-blue": "hsl(var(--executive-light-blue))",
+        "executive-blue-warm": "hsl(var(--executive-blue-warm))",
+        "executive-light-blue-warm": "hsl(var(--executive-light-blue-warm))",
         "executive-dark": "hsl(var(--executive-dark))",
         "executive-gold": "hsl(var(--executive-gold))",
         "executive-text": "hsl(var(--executive-text))",
+        'warm-bg': 'var(--warm-bg)',
+        'warm-accent': 'var(--warm-accent)',
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
+import { sectionBackgrounds } from "@/lib/section-backgrounds";
 
 export function HowItWorksSection() {
   const { t } = useLanguage();
   return (
-    <section id="how-it-works" className="w-full py-10 md:py-16 lg:py-24 bg-executive-light-blue">
+    <section id="how-it-works" className={`w-full py-10 md:py-16 lg:py-24 ${sectionBackgrounds.howItWorks}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-4">

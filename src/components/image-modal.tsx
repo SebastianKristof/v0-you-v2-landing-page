@@ -36,7 +36,7 @@ export default function ImageModal({ src, alt }: ImageModalProps) {
 
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80" onClick={closeModal}>
-          <div className="relative max-h-[90vh] max-w-[90vw]">
+          <div className="relative max-h-[50vh] max-w-[60vw]">
             <button
               className="absolute -right-4 -top-4 rounded-full bg-white p-2 shadow-md"
               onClick={(e) => {
@@ -46,7 +46,7 @@ export default function ImageModal({ src, alt }: ImageModalProps) {
             >
               <X className="h-5 w-5" />
             </button>
-            <div className="relative h-[80vh] w-[80vw] max-w-4xl">
+            <div className="relative h-[50vh] w-[60vw] max-w-2xl">
               <Image src={src || "/placeholder.svg"} alt={alt} fill className="object-contain" />
             </div>
           </div>

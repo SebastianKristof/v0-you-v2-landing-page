@@ -1,12 +1,13 @@
 import { Globe, Languages, Star, CalendarDays } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
+import { sectionBackgrounds } from "@/lib/section-backgrounds";
 
 export function GlobalProsSection() {
   const { t } = useLanguage();
   const points = t("globalPros.points", { returnObjects: true }) || [];
   return (
-    <section id="global-pros" className="w-full py-10 md:py-16 lg:py-24 bg-white">
+    <section id="global-pros" className={`w-full py-10 md:py-16 lg:py-24 ${sectionBackgrounds.globalPros}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-4 text-center">
@@ -22,7 +23,7 @@ export function GlobalProsSection() {
             {Array.isArray(points) && points.map((item: any, i: number) => (
               <li
                 key={i}
-                className="flex-1 flex items-start gap-3 bg-executive-light-blue/60 rounded-lg p-4 md:flex-col md:items-center md:text-center shadow-sm"
+                className={`flex-1 flex items-start gap-3 rounded-lg p-4 md:flex-col md:items-center md:text-center shadow-sm ${sectionBackgrounds.globalProsPoint}`}
               >
                 {i === 0 && <Languages className="w-7 h-7 text-executive-blue mb-2 md:mb-4" />}
                 {i === 1 && <Globe className="w-7 h-7 text-executive-gold mb-2 md:mb-4" />}

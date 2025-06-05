@@ -1,6 +1,7 @@
 import { CalendarDays, Check } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
+import { sectionBackgrounds } from "@/lib/section-backgrounds";
 
 export function PricingSection() {
   const { t } = useLanguage();
@@ -8,7 +9,7 @@ export function PricingSection() {
   const core = t("pricing.core", { returnObjects: true }) || {};
   const framework = t("pricing.framework", { returnObjects: true }) || {};
   return (
-    <section id="pricing" className="w-full py-10 md:py-16 lg:py-24 bg-white">
+    <section id="pricing" className={`w-full py-10 md:py-16 lg:py-24 ${sectionBackgrounds.pricing}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[900px] space-y-8 md:space-y-12">
           <div className="text-center mb-8">
@@ -17,7 +18,7 @@ export function PricingSection() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Premium Tier Card */}
-            <div className="executive-card bg-card/80 backdrop-blur-sm border-2 border-executive-blue flex flex-col items-center p-6">
+            <div className={`executive-card flex flex-col items-center p-6 ${sectionBackgrounds.pricingPremiumCard}`}>
               <h3 className="text-2xl font-bold text-executive-blue mb-2">{premium.title}</h3>
               <div className="text-base text-muted-foreground mb-4 text-center">{premium.description}</div>
               <ul className="space-y-2 mb-4 w-full">
@@ -32,7 +33,7 @@ export function PricingSection() {
               <div className="font-semibold text-executive-dark mb-4">{premium.pricing}</div>
             </div>
             {/* Core Tier Card */}
-            <div className="executive-card bg-white shadow-lg flex flex-col items-center p-6">
+            <div className={`executive-card flex flex-col items-center p-6 ${sectionBackgrounds.pricingCoreCard}`}>
               <h3 className="text-2xl font-bold text-executive-blue mb-2">{core.title}</h3>
               <div className="text-base text-muted-foreground mb-4 text-center">{core.description}</div>
               <ul className="space-y-2 mb-4 w-full">

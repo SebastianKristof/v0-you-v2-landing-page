@@ -30,6 +30,8 @@ import { PrecisionSection } from "@/components/sections/precision-section"
 import { WhyMeSection } from "@/components/sections/why-me-section"
 import { ReadyToChooseSection } from "@/components/sections/ready-to-choose-section"
 import { Footer } from "@/components/layout/footer"
+import { FullControlSection } from "@/components/sections/full-control-section"
+import { ResultsSection } from "@/components/sections/results-section"
 
 export default function Home() {
   const { t, language } = useLanguage()
@@ -104,17 +106,23 @@ export default function Home() {
             <Link href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.howItWorks")}
             </Link>
+            <Link href="#full-control" className="text-sm font-medium hover:text-primary transition-colors">
+              {t("nav.fullControl")}
+            </Link>
             <Link href="#is-this-for-you" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.isThisForYou")}
             </Link>
-            <Link href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
-              {t("nav.packages")}
+            <Link href="#issues" className="text-sm font-medium hover:text-primary transition-colors">
+              {t("nav.issues")}
+            </Link>
+            <Link href="#results" className="text-sm font-medium hover:text-primary transition-colors">
+              {t("nav.results")}
             </Link>
             <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.about")}
             </Link>
-            <Link href="#faq" className="text-sm font-medium hover:text-primary transition-colors">
-              {t("nav.faq")}
+            <Link href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
+              {t("nav.paths")}
             </Link>
             {/* More Dropdown */}
             <div className="relative">
@@ -130,18 +138,15 @@ export default function Home() {
               </button>
               {showMore && (
                 <div className="absolute right-0 mt-2 w-56 bg-white border rounded shadow-lg z-50 py-2">
-                  <Link href="#the-why" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.theWhy")}</Link>
                   <Link href="#client-stories" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.clientStories")}</Link>
                   <Link href="#what-makes-different" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.whatMakesDifferent")}</Link>
-                  <Link href="#issues" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.issues")}</Link>
-                  <Link href="#precision" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.precision")}</Link>
                   <Link href="#roi" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.roi")}</Link>
-                  <Link href="#about" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.about")}</Link>
-                  <Link href="#global-pros" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.globalPros")}</Link>
-                  <Link href="#session" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.session")}</Link>
-                  <Link href="#pricing" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.packages")}</Link>
-                  <Link href="#why-me" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.whyMe")}</Link>
                   <Link href="#faq" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.faq")}</Link>
+                  <Link href="#precision" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.precision")}</Link>
+                  <Link href="#global-pros" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.globalPros")}</Link>
+                  <Link href="#the-why" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.theWhy")}</Link>
+                  <Link href="#session" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.session")}</Link>
+                  <Link href="#why-me" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.whyMe")}</Link>
                   <Link href="#ready-to-choose" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.readyToChoose")}</Link>
                 </div>
               )}
@@ -164,26 +169,21 @@ export default function Home() {
         {/* How It Works Section */}
         <HowItWorksSection />
 
-        {/* The Why Section */}
-        <TheWhySection />
+        {/* Full Control Section */}
+        <FullControlSection />
 
         {/* Is This For You Section */}
         <IsThisForYouSection />
+        {/* Issues Section */}
+        <IssuesSection />
+        {/* Results Section */}
+        <ResultsSection />
 
         {/* Client Stories Section */}
         <ClientStoriesSection />
-
+        
         {/* What Makes You.v2 Different Section */}
         <WhatMakesDifferentSection />
-
-        {/* Issues Section */}
-        <IssuesSection />
-
-        {/* Precision Section */}
-        <PrecisionSection />
-
-        {/* Timeline Section */}
-        {/* <TimelineSection /> */}
 
         {/* ROI Comparison */}
         <RoiSection />
@@ -191,8 +191,20 @@ export default function Home() {
         {/* About the Creator */}
         <AboutSection />
 
+        {/* FAQ Section */}
+        <FaqSection />
+        
+        {/* Precision Section */}
+        <PrecisionSection />
+        
         {/* Global Pros Section */}
         <GlobalProsSection />
+
+        {/* The Why Section */}
+        <TheWhySection />
+
+        {/* Pricing & CTA */}
+        <PricingSection />
 
         {/* What Happens in a Session */}
         <SessionSection />
@@ -200,14 +212,8 @@ export default function Home() {
         {/* Client Story */}
         <ClientStorySection />
 
-        {/* Pricing & CTA */}
-        <PricingSection />
-
         {/* Why Work With Me Section */}
         <WhyMeSection />
-
-        {/* FAQ Section */}
-        <FaqSection />
 
         {/* Ready to Choose Your Path Section */}
         <ReadyToChooseSection />

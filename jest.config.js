@@ -3,9 +3,10 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
   moduleNameMapper: {
     '^@/components/(.*)$': '<rootDir>/src/components/$1',
-    '^@/contexts/(.*)$': '<rootDir>/contexts/$1',
-    '^@/hooks/(.*)$': '<rootDir>/hooks/$1',
+    '^@/contexts/(.*)$': '<rootDir>/src/contexts/$1',
+    '^@/hooks/(.*)$': '<rootDir>/src/hooks/$1',
     '^@/lib/(.*)$': '<rootDir>/lib/$1',
+    '^@/translations/(.*)$': '<rootDir>/src/translations/$1',
     '^@/(.*)$': '<rootDir>/$1',
     '\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
     '\\.(css|sass|scss)$': 'identity-obj-proxy',
