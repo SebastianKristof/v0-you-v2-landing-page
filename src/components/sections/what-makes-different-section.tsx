@@ -1,6 +1,7 @@
 import { useLanguage } from '@/contexts/language-context';
 import { CheckCircle, Timer, Cog, Lock } from 'lucide-react';
 import Image from 'next/image';
+import { sectionBackgrounds } from '@/lib/section-backgrounds';
 
 const ICONS = {
   'timer': <Timer className="text-executive-blue w-7 h-7" />,
@@ -16,7 +17,7 @@ export function WhatMakesDifferentSection() {
   const title = t('whatMakesDifferent.title');
 
   return (
-    <section id="what-makes-different" className="w-full py-16 bg-executive-light-blue">
+    <section id="what-makes-different" className={`w-full py-16 ${sectionBackgrounds.whatMakesDifferent}`}>
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-20">
         {/* Text content on the right (on desktop), on mobile order-2 */}
         <div className="md:w-3/5 w-full order-2 md:order-1">

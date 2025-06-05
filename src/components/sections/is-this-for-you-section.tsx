@@ -1,12 +1,13 @@
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 import Image from "next/image";
+import { sectionBackgrounds } from "@/lib/section-backgrounds";
 
 export function IsThisForYouSection() {
   const { t } = useLanguage();
   const bullets = t("isThisForYou.bullets", { returnObjects: true }) as string[];
   return (
-    <section id="is-this-for-you" className="w-full py-16 bg-executive-light-blue scroll-mt-24">
+    <section id="is-this-for-you" className={`w-full py-16 ${sectionBackgrounds.isThisForYou} scroll-mt-24`}>
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-20">
         {/* Text content on the left (on desktop), on mobile order-2 */}
         <div className="md:w-3/5 w-full order-2 md:order-1">

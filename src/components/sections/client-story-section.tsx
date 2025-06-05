@@ -1,14 +1,23 @@
 import Image from "next/image";
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
+import { sectionBackgrounds } from "@/lib/section-backgrounds";
 
 export function ClientStorySection() {
   const { t } = useLanguage();
+  // Get background config
+  const clientStoryBg = sectionBackgrounds.clientStory;
+  const isStyle = clientStoryBg.startsWith("[style.backgroundColor=");
+  const style = isStyle ? { backgroundColor: clientStoryBg.match(/'([^']+)'/)?.[1] } : undefined;
+  const className = isStyle
+    ? "w-full py-10 md:py-16 lg:py-24 relative overflow-hidden"
+    : `w-full py-10 md:py-16 lg:py-24 relative overflow-hidden ${clientStoryBg}`;
+
   return (
     <section
       id="client-story"
-      className="w-full py-10 md:py-16 lg:py-24 relative overflow-hidden"
-      style={{ backgroundColor: "hsl(var(--executive-light-blue))" }}
+      className={className}
+      style={style}
     >
       {/* Background gradient overlay only (image removed for now) */}
       <div className="absolute inset-0 bg-gradient-to-r from-white/80 to-transparent opacity-10"></div>

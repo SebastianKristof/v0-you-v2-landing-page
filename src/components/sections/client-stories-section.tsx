@@ -2,6 +2,7 @@ import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 import { useRef, useState, useEffect, useCallback } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { sectionBackgrounds } from "@/lib/section-backgrounds";
 
 // Simple SVG avatar placeholders
 const FemaleAvatar = () => (
@@ -23,11 +24,11 @@ const MaleAvatar = () => (
 
 const TIME = "10:42";
 
-// Messenger backgrounds
+// Messenger backgrounds from config
 const messengerBg = [
-  "bg-gradient-to-br from-[#e0eafc] to-[#cfdef3]", // iMessage-like
-  "bg-gradient-to-br from-[#e4e9f7] to-[#a7bfe8]", // Telegram-like
-  "bg-gradient-to-br from-[#d2f8d2] to-[#a6e3a1]", // WhatsApp-like
+  sectionBackgrounds.clientStoriesCard1,
+  sectionBackgrounds.clientStoriesCard2,
+  sectionBackgrounds.clientStoriesCard3,
 ];
 
 export function ClientStoriesSection() {
@@ -101,7 +102,7 @@ export function ClientStoriesSection() {
   }
 
   return (
-    <section id="client-stories" className="w-full py-16 bg-warm-bg">
+    <section id="client-stories" className={`w-full py-16 ${sectionBackgrounds.clientStories}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <h2 className="section-title text-center">{t("clientStories.title")}</h2>

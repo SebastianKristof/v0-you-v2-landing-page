@@ -1,11 +1,12 @@
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 import Image from "next/image";
+import { sectionBackgrounds } from "@/lib/section-backgrounds";
 
 export function FullControlSection() {
   const { t } = useLanguage();
   return (
-    <section id="full-control" className="w-full py-16 bg-warm-bg">
+    <section id="full-control" className={`w-full py-16 ${sectionBackgrounds.fullControl}`}>
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-20">
         {/* Text content on the right (on desktop), on mobile order-2 */}
         <div className="md:w-3/5 w-full order-2 md:order-1">

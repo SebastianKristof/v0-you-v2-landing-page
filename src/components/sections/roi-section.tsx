@@ -1,12 +1,13 @@
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 import { CalendarDays } from "lucide-react";
+import { sectionBackgrounds } from "@/lib/section-backgrounds";
 
 export function RoiSection() {
   const { t } = useLanguage();
   const roiTableRows = t("roi.table.rows", { returnObjects: true }) || [];
   return (
-    <section id="roi" className="w-full py-10 md:py-16 lg:py-24 bg-white">
+    <section id="roi" className={`w-full py-10 md:py-16 lg:py-24 ${sectionBackgrounds.roi}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-4 text-center">
@@ -41,7 +42,7 @@ export function RoiSection() {
           </div>
         </ScrollReveal>
         <ScrollReveal className="mx-auto max-w-[600px] mt-8">
-          <div className="text-center text-base md:text-lg font-medium bg-executive-light-blue/60 text-executive-dark rounded-md px-4 py-3 mx-auto">
+          <div className={`text-center text-base md:text-lg font-medium text-executive-dark rounded-md px-4 py-3 mx-auto ${sectionBackgrounds.roiSupport}`}>
             {(() => {
               const supporting = t("roi.supporting");
               // Highlight 'You.v2' in the supporting text
