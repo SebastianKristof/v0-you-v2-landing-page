@@ -199,7 +199,7 @@ export default function Home() {
         <GlobalProsSection />
 
         {/* The Why Section */}
-        {/* <TheWhySection /> */}
+        <TheWhySection />
 
         {/* Pricing & CTA */}
         <PricingSection />
