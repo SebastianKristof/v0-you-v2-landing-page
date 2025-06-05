@@ -106,26 +106,20 @@ export default function Home() {
             <Link href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.howItWorks")}
             </Link>
-            <Link href="#full-control" className="text-sm font-medium hover:text-primary transition-colors">
-              {t("nav.fullControl", "Полный контроль")}
-            </Link>
             <Link href="#is-this-for-you" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.isThisForYou")}
-            </Link>
-            <Link href="#results" className="text-sm font-medium hover:text-primary transition-colors">
-              {t("nav.results", "Результат")}
-            </Link>
-            <Link href="#what-makes-different" className="text-sm font-medium hover:text-primary transition-colors">
-              {t("nav.whatMakesDifferent")}
             </Link>
             <Link href="#issues" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.issues")}
             </Link>
+            <Link href="#results" className="text-sm font-medium hover:text-primary transition-colors">
+              {t("nav.results")}
+            </Link>
             <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">
               {t("nav.about")}
             </Link>
-            <Link href="#faq" className="text-sm font-medium hover:text-primary transition-colors">
-              {t("nav.faq")}
+            <Link href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
+              {t("nav.paths")}
             </Link>
             {/* More Dropdown */}
             <div className="relative">
@@ -141,26 +135,16 @@ export default function Home() {
               </button>
               {showMore && (
                 <div className="absolute right-0 mt-2 w-56 bg-white border rounded shadow-lg z-50 py-2">
-                  <Link href="#how-it-works" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.howItWorks")}</Link>
-                  <Link href="#full-control" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.fullControl", "Полный контроль")}</Link>
-                  <Link href="#is-this-for-you" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.isThisForYou")}</Link>
-                  <Link href="#results" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.results", "Результат")}</Link>
-                  <Link href="#what-makes-different" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.whatMakesDifferent")}</Link>
-                  <Link href="#issues" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.issues")}</Link>
-                  <Link href="#about" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.about")}</Link>
-                  <Link href="#faq" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.faq")}</Link>
-                  <Link href="#the-why" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.theWhy")}</Link>
+                  <Link href="#full-control" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.fullControl")}</Link>
                   <Link href="#client-stories" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.clientStories")}</Link>
                   <Link href="#what-makes-different" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.whatMakesDifferent")}</Link>
-                  <Link href="#issues" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.issues")}</Link>
+                  <Link href="#faq" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.faq")}</Link>
+                  <Link href="#the-why" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.theWhy")}</Link>
                   <Link href="#precision" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.precision")}</Link>
                   <Link href="#roi" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.roi")}</Link>
-                  <Link href="#about" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.about")}</Link>
                   <Link href="#global-pros" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.globalPros")}</Link>
                   <Link href="#session" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.session")}</Link>
-                  <Link href="#pricing" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.packages")}</Link>
                   <Link href="#why-me" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.whyMe")}</Link>
-                  <Link href="#faq" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.faq")}</Link>
                   <Link href="#ready-to-choose" className="block px-4 py-2 text-sm hover:bg-muted">{t("nav.readyToChoose")}</Link>
                 </div>
               )}

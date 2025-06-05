@@ -63,19 +63,21 @@ export default function MobileNav({ className = "" }: MobileNavProps) {
             </div>
             <nav className="flex flex-col items-center gap-6 text-lg w-full">
               <Link href="#how-it-works" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.howItWorks")}</Link>
-              <Link href="#the-why" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.theWhy")}</Link>
+              <Link href="#full-control" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.fullControl")}</Link>
               <Link href="#is-this-for-you" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.isThisForYou")}</Link>
+              <Link href="#issues" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.issues")}</Link>
+              <Link href="#results" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.results")}</Link>
               <Link href="#client-stories" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.clientStories")}</Link>
               <Link href="#what-makes-different" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.whatMakesDifferent")}</Link>
-              <Link href="#issues" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.issues")}</Link>
+              <Link href="#about" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.about")}</Link>
+              <Link href="#faq" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.faq")}</Link>
+              <Link href="#the-why" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.theWhy")}</Link>
               <Link href="#precision" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.precision")}</Link>
               <Link href="#roi" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.roi")}</Link>
-              <Link href="#about" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.about")}</Link>
               <Link href="#global-pros" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.globalPros")}</Link>
               <Link href="#session" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.session")}</Link>
-              <Link href="#pricing" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.packages")}</Link>
+              <Link href="#pricing" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.paths")}</Link>
               <Link href="#why-me" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.whyMe")}</Link>
-              <Link href="#faq" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.faq")}</Link>
               <Link href="#ready-to-choose" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.readyToChoose")}</Link>
               <button className="executive-button mt-4 w-full max-w-xs">
                 <CalendarDays className="mr-2 h-4 w-4 inline" /> Book Call
