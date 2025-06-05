@@ -18,7 +18,6 @@ export function RoiSection() {
                 <thead>
                   <tr className="border-b bg-muted/30">
                     <th className="py-3 px-2 md:py-4 md:px-4 text-left">{t("roi.table.headers.approach")}</th>
-                    <th className="py-3 px-2 md:py-4 md:px-4 text-left">{t("roi.table.headers.depth")}</th>
                     <th className="py-3 px-2 md:py-4 md:px-4 text-left">{t("roi.table.headers.time")}</th>
                     <th className="py-3 px-2 md:py-4 md:px-4 text-left">{t("roi.table.headers.cost")}</th>
                   </tr>
@@ -31,8 +30,7 @@ export function RoiSection() {
                         className={`border-b ${index === 4 ? "font-medium" : ""}`}
                         style={index === 4 ? { backgroundColor: "hsla(var(--executive-blue), 0.05)" } : {}}
                       >
-                        <td className="py-3 px-2 md:py-4 md:px-4">{row.approach}</td>
-                        <td className="py-3 px-2 md:py-4 md:px-4">{row.depth}</td>
+                        <td className="py-3 px-2 md:py-4 md:px-4">{row.merged}</td>
                         <td className={`py-3 px-2 md:py-4 md:px-4 ${index === 4 ? "font-bold" : ""}`}>{row.time}</td>
                         <td className={`py-3 px-2 md:py-4 md:px-4 ${index === 4 ? "font-bold" : ""}`}>{row.cost}</td>
                       </tr>

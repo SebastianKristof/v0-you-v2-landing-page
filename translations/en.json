@@ -219,34 +219,29 @@
       },
       "rows": [
         {
-          "approach": "Traditional Therapy",
-          "depth": "Emotional insight",
-          "time": "6–12 months+",
-          "cost": "$5,000–10,000"
+          "time": "12–24 months+",
+          "cost": "$8,000–15,000 and more",
+          "merged": "Traditional Therapy — Emotional insight, behavior correction, coping skills"
         },
         {
-          "approach": "Coaching",
-          "depth": "Motivation + Strategy",
-          "time": "2–6 months",
-          "cost": "$1,500–5,000"
+          "time": "6–12 months",
+          "cost": "$5,000–10,000 and more",
+          "merged": "Coaching — Motivation and strategy, helps you try harder, may exhaust you if there are deeper issues"
         },
         {
-          "approach": "Medication",
-          "depth": "Symptom suppression",
           "time": "Ongoing",
-          "cost": "$2,400–6,000+/year"
+          "cost": "$2,400–6,000+/year indefinitely",
+          "merged": "Medication — Suppresses symptoms, does not address root causes, may cause side effects and dependency"
         },
         {
-          "approach": "Self-Help / Inaction",
-          "depth": "Surface-level awareness",
           "time": "Years (or never)",
-          "cost": "Opportunity cost + wasted time"
+          "cost": "Opportunity cost + wasted time",
+          "merged": "Self-Help / Inaction — Surface-level awareness, little real change, repeated patterns despite understanding"
         },
         {
-          "approach": "You.v2",
-          "depth": "Deep, ecological, and complete resolution of your issue",
           "time": "Weeks",
-          "cost": "What is it worth to you?"
+          "cost": "Less than all other options",
+          "merged": "You.v2 — Deep, structural change at the root cause — fast!"
         }
       ]
     },
