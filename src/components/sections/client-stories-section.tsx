@@ -3,24 +3,19 @@ import ScrollReveal from "@/components/scroll-reveal";
 import { useRef, useState, useEffect, useCallback } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { sectionBackgrounds } from "@/lib/section-backgrounds";
+import Image from "next/image";
 
-// Simple SVG avatar placeholders
-const FemaleAvatar = () => (
-  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
-    <circle cx="20" cy="20" r="20" fill="#E0BBE4" />
-    <ellipse cx="20" cy="25" rx="10" ry="7" fill="#fff" />
-    <ellipse cx="20" cy="16" rx="7" ry="7" fill="#fff" />
-    <ellipse cx="20" cy="16" rx="5" ry="5" fill="#E0BBE4" />
-  </svg>
-);
-const MaleAvatar = () => (
-  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
-    <circle cx="20" cy="20" r="20" fill="#A3C9E2" />
-    <ellipse cx="20" cy="25" rx="10" ry="7" fill="#fff" />
-    <ellipse cx="20" cy="16" rx="7" ry="7" fill="#fff" />
-    <ellipse cx="20" cy="16" rx="5" ry="5" fill="#A3C9E2" />
-  </svg>
-);
+// Avatar image paths (even=female, odd=male)
+const femaleAvatars = [
+  "/images/client-avatar-2-female.jpg",
+  "/images/client-avatar-4-female.jpg",
+  "/images/client-avatar-7-female.jpg",
+];
+const maleAvatars = [
+  "/images/client-avatar-1-male.jpg",
+  "/images/client-avatar-5-male.jpg",
+  "/images/client-avatar-6-male.jpg",
+];
 
 const TIME = "10:42";
 
@@ -131,8 +126,11 @@ export function ClientStoriesSection() {
               />
               {stories.map((story, i) => {
                 const { message, name, title } = story;
-                const Avatar = i % 2 === 0 ? FemaleAvatar : MaleAvatar;
                 const bg = messengerBg[i % messengerBg.length];
+                // Even index: female, Odd index: male
+                const isFemale = i % 2 === 0;
+                const avatarList = isFemale ? femaleAvatars : maleAvatars;
+                const avatarSrc = avatarList[Math.floor(i / 2) % avatarList.length];
                 return (
                   <div
                     key={i}
@@ -141,7 +139,15 @@ export function ClientStoriesSection() {
                   >
                     {/* Messenger header */}
                     <div className="flex items-center gap-3 px-4 py-2 border-b bg-white/60 rounded-t-2xl">
-                      <span className="flex-shrink-0"><Avatar /></span>
+                      <span className="flex-shrink-0">
+                        <Image
+                          src={avatarSrc}
+                          alt={isFemale ? "Female client avatar" : "Male client avatar"}
+                          width={32}
+                          height={32}
+                          className="rounded-full object-cover"
+                        />
+                      </span>
                       <span className="font-semibold text-executive-dark text-sm">{name}</span>
                       {title && <span className="text-xs text-muted-foreground ml-2">{title}</span>}
                     </div>

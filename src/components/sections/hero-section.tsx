@@ -15,7 +15,7 @@ export function HeroSection() {
           <div className="relative w-full h-full flex items-start justify-end">
             <div className="relative w-[90%] aspect-square rounded-full overflow-hidden border-4 border-white shadow-lg">
               <Image
-                src="/images/sebastian-portrait.png"
+                src="/images/sebastian-hero-photo-1.jpg"
                 alt="Dr. Sebastian Kristof"
                 fill
                 className="object-cover"
@@ -28,7 +28,7 @@ export function HeroSection() {
         <div className="md:hidden w-full mb-8">
           <div className="relative w-64 h-64 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg">
             <Image
-              src="/images/sebastian-portrait.png"
+              src="/images/sebastian-hero-photo-1.jpg"
               alt="Dr. Sebastian Kristof"
               fill
               className="object-cover"
