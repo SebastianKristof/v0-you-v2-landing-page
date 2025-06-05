@@ -30,6 +30,6 @@ export const sectionBackgrounds: Record<string, string> = {
   pricingCoreCard: "bg-warm-bg shadow-lg",
   whyMe: "bg-warm-bg",
   readyToChoose: "bg-executive-light-blue-warm",
-  readyToChooseCta: "bg-warm-accent",
+  readyToChooseCta: "bg-executive-gold",
   footer: "bg-warm-bg",
 }; 
