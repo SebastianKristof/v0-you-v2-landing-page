@@ -26,7 +26,14 @@ interface LanguageProviderProps {
 }
 
 export function LanguageProvider({ children, initialLanguage = "en" }: LanguageProviderProps) {
-  const [language, setLanguage] = useState<Language>(initialLanguage)
+  const [language, setLanguage] = useState<Language>(() => {
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem("language") as Language | null;
+      if (stored === "en" || stored === "ru") return stored;
+      if (navigator.language.split("-")[0] === "ru") return "ru";
+    }
+    return initialLanguage;
+  });
 
   const t = (key: string, options?: { returnObjects?: boolean }): any => {
     const keys = key.split(".")
@@ -34,7 +41,7 @@ export function LanguageProvider({ children, initialLanguage = "en" }: LanguageP
 
     for (const k of keys) {
       if (value && typeof value === "object" && k in value) {
-        value = value[k]
+        value = (value as Record<string, any>)[k]
       } else {
         console.warn(`Translation key not found: ${key}`)
         return key
