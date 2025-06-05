@@ -104,10 +104,26 @@
   "clientStories": {
     "title": "Client Stories",
     "stories": [
-      "After just one session, I felt like years of emotional weight lifted off. — Anna, Executive Coach",
-      "This work gave me tools I still use every day — real transformation. — Anthony, Tech Founder",
-      "I've done coaching, therapy, even retreats. Nothing got to the root like this did. The shifts were deep and lasting. — Elena, Entrepreneur",
-      "I didn't expect to feel this clear after just two weeks. I finally stopped repeating the same self-destructive cycle. — Dmitry, Product Manager"
+      {
+        "message": "After just one session, I felt like years of emotional weight lifted off. I didn't realize how much I'd been holding together with grit and control — until it all let go. For the first time in years, I could breathe fully again. It was like meeting a version of myself I thought was gone.",
+        "name": "Anna",
+        "title": "Executive Coach"
+      },
+      {
+        "message": "This work gave me tools I still use every day — real transformation. I used to bulldoze through stress and burnout until my body started breaking down. Now I know how to check in, reset, and make clear decisions without going into overdrive.",
+        "name": "Anthony",
+        "title": "Tech Founder"
+      },
+      {
+        "message": "I've done coaching, therapy, even retreats. Nothing got to the root like this did. The shifts were deep and lasting — not just emotional insight, but a complete rewiring of how I relate to people and pressure. I didn't just understand my patterns — I stopped living in them.",
+        "name": "Elena",
+        "title": "Entrepreneur"
+      },
+      {
+        "message": "I didn't expect to feel this clear after just two weeks. I was stuck in the same self-destructive loop for years, and I had no idea how to stop. Now it's like something unhooked inside me. I'm not reacting the same way — and my girlfriend noticed it before I did.",
+        "name": "Dmitry",
+        "title": "Product Manager"
+      }
     ]
   },
   "whatMakesDifferent": {
