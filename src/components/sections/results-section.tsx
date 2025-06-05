@@ -9,8 +9,9 @@ export function ResultsSection() {
     <section id="results" className="w-full py-16 bg-executive-light-blue">
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
-          <div className="space-y-4 text-center">
+          <div className="space-y-2 text-center">
             <h2 className="section-title">{t("results.title")}</h2>
+            <div className="text-xl md:text-2xl font-semibold text-executive-blue mt-2">{t("results.subheading")}</div>
           </div>
           <ul className="grid gap-6 md:gap-8 md:grid-cols-2 max-w-2xl mx-auto">
             {bullets.map((item, i) => (
