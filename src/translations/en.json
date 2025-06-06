@@ -433,6 +433,7 @@
   },
   "cta": {
     "bookStrategyCall": "Book Your Strategy Call",
+    "bookStrategyCallSuccess": "Thank you! Your request has been received. I'll be in touch soon to schedule your strategy call.",
     "downloadEbook": "Download Free Book",
     "downloadEbookSuccess": "Check your inbox for the free book!",
     "letsTalk": "Let's Talk First",
@@ -441,5 +442,11 @@
     "startNow": "Start Now",
     "primaryProblem": "Begin Your Transformation",
     "primaryRoi": "Begin Your Transformation"
+  },
+  "booking": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Details",
+    "messagePlaceholder": "Please tell me more about what you'd like to work on"
   }
 }

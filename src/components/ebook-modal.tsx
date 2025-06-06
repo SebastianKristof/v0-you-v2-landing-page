@@ -42,7 +42,6 @@ export function EbookModal({ open, setOpen }: { open: boolean; setOpen: (v: bool
     if (res.ok) {
       setSuccess(true)
       toast({ title: t("cta.downloadEbook"), description: t("cta.downloadEbookSuccess") })
-      setTimeout(() => setOpen(false), 2000)
     } else {
       toast({ title: t("cta.downloadEbook"), description: "Something went wrong. Please try again." })
     }
@@ -104,7 +103,9 @@ export function EbookModal({ open, setOpen }: { open: boolean; setOpen: (v: bool
         </Dialog>
       </div>
       {success ? (
-        <div className="py-8 text-center text-green-600 font-semibold">{t("cta.downloadEbookSuccess")}</div>
+        <div className="py-8 text-center text-green-600 font-semibold">
+          {t("cta.downloadEbookSuccess") || "Check your inbox for the free book!"}
+        </div>
       ) : (
         <form className="space-y-4" onSubmit={handleSubmit}>
           <input type="hidden" name="source" value="ebook" />
