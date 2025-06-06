@@ -8,7 +8,7 @@ import { sectionBackgrounds } from "@/lib/section-backgrounds";
 export function HeroSection() {
   const { t } = useLanguage();
   return (
-    <section className={`w-full py-10 md:py-16 lg:py-24 overflow-hidden ${sectionBackgrounds.hero}`}>
+    <section id="hero" className={`w-full py-10 md:py-16 lg:py-24 overflow-hidden scroll-mt-8 ${sectionBackgrounds.hero}`}>
       <div className="container px-4 md:px-6 mx-auto relative">
         {/* Image positioned absolutely on the right for larger screens */}
         <div className="hidden md:block absolute top-0 right-0 w-[45%] h-full">

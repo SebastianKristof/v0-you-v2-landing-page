@@ -6,7 +6,7 @@ export function IssuesSection() {
   const { t } = useLanguage();
   const issues = t("issues.items", { returnObjects: true }) as { title: string; desc: string }[];
   return (
-    <section id="issues" className={`w-full py-16 ${sectionBackgrounds.issues}`}>
+    <section id="issues" className={`w-full py-16 scroll-mt-8 ${sectionBackgrounds.issues}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <h2 className="section-title text-center">{t("issues.title")}</h2>

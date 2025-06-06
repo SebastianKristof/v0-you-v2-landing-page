@@ -7,7 +7,7 @@ export function FaqSection() {
   const { t } = useLanguage();
   const faqItems = t("faq.items", { returnObjects: true }) || [];
   return (
-    <section id="faq" className={`w-full py-10 md:py-16 lg:py-24 ${sectionBackgrounds.faq}`}>
+    <section id="faq" className={`w-full py-10 md:py-16 lg:py-24 scroll-mt-8 ${sectionBackgrounds.faq}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-4 text-center">

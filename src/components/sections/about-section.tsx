@@ -19,7 +19,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className={className}
+      className={className + ' scroll-mt-8'}
       style={style}
     >
       <div className="section-container">

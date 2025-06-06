@@ -6,7 +6,7 @@ import { sectionBackgrounds } from "@/lib/section-backgrounds";
 export function HowItWorksSection() {
   const { t } = useLanguage();
   return (
-    <section id="how-it-works" className={`w-full py-10 md:py-16 lg:py-24 ${sectionBackgrounds.howItWorks}`}>
+    <section id="how-it-works" className={`w-full py-10 md:py-16 lg:py-24 scroll-mt-8 ${sectionBackgrounds.howItWorks}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-4">

@@ -6,7 +6,7 @@ import { sectionBackgrounds } from "@/lib/section-backgrounds";
 export function FullControlSection() {
   const { t } = useLanguage();
   return (
-    <section id="full-control" className={`w-full py-16 ${sectionBackgrounds.fullControl}`}>
+    <section id="full-control" className={`w-full py-10 md:py-16 lg:py-24 scroll-mt-8 ${sectionBackgrounds.fullControl}`}>
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-20">
         {/* Text content on the right (on desktop), on mobile order-2 */}
         <div className="md:w-3/5 w-full order-2 md:order-2">

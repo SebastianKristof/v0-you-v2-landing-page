@@ -16,7 +16,7 @@ export function ClientStorySection() {
   return (
     <section
       id="client-story"
-      className={className}
+      className={className + ' scroll-mt-8'}
       style={style}
     >
       {/* Background gradient overlay only (image removed for now) */}
