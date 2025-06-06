@@ -33,7 +33,7 @@ export function EbookModal({ open, setOpen }: { open: boolean; setOpen: (v: bool
     const form = e.currentTarget
     const data = new FormData(form)
     trackEvent({ action: "submit_ebook_form", category: "cta" })
-    const res = await fetch("https://formspree.io/f/xqkrzqzv", {
+    const res = await fetch("https://formspree.io/f/xblyddja", {
       method: "POST",
       body: data,
       headers: { Accept: "application/json" },
@@ -107,6 +107,7 @@ export function EbookModal({ open, setOpen }: { open: boolean; setOpen: (v: bool
         <div className="py-8 text-center text-green-600 font-semibold">{t("cta.downloadEbookSuccess")}</div>
       ) : (
         <form className="space-y-4" onSubmit={handleSubmit}>
+          <input type="hidden" name="source" value="ebook" />
           <Input name="email" type="email" placeholder={t("ebook.emailPlaceholder")} required autoComplete="email" />
           <div className="flex gap-2 justify-end">
             <Button type="submit" disabled={loading}>{loading ? t("loading") : t("ebook.submit")}</Button>

@@ -31,7 +31,7 @@ export function BookingModal({ open, setOpen }: { open: boolean; setOpen: (v: bo
     const form = e.currentTarget
     const data = new FormData(form)
     trackEvent({ action: "submit_booking_form", category: "cta" })
-    const res = await fetch("https://formspree.io/f/xqkrzqzv", {
+    const res = await fetch("https://formspree.io/f/xblyddja", {
       method: "POST",
       body: data,
       headers: { Accept: "application/json" },
@@ -56,6 +56,7 @@ export function BookingModal({ open, setOpen }: { open: boolean; setOpen: (v: bo
         <div className="py-8 text-center text-green-600 font-semibold">{t("cta.downloadEbookSuccess")}</div>
       ) : (
         <form className="space-y-4" onSubmit={handleSubmit}>
+          <input type="hidden" name="source" value="booking" />
           <Input name="name" type="text" placeholder="Name" required autoComplete="name" />
           <Input name="email" type="email" placeholder="Email" required autoComplete="email" />
           <Textarea name="message" placeholder="What would you like to discuss?" rows={3} />
