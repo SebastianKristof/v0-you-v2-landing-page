@@ -9,7 +9,7 @@ export const sectionBackgrounds: Record<string, string> = {
   issues: "bg-warm-bg",
   issuesCard: "bg-executive-light-blue-warm",
   results: "bg-executive-light-blue-warm",
-  resultsItem: "bg-white/70",
+  resultsItem: "bg-white/90",
   clientStories: "bg-warm-bg",
   clientStoriesCard1: "bg-gradient-to-br from-[#e0eafc] to-[#cfdef3]", // iMessage-like
   clientStoriesCard2: "bg-gradient-to-br from-[#e4e9f7] to-[#a7bfe8]", // Telegram-like

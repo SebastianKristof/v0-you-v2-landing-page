@@ -6,7 +6,7 @@ export function PrecisionSection() {
   const { t } = useLanguage();
   const bullets = t("precision.bullets", { returnObjects: true }) as { heading: string; desc: string }[];
   return (
-    <section id="precision" className={`w-full py-16 ${sectionBackgrounds.precision}`}>
+    <section id="precision" className={`w-full py-16 scroll-mt-8 ${sectionBackgrounds.precision}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <h2 className="section-title text-center">{t("precision.title")}</h2>

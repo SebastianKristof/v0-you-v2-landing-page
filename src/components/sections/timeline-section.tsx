@@ -7,7 +7,7 @@ export function TimelineSection() {
   return (
     <section
       id="timeline"
-      className="w-full py-10 md:py-16 lg:py-24"
+      className="w-full py-10 md:py-16 lg:py-24 scroll-mt-8"
       style={{ backgroundColor: "hsl(var(--executive-light-blue))" }}
     >
       <div className="section-container">

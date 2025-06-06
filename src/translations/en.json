@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "You.v2 - Rapid Subconscious Realignment Program",
-    "description": "You.v2 is a rapid and gentle subconscious realignment program for global leaders and helping professionals who feel inexplicably blocked in some area of life despite external success."
+    "description": "You.v2 is a structured, personalized subconscious realignment program for global leaders and professionals who feel stuck despite external success."
   },
   "nav": {
     "howItWorks": "Not Therapy",
@@ -31,7 +31,7 @@
     "subtitle": "You.v2 is a structured, personalized subconscious realignment program for global leaders and professionals who feel stuck despite external success.",
     "description1": "You don't need more willpower or positive thinking. You need access to the part of your mind where real change begins.",
     "description2": "Through this work, I'll teach you how to access and use the power of your own subconscious mind — so that you can stop self-sabotaging, achieve your goals more easily, and continue creating meaningful change long after our work is done.",
-    "ctaMicrocopy": "No obligation. 100% confidential. Best for those who've already tried other approaches."
+    "ctaMicrocopy": "No expectations. 100% confidential. Spaces are limited."
   },
   "quickRoi": {
     "therapy": {
@@ -56,7 +56,7 @@
     },
     "youv2": {
       "title": "You.v2",
-      "duration": "From 17 days",
+      "duration": "17 days to 6 weeks",
       "comment": "deep, lasting change!"
     }
   },
@@ -273,7 +273,7 @@
       "Clinical researcher & software engineer",
       "Subconscious strategist for high-performing clients who need deep, fast change"
     ],
-    "quote": "\"I don't give advice or teach to think positively. I change internal architecture. Gently. Precisely. Permanently.\""
+    "quote": "\"From medicine to software — I've tested many methods and gathered real-world wisdom. Now I use it to guide you through lasting transformation. Gently. Precisely. Permanently.\""
   },
   "globalPros": {
     "title": "Built for Global Russian-Speaking Professionals",
@@ -394,10 +394,6 @@
         "Integrating new internal logic and long-term access tools"
       ],
       "note": "This is not mindset coaching. This is subconscious repatterning — done with surgical precision and deep containment."
-    },
-    "cta": {
-      "primary": "Book Strategy Call",
-      "secondary": "Let's Talk First"
     }
   },
   "whyMe": {
@@ -426,6 +422,31 @@
     "cta": "Book Your $100 Strategy Call",
     "p1": "This is not a sales pitch — it's a discovery conversation. You'll gain visibility into what's truly going on beneath the surface and map your best next step.",
     "p2": "This 60-minute strategy call is $100 — credited toward your program if you choose to continue. You'll walk away with clear insight into what's keeping you stuck, and what needs to shift at the subconscious level. My pledge is that this conversation will be deeply useful to you — even if you don't decide to go through the full program at this time.",
-    "p3": "To give you my full presence and focus, I never do back-to-back sessions. I work with two clients per day max — so your transformation gets everything I've got. As a result, I can only accept up to 4 new clients per month for deep, individualized transformation. Spots fill quickly — if you feel you're ready, book now and let's talk."
+    "p3": "I can only accept up to 4 new clients per month to give you my full presence and focus for deep, individualized transformation. Spots fill quickly — if you feel you're ready, book now and let's talk."
+  },
+  "ebook": {
+    "title": "The Soul Code: Rewriting The Patterns That Run Your Life",
+    "description": "Get my actionable guide to subconscious change. No spam, just real value.",
+    "emailPlaceholder": "Your email address",
+    "submit": "Send me the book",
+    "cancel": "Cancel"
+  },
+  "cta": {
+    "bookStrategyCall": "Book Your Strategy Call",
+    "bookStrategyCallSuccess": "Thank you! Your request has been received. I'll be in touch soon to schedule your strategy call.",
+    "downloadEbook": "Download Free Book",
+    "downloadEbookSuccess": "Check your inbox for the free book!",
+    "letsTalk": "Let's Talk First",
+    "chooseYourPath": "Choose Your Path",
+    "claimYourSpot": "Book Your Strategy Call",
+    "startNow": "Start Now",
+    "primaryProblem": "Begin Your Transformation",
+    "primaryRoi": "Begin Your Transformation"
+  },
+  "booking": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Details",
+    "messagePlaceholder": "Please tell me more about what you'd like to work on"
   }
 }

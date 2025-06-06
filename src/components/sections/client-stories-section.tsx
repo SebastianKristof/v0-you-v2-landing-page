@@ -97,7 +97,7 @@ export function ClientStoriesSection() {
   }
 
   return (
-    <section id="client-stories" className={`w-full py-16 ${sectionBackgrounds.clientStories}`}>
+    <section id="client-stories" className={`w-full py-16 scroll-mt-8 ${sectionBackgrounds.clientStories}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <h2 className="section-title text-center">{t("clientStories.title")}</h2>

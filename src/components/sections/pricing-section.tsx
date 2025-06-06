@@ -2,6 +2,7 @@ import { CalendarDays, Check } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 import { sectionBackgrounds } from "@/lib/section-backgrounds";
+import { BookingModalTrigger } from "@/components/booking-modal"
 
 export function PricingSection() {
   const { t } = useLanguage();
@@ -9,7 +10,7 @@ export function PricingSection() {
   const core = t("pricing.core", { returnObjects: true }) || {};
   const framework = t("pricing.framework", { returnObjects: true }) || {};
   return (
-    <section id="pricing" className={`w-full py-10 md:py-16 lg:py-24 ${sectionBackgrounds.pricing}`}>
+    <section id="pricing" className={`w-full py-10 md:py-16 lg:py-24 scroll-mt-8 ${sectionBackgrounds.pricing}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[900px] space-y-8 md:space-y-12">
           <div className="text-center mb-8">
@@ -51,9 +52,11 @@ export function PricingSection() {
           {/* Framework Section */}
           <div className="text-center mt-12">
             <h4 className="text-xl font-bold mb-6">{framework.title}</h4>
-            <button className="executive-button">
-              <CalendarDays className="mr-2 h-4 w-4 inline" /> {t("pricing.cta.primary")}
-            </button>
+            <BookingModalTrigger>
+              <button className="executive-button">
+                <CalendarDays className="mr-2 h-4 w-4 inline" /> {t("cta.bookStrategyCall")}
+              </button>
+            </BookingModalTrigger>
           </div>
         </ScrollReveal>
       </div>

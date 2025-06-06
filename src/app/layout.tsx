@@ -3,12 +3,13 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/contexts/language-context"
+import en from "@/translations/en.json"
 
-export const metadata: Metadata = {
-  title: "You.v2 - 17-Day Subconscious Reprogramming Protocol",
-  description:
-    "You.v2 is a 17-day subconscious reprogramming protocol for high-performing individuals who feel inexplicably blocked by old patterns.",
-    generator: 'v0.dev'
+export async function generateMetadata() {
+  return {
+    title: en.meta.title,
+    description: en.meta.description,
+  }
 }
 
 export default function RootLayout({

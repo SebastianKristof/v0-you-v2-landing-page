@@ -2,12 +2,13 @@ import { Globe, Languages, Star, CalendarDays } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 import { sectionBackgrounds } from "@/lib/section-backgrounds";
+import { BookingModalTrigger } from "@/components/booking-modal"
 
 export function GlobalProsSection() {
   const { t } = useLanguage();
   const points = t("globalPros.points", { returnObjects: true }) || [];
   return (
-    <section id="global-pros" className={`w-full py-10 md:py-16 lg:py-24 ${sectionBackgrounds.globalPros}`}>
+    <section id="global-pros" className={`w-full py-10 md:py-16 lg:py-24 scroll-mt-8 ${sectionBackgrounds.globalPros}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-4 text-center">
@@ -39,10 +40,12 @@ export function GlobalProsSection() {
           </blockquote>
           <div className="mt-12 flex flex-col items-center gap-4">
             <span className="text-lg md:text-xl text-muted-foreground mb-1 text-center">{t("globalPros.ctaPrompt")}</span>
-            <button className="executive-button flex items-center gap-2 justify-center" type="button">
-              <CalendarDays className="w-5 h-5" />
-              {t("globalPros.ctaButton")}
-            </button>
+            <BookingModalTrigger>
+              <button className="executive-button flex items-center gap-2 justify-center" type="button">
+                <CalendarDays className="w-5 h-5" />
+                {t("cta.bookStrategyCall")}
+              </button>
+            </BookingModalTrigger>
           </div>
         </ScrollReveal>
       </div>

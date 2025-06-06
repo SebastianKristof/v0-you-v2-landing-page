@@ -7,7 +7,7 @@ export function RoiSection() {
   const { t } = useLanguage();
   const roiTableRows = t("roi.table.rows", { returnObjects: true }) || [];
   return (
-    <section id="roi" className={`w-full py-10 md:py-16 lg:py-24 ${sectionBackgrounds.roi}`}>
+    <section id="roi" className={`w-full py-10 md:py-16 lg:py-24 scroll-mt-8 ${sectionBackgrounds.roi}`}>
       <div className="section-container">
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-4 text-center">
@@ -60,7 +60,7 @@ export function RoiSection() {
         <div className="flex justify-center mt-8 mb-4">
           <button className="executive-button flex items-center gap-2 justify-center" type="button">
             <CalendarDays className="w-5 h-5" />
-            {t("pricing.cta.primary")}
+            {t("cta.primaryRoi")}
           </button>
         </div>
       </div>
