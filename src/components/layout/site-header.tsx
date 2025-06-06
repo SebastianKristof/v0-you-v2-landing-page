@@ -3,6 +3,7 @@ import { CalendarDays } from "lucide-react";
 import LanguageSwitcher from "@/components/language-switcher";
 import MobileNav from "@/components/mobile-nav";
 import { useLanguage } from "@/contexts/language-context";
+import { BookingModalTrigger } from "@/components/booking-modal"
 
 export function SiteHeader() {
   const { t } = useLanguage();
@@ -36,9 +37,11 @@ export function SiteHeader() {
         </nav>
         <div className="flex items-center gap-4">
           <LanguageSwitcher />
-          <button className="executive-button hidden md:flex">
-            <CalendarDays className="mr-2 h-4 w-4 inline" /> {t("nav.bookCall")}
-          </button>
+          <BookingModalTrigger>
+            <button className="executive-button hidden md:flex">
+              <CalendarDays className="mr-2 h-4 w-4 inline" /> {t("cta.bookStrategyCall")}
+            </button>
+          </BookingModalTrigger>
           <MobileNav />
         </div>
       </div>

@@ -31,7 +31,7 @@
     "subtitle": "You.v2 is a structured, personalized subconscious realignment program for global leaders and professionals who feel stuck despite external success.",
     "description1": "You don't need more willpower or positive thinking. You need access to the part of your mind where real change begins.",
     "description2": "Through this work, I'll teach you how to access and use the power of your own subconscious mind — so that you can stop self-sabotaging, achieve your goals more easily, and continue creating meaningful change long after our work is done.",
-    "ctaMicrocopy": "No obligation. 100% confidential. Best for those who've already tried other approaches."
+    "ctaMicrocopy": "No expectations. 100% confidential. Spaces are limited."
   },
   "quickRoi": {
     "therapy": {
@@ -56,7 +56,7 @@
     },
     "youv2": {
       "title": "You.v2",
-      "duration": "From 17 days",
+      "duration": "17 days to 6 weeks",
       "comment": "deep, lasting change!"
     }
   },
@@ -394,10 +394,6 @@
         "Integrating new internal logic and long-term access tools"
       ],
       "note": "This is not mindset coaching. This is subconscious repatterning — done with surgical precision and deep containment."
-    },
-    "cta": {
-      "primary": "Book Strategy Call",
-      "secondary": "Let's Talk First"
     }
   },
   "whyMe": {
@@ -427,5 +423,23 @@
     "p1": "This is not a sales pitch — it's a discovery conversation. You'll gain visibility into what's truly going on beneath the surface and map your best next step.",
     "p2": "This 60-minute strategy call is $100 — credited toward your program if you choose to continue. You'll walk away with clear insight into what's keeping you stuck, and what needs to shift at the subconscious level. My pledge is that this conversation will be deeply useful to you — even if you don't decide to go through the full program at this time.",
     "p3": "To give you my full presence and focus, I never do back-to-back sessions. I work with two clients per day max — so your transformation gets everything I've got. As a result, I can only accept up to 4 new clients per month for deep, individualized transformation. Spots fill quickly — if you feel you're ready, book now and let's talk."
+  },
+  "ebook": {
+    "title": "The Soul Code: Rewriting The Patterns That Run Your Life",
+    "description": "Get my actionable guide to subconscious change. No spam, just real value.",
+    "emailPlaceholder": "Your email address",
+    "submit": "Send me the book",
+    "cancel": "Cancel"
+  },
+  "cta": {
+    "bookStrategyCall": "Book Your Strategy Call",
+    "downloadEbook": "Download Free Guide",
+    "downloadEbookSuccess": "Check your inbox for the free guide!",
+    "letsTalk": "Let's Talk First",
+    "chooseYourPath": "Choose Your Path",
+    "claimYourSpot": "Claim Your Spot",
+    "startNow": "Start Now",
+    "primaryProblem": "Book Your Strategy Call",
+    "primaryRoi": "Book Your Strategy Call"
   }
 }

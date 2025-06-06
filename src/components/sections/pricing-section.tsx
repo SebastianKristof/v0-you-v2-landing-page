@@ -2,6 +2,7 @@ import { CalendarDays, Check } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 import { sectionBackgrounds } from "@/lib/section-backgrounds";
+import { BookingModalTrigger } from "@/components/booking-modal"
 
 export function PricingSection() {
   const { t } = useLanguage();
@@ -51,9 +52,11 @@ export function PricingSection() {
           {/* Framework Section */}
           <div className="text-center mt-12">
             <h4 className="text-xl font-bold mb-6">{framework.title}</h4>
-            <button className="executive-button">
-              <CalendarDays className="mr-2 h-4 w-4 inline" /> {t("pricing.cta.primary")}
-            </button>
+            <BookingModalTrigger>
+              <button className="executive-button">
+                <CalendarDays className="mr-2 h-4 w-4 inline" /> {t("cta.bookStrategyCall")}
+              </button>
+            </BookingModalTrigger>
           </div>
         </ScrollReveal>
       </div>

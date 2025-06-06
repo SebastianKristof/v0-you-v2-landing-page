@@ -6,6 +6,7 @@ import Image from "next/image"
 import { Menu, X, CalendarDays } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import LanguageSwitcher from "@/components/language-switcher"
+import { BookingModalTrigger } from "@/components/booking-modal"
 
 interface MobileNavProps {
   className?: string
@@ -79,9 +80,11 @@ export default function MobileNav({ className = "" }: MobileNavProps) {
               <Link href="#session" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.session")}</Link>
               <Link href="#why-me" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.whyMe")}</Link>
               <Link href="#ready-to-choose" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.readyToChoose")}</Link>
-              <button className="executive-button mt-4 w-full max-w-xs">
-                <CalendarDays className="mr-2 h-4 w-4 inline" /> Book Call
-              </button>
+              <BookingModalTrigger>
+                <button className="executive-button mt-4 w-full max-w-xs">
+                  <CalendarDays className="mr-2 h-4 w-4 inline" /> {t("cta.bookStrategyCall")}
+                </button>
+              </BookingModalTrigger>
             </nav>
             <div className="mt-8">
               <LanguageSwitcher />

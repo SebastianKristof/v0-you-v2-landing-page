@@ -2,6 +2,7 @@ import { Globe, Languages, Star, CalendarDays } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 import { sectionBackgrounds } from "@/lib/section-backgrounds";
+import { BookingModalTrigger } from "@/components/booking-modal"
 
 export function GlobalProsSection() {
   const { t } = useLanguage();
@@ -39,10 +40,12 @@ export function GlobalProsSection() {
           </blockquote>
           <div className="mt-12 flex flex-col items-center gap-4">
             <span className="text-lg md:text-xl text-muted-foreground mb-1 text-center">{t("globalPros.ctaPrompt")}</span>
-            <button className="executive-button flex items-center gap-2 justify-center" type="button">
-              <CalendarDays className="w-5 h-5" />
-              {t("globalPros.ctaButton")}
-            </button>
+            <BookingModalTrigger>
+              <button className="executive-button flex items-center gap-2 justify-center" type="button">
+                <CalendarDays className="w-5 h-5" />
+                {t("cta.bookStrategyCall")}
+              </button>
+            </BookingModalTrigger>
           </div>
         </ScrollReveal>
       </div>

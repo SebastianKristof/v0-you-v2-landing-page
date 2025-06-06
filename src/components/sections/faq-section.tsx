@@ -2,6 +2,8 @@ import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 import FAQAccordion from "@/components/faq-accordion";
 import { sectionBackgrounds } from "@/lib/section-backgrounds";
+import { EbookModalTrigger } from "@/components/ebook-modal"
+import { BookingModalTrigger } from "@/components/booking-modal"
 
 export function FaqSection() {
   const { t } = useLanguage();
@@ -14,6 +16,18 @@ export function FaqSection() {
             <h2 className="section-title">{t("faq.title")}</h2>
           </div>
           <FAQAccordion items={Array.isArray(faqItems) ? faqItems : []} />
+          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+            <BookingModalTrigger>
+              <button className="executive-button">
+                {t("cta.bookStrategyCall")}
+              </button>
+            </BookingModalTrigger>
+            <EbookModalTrigger>
+              <button className="executive-button-outline border border-executive-blue text-executive-blue font-semibold rounded-full py-3 px-4 md:px-6 text-center transition-colors hover:bg-executive-blue/10">
+                {t("cta.downloadEbook")}
+              </button>
+            </EbookModalTrigger>
+          </div>
         </ScrollReveal>
       </div>
     </section>

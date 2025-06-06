@@ -4,6 +4,8 @@ import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 import { QuickRoiSection } from "./quick-roi-section";
 import { sectionBackgrounds } from "@/lib/section-backgrounds";
+import { BookingModalTrigger } from "@/components/booking-modal"
+import { EbookModalTrigger } from "@/components/ebook-modal"
 
 export function HeroSection() {
   const { t } = useLanguage();
@@ -49,12 +51,16 @@ export function HeroSection() {
             <p className="text-base md:text-lg text-muted-foreground">{t("hero.description1")}</p>
           </div>
           <div className="flex flex-col gap-3 min-[400px]:flex-row mt-4">
-            <button className="executive-button">
-              <CalendarDays className="mr-2 h-4 w-4 inline" /> {t("nav.bookCall")}
-            </button>
-            <a href="#how-it-works" className="executive-button-outline border border-executive-blue text-executive-blue font-semibold rounded-full py-3 px-4 md:px-6 text-center transition-colors hover:bg-executive-blue/10">
-              {t("nav.howItWorks")}
-            </a>
+            <BookingModalTrigger>
+              <button className="executive-button">
+                <CalendarDays className="mr-2 h-4 w-4 inline" /> {t("cta.bookStrategyCall")}
+              </button>
+            </BookingModalTrigger>
+            <EbookModalTrigger>
+              <button className="executive-button-outline border border-executive-blue text-executive-blue font-semibold rounded-full py-3 px-4 md:px-6 text-center transition-colors hover:bg-executive-blue/10">
+                {t("cta.downloadEbook")}
+              </button>
+            </EbookModalTrigger>
           </div>
           <p className="text-xs text-muted-foreground mt-2">{t("hero.ctaMicrocopy")}</p>
         </div>
