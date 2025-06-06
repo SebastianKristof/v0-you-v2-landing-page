@@ -2,6 +2,7 @@ import { useLanguage } from "@/contexts/language-context";
 import ScrollReveal from "@/components/scroll-reveal";
 import { Check } from "lucide-react";
 import { sectionBackgrounds } from "@/lib/section-backgrounds";
+import { BookingModalTrigger } from "@/components/booking-modal"
 
 export function ResultsSection() {
   const { t } = useLanguage();
@@ -25,6 +26,13 @@ export function ResultsSection() {
           <blockquote className="mt-10 text-center text-lg md:text-xl italic text-executive-dark max-w-2xl mx-auto border-l-4 border-executive-blue pl-6 py-4 bg-white/60 rounded-lg">
             {t("results.pullQuote")}
           </blockquote>
+          <div className="mt-8 flex justify-center">
+            <BookingModalTrigger>
+              <button className="executive-button text-lg px-8 py-4">
+                {t("cta.bookStrategyCall")}
+              </button>
+            </BookingModalTrigger>
+          </div>
         </ScrollReveal>
       </div>
     </section>
