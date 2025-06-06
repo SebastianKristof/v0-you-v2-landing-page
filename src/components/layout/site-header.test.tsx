@@ -17,14 +17,17 @@ describe('SiteHeader', () => {
   it('renders all main navigation links', () => {
     renderWithProviders(<SiteHeader />);
     expect(screen.getByText(translations.nav.howItWorks)).toBeInTheDocument();
-    expect(screen.getByText(translations.nav.roi)).toBeInTheDocument();
+    expect(screen.getByText(translations.nav.fullControl)).toBeInTheDocument();
+    expect(screen.getByText(translations.nav.isThisForYou)).toBeInTheDocument();
+    expect(screen.getByText(translations.nav.issues)).toBeInTheDocument();
+    expect(screen.getByText(translations.nav.results)).toBeInTheDocument();
     expect(screen.getByText(translations.nav.about)).toBeInTheDocument();
-    expect(screen.getByText(translations.nav.faq)).toBeInTheDocument();
+    expect(screen.getByText(translations.nav.paths)).toBeInTheDocument();
   });
 
   it('renders the Book Strategy Call button', () => {
     renderWithProviders(<SiteHeader />);
-    expect(screen.getByRole('button', { name: translations.nav.bookCall })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: translations.cta.bookStrategyCall })).toBeInTheDocument();
   });
 
   it('renders the LanguageSwitcher', () => {
@@ -35,9 +38,12 @@ describe('SiteHeader', () => {
   it('all navigation links have correct hrefs', () => {
     renderWithProviders(<SiteHeader />);
     expect(screen.getByText(translations.nav.howItWorks).closest('a')).toHaveAttribute('href', '#how-it-works');
-    expect(screen.getByText(translations.nav.roi).closest('a')).toHaveAttribute('href', '#roi');
+    expect(screen.getByText(translations.nav.fullControl).closest('a')).toHaveAttribute('href', '#full-control');
+    expect(screen.getByText(translations.nav.isThisForYou).closest('a')).toHaveAttribute('href', '#is-this-for-you');
+    expect(screen.getByText(translations.nav.issues).closest('a')).toHaveAttribute('href', '#issues');
+    expect(screen.getByText(translations.nav.results).closest('a')).toHaveAttribute('href', '#results');
     expect(screen.getByText(translations.nav.about).closest('a')).toHaveAttribute('href', '#about');
-    expect(screen.getByText(translations.nav.faq).closest('a')).toHaveAttribute('href', '#faq');
+    expect(screen.getByText(translations.nav.paths).closest('a')).toHaveAttribute('href', '#pricing');
   });
 });
 
