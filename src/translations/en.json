@@ -433,13 +433,13 @@
   },
   "cta": {
     "bookStrategyCall": "Book Your Strategy Call",
-    "downloadEbook": "Download Free Guide",
-    "downloadEbookSuccess": "Check your inbox for the free guide!",
+    "downloadEbook": "Download Free Book",
+    "downloadEbookSuccess": "Check your inbox for the free book!",
     "letsTalk": "Let's Talk First",
     "chooseYourPath": "Choose Your Path",
-    "claimYourSpot": "Claim Your Spot",
+    "claimYourSpot": "Book Your Strategy Call",
     "startNow": "Start Now",
-    "primaryProblem": "Book Your Strategy Call",
-    "primaryRoi": "Book Your Strategy Call"
+    "primaryProblem": "Begin Your Transformation",
+    "primaryRoi": "Begin Your Transformation"
   }
 }
