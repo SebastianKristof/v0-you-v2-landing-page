@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useLanguage } from "@/contexts/language-context";
 import { sectionBackgrounds } from "@/lib/section-backgrounds";
+import { LegalModal } from "@/components/legal-modal";
 
 export function Footer() {
   const { t } = useLanguage();
@@ -26,24 +27,14 @@ export function Footer() {
             &copy; {new Date().getFullYear()} {t("footer.rights")}
           </p>
           <div className="flex items-center gap-4 md:gap-6">
-            <Link
-              href="/privacy"
-              className="text-xs md:text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              {t("footer.links.privacy")}
-            </Link>
-            <Link
-              href="/terms"
-              className="text-xs md:text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              {t("footer.links.terms")}
-            </Link>
-            <Link
-              href="#contact"
-              className="text-xs md:text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              {t("footer.links.contact")}
-            </Link>
+            <LegalModal
+              type="privacy"
+              trigger={<button className="text-xs md:text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2">{t("footer.links.privacy")}</button>}
+            />
+            <LegalModal
+              type="terms"
+              trigger={<button className="text-xs md:text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2">{t("footer.links.terms")}</button>}
+            />
           </div>
         </div>
       </div>
