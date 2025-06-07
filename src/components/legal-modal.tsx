@@ -29,9 +29,6 @@ export function LegalModal({ type, trigger }: LegalModalProps) {
     }
   }, [open, type, lang]);
 
-  console.log('lang from useLanguage:', lang);
-  console.log(content);
-
   // Replace {{DATE}} with today's date in the loaded markdown
   const displayContent = content.replace(/\{\{DATE\}\}/g, new Date().toLocaleDateString(lang === "ru" ? "ru-RU" : "en-US"));
 
