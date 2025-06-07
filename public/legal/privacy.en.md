@@ -1,38 +1,47 @@
 Last updated: {{DATE}}
 
 ## 1. Introduction
-Welcome to Dr. Kristof's website ("we", "our", or "us"). We respect your privacy and are committed to protecting your personal data.
+Welcome to Dr. Kristof's website ("we", "our", or "us"). We respect your privacy and are committed to protecting your personal data (any information that can identify you directly or indirectly).
 
-This privacy policy explains how we collect, use, and protect the information you provide when using our website. We are committed to ensuring the security of your data and complying with applicable data protection laws.
+This privacy policy explains how we collect, use, and protect your information when using our website, in line with international data protection laws.
 
 ## 2. Information We Collect
-We may collect the following types of information:
-- Personal information (name, email address, phone number) that you voluntarily provide when filling out forms on our site
-- Session information (IP address, browser type, time of visit)
-- Cookies and similar technologies to enhance user experience
+We may collect:
+- Personal information (name, email, phone) you provide in forms
+- Session data (IP address, browser type, visit time)
+- Cookies and similar technologies (see our Cookie Policy)
 
-## 3. How We Use Your Information
-We use the collected information for the following purposes:
-- To provide the services you have requested
-- To communicate with you regarding inquiries and consultations
-- To improve our website and services
-- To comply with legal obligations
+## 3. Legal Basis for Processing
+We process your data based on your consent, to fulfill our services, or for our legitimate interests (such as improving our website), and to comply with legal obligations.
 
-## 4. Data Protection
-We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, loss, or damage.
+## 4. How We Use Your Information
+We use your information to:
+- Provide requested services
+- Communicate with you
+- Improve our website
+- Comply with the law
 
-## 5. Disclosure to Third Parties
-We do not sell, trade, or transfer your personal information to third parties without your consent, except as necessary to provide services you've requested or as required by law.
+## 5. Data Retention
+We keep your personal data only as long as necessary for the purposes described or as required by law.
 
-## 6. Your Rights
+## 6. International Data Transfers
+Your data may be processed outside your country. We ensure appropriate safeguards are in place for such transfers.
+
+## 7. Data Protection
+We use technical and organizational measures to protect your data from unauthorized access, loss, or damage.
+
+## 8. Disclosure to Third Parties
+We do not sell or share your personal data with third parties except as needed to provide services or as required by law.
+
+## 9. Your Rights
 You have the right to:
-- Access your personal data
-- Rectify inaccurate personal data
-- Request deletion of your personal data
-- Withdraw consent for data processing
+- Access, correct, or delete your data
+- Withdraw consent
+- Object to processing
+- Lodge a complaint with your local data protection authority
 
-## 7. Contact Information
-If you have any questions about this privacy policy, please contact us through the contact form on our website.
+## 10. Contact Information
+Questions? Contact us at info@drkristof.com or via the website contact form.
 
-## 8. Changes to This Privacy Policy
-We may update this policy from time to time. Please check this page periodically for any changes. 
+## 11. Changes to This Privacy Policy
+We may update this policy. Please check this page periodically for changes. 
