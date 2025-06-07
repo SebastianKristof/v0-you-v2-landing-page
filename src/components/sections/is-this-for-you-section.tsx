@@ -36,15 +36,7 @@ export function IsThisForYouSection() {
               ))}
             </ul>
             <div className="space-y-4">
-              <p className="text-base md:text-lg text-left">
-                {t("isThisForYou.description1").split(/(coaches|therapists|doctors|lawyers|business leaders)/g).map((part: string, i: number) =>
-                  ["coaches", "therapists", "doctors", "lawyers", "business leaders"].includes(part) ? (
-                    <span key={i} className="text-executive-blue font-semibold">{part}</span>
-                  ) : (
-                    <span key={i}>{part}</span>
-                  )
-                )}
-              </p>
+              <p className="text-base md:text-lg text-left" dangerouslySetInnerHTML={{ __html: t("isThisForYou.description1") }} />
               <p className="text-base md:text-lg text-left font-semibold">{t("isThisForYou.description2")}</p>
             </div>
           </ScrollReveal>

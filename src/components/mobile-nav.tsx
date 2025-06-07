@@ -43,25 +43,13 @@ export default function MobileNav({ className = "" }: MobileNavProps) {
 
       {/* Mobile menu overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-white/90 overflow-y-auto">
+        <div className="fixed inset-0 z-50 bg-white/95 overflow-y-auto">
           <div className="flex justify-end p-4">
             <button onClick={closeMenu} className="p-2 text-foreground focus:outline-none">
               <X className="h-6 w-6" />
             </button>
           </div>
           <div className="flex flex-col items-center gap-8 p-8">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="relative h-8 w-8">
-                <Image src="/images/sk-logo.png" alt="You.v2 Logo" fill className="object-contain" />
-              </div>
-              <span className="text-xl font-bold">You.v2</span>
-              <span
-                className="text-xs font-semibold uppercase px-2 py-0.5 rounded-md"
-                style={{ backgroundColor: "hsl(var(--executive-gold))", color: "hsl(var(--executive-dark))" }}
-              >
-                Intensive
-              </span>
-            </div>
             <nav className="flex flex-col items-center gap-6 text-lg w-full">
               <Link href="#how-it-works" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.howItWorks")}</Link>
               <Link href="#full-control" onClick={closeMenu} className="font-medium hover:text-primary transition-colors w-full text-center">{t("nav.fullControl")}</Link>

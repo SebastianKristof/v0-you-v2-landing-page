@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "You.v2 - Rapid Subconscious Realignment Program",
-    "description": "You.v2 is a structured, personalized subconscious realignment program for global leaders and professionals who feel stuck despite external success."
+    "title": "You.v2 - Upgrade Your Subconscious",
+    "description": "You.v2 is a structured, personalized subconscious reprogramming method for leaders and professionals who feel stuck despite external success."
   },
   "nav": {
     "howItWorks": "Not Therapy",
@@ -27,8 +27,8 @@
     "clientStory": "Client Story"
   },
   "hero": {
-    "title": "You lead, guide, and support others — but you feel it's time to focus on yourself.",
-    "subtitle": "You.v2 is a structured, personalized subconscious realignment program for global leaders and professionals who feel stuck despite external success.",
+    "title": "You lead, guide, and support others — but it's time to focus on yourself.",
+    "subtitle": "You.v2 is a structured, personalized subconscious reprogramming method for leaders and professionals who feel stuck despite external success.",
     "description1": "You don't need more willpower or positive thinking. You need access to the part of your mind where real change begins.",
     "description2": "Through this work, I'll teach you how to access and use the power of your own subconscious mind — so that you can stop self-sabotaging, achieve your goals more easily, and continue creating meaningful change long after our work is done.",
     "ctaMicrocopy": "No expectations. 100% confidential. Spaces are limited."
@@ -78,11 +78,11 @@
   },
   "fullControl": {
     "title": "You Have Full Control",
-    "p1": "Hypnosis isn't mind control — it's a natural state of focused attention.",
-    "p1b": "It's like being deeply absorbed in a movie, but with the ability to pause or speak up at any time. You hear everything, understand where you are, and choose what you share or withhold. Actually the results will depend on how focused and present you are.",
-    "p2": "In You.v2 method, trance is simply the tool we use to bypass your inner firewall — the \"critical factor\" that defends outdated patterns. Once we pass it, your subconscious becomes available for realignment.",
-    "p3": "If you've seen hypnosis in movies or on TV, forget it — this is different. A hypnotic trance is a natural state of mind. Nothing spooky is going on. You won't accept any suggestions you are not willing to accept. You won't reveal any secrets either. ",
-    "p4": "My method is safe because it respects your values, religion, and privacy — and above all, your free will."
+    "p1": "My method is safe because it respects your values, religion, and privacy — and above all, your free will.",
+    "p1b": "In You.v2 method, hypnotic trance is simply the tool we use to bypass your inner firewall — the \"critical factor\" that defends outdated patterns. Once we pass it, your subconscious becomes available for realignment.",
+    "p2": "If you've seen hypnosis in movies or on TV, forget it — this is different. A hypnotic trance is a natural state of mind. Nothing spooky is going on. <b>You won't accept any suggestions you are not willing to accept.</b> You won't reveal any secrets either. ",
+    "p3": "It's like being deeply absorbed in a movie, but with the ability to pause or speak up at any time. You hear everything, understand where you are, and choose what you share or withhold. Actually the results will depend on how focused and present you are.",
+    "p4": "Hypnosis isn't mind control — it's a natural state of focused attention."
   },
   "theWhy": {
     "title": "My Vision",
@@ -99,7 +99,7 @@
       "You help others every day, but need to work on your own stuff too",
       "People look up to you, so you have no one to turn to for help in your social circle"
     ],
-    "description1": "This work is especially effective for people in helping roles — coaches, therapists, doctors, lawyers, business leaders — because you understand change, and you're ready to do the work that goes beyond what most methods can reach.",
+    "description1": "This work is especially effective for people who know what it's like to be responsible for others — for <b>managers and business leaders, coaches, therapists, doctors, lawyers</b>. You understand what change and self-work is like, and you're ready to go beyond what most methods can reach.",
     "description2": "This work is for people who are truly ready. Not to cope, not to hope — but to actually change."
   },
   "clientStories": {
@@ -276,16 +276,16 @@
     "quote": "\"From medicine to software — I've tested many methods and gathered real-world wisdom. Now I use it to guide you through lasting transformation. Gently. Precisely. Permanently.\""
   },
   "globalPros": {
-    "title": "Built for Global Russian-Speaking Professionals",
-    "subtitle": "You work and think in English. But your subconscious mind was programmed in your first language. Therapy in English misses your roots. Therapy in Russian misses your real life.",
-    "preludeHighlight": "In short, you need someone who understands both the life you live now — and the \"multiki\" you watched as a kid.",
+    "title": "Built for Bilingual & Multicultural Professionals",
+    "subtitle": "You think and work in more than one language. Your subconscious was programmed in your first language and shaped by multiple cultures. Most approaches miss this complexity — I don't.",
+    "preludeHighlight": "You need someone who understands both your current reality and the culture you grew up in.",
     "points": [
-      "I work in English, Russian, or both — whatever your mind needs.",
-      "I was raised to succeed and stay silent — I know what that costs.",
+      "I work in English, Russian, or both — whatever fits your mind best.",
+      "I grew up with high expectations, strict rules, and no tears allowed — I know what that costs.",
       "I've worked through the legacy of a difficult past — and I'll help you do the same."
     ],
-    "quote": "You succeed in English, but your inner child still speaks Russian.",
-    "ctaPrompt": "Ready to integrate both sides of yourself?",
+    "quote": "You succeed in English, but your inner child still speaks your first language.",
+    "ctaPrompt": "Ready to work on both levels?",
     "ctaButton": "Book Strategy Call"
   },
   "session": {
