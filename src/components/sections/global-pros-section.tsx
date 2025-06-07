@@ -13,7 +13,7 @@ export function GlobalProsSection() {
         <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
           <div className="space-y-4 text-center">
             <h2 className="section-title text-black">{t("globalPros.title")}</h2>
-            <p className="text-lg md:text-xl text-muted-foreground">{t("globalPros.subtitle")}</p>
+            <p className="text-base md:text-lg text-muted-foreground">{t("globalPros.subtitle")}</p>
           </div>
           <p className="max-w-2xl mx-auto text-base md:text-lg text-executive-dark/90 mb-2 md:mb-4 text-center">
             <span className="underline underline-offset-[6px] decoration-2 decoration-transparent bg-gradient-to-r from-executive-blue to-executive-light-blue bg-no-repeat bg-[length:100%_2px] bg-[position:0_100%]">
@@ -35,11 +35,11 @@ export function GlobalProsSection() {
               </li>
             ))}
           </ul>
-          <blockquote className="mt-8 text-xl md:text-2xl italic text-executive-blue text-center max-w-3xl mx-auto">
+          <blockquote className="mt-8 text-base md:text-lg italic text-executive-blue text-center max-w-3xl mx-auto">
             {t("globalPros.quote")}
           </blockquote>
           <div className="mt-12 flex flex-col items-center gap-4">
-            <span className="text-lg md:text-xl text-muted-foreground mb-1 text-center">{t("globalPros.ctaPrompt")}</span>
+            <span className="text-base md:text-lg text-muted-foreground mb-1 text-center">{t("globalPros.ctaPrompt")}</span>
             <BookingModalTrigger>
               <button className="executive-button flex items-center gap-2 justify-center" type="button">
                 <CalendarDays className="w-5 h-5" />
