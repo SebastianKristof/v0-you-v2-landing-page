@@ -63,12 +63,6 @@ export default function Home() {
     }
   }, [])
 
-  // Get problem cards safely
-  const problemCards = t("problem.cards", { returnObjects: true }) || []
-
-  // Get timeline steps safely
-  const timelineSteps = t("timeline.steps", { returnObjects: true }) || []
-
   // Get ROI table rows safely
   const roiTableRows = t("roi.table.rows", { returnObjects: true }) || []
 
@@ -80,9 +74,6 @@ export default function Home() {
 
   // Get session work types safely
   const sessionWorkTypes = t("session.work.types", { returnObjects: true }) || []
-
-  // Get pricing features safely
-  const pricingFeatures = t("pricing.includes.features", { returnObjects: true }) || []
 
   // Get FAQ items safely
   const faqItems = t("faq.items", { returnObjects: true }) || []
