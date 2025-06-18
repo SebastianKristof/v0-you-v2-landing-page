@@ -41,7 +41,7 @@ export function WhatMakesDifferentSection() {
           <div className="block md:hidden my-6">
             <div className="relative w-full max-w-[36rem] aspect-[16/9] rounded-2xl overflow-hidden shadow-lg bg-executive-light-blue/40 mx-auto">
               <Image
-                src="/images/ChatGPT_Image_Mind_Engineering.png"
+                src="/images/Mind_Engineering.png"
                 alt="System Reprogramming Illustration"
                 fill
                 className="object-cover rounded-2xl"
@@ -72,7 +72,7 @@ export function WhatMakesDifferentSection() {
         <div className="md:w-2/5 w-full hidden md:flex justify-center items-center order-1 md:order-2 md:pr-16">
           <div className="relative w-full max-w-[36rem] aspect-[16/9] rounded-2xl overflow-hidden shadow-lg bg-executive-light-blue/40">
             <Image
-              src="/images/ChatGPT_Image_Mind_Engineering.png"
+              src="/images/Mind_Engineering.png"
               alt="System Reprogramming Illustration"
               fill
               className="object-cover rounded-2xl"
