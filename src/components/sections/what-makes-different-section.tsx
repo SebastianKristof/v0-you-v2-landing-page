@@ -18,9 +18,9 @@ export function WhatMakesDifferentSection() {
 
   return (
     <section id="what-makes-different" className={`w-full py-10 md:py-16 lg:py-24 scroll-mt-8 ${sectionBackgrounds.whatMakesDifferent}`}>
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-20">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10 lg:gap-16">
         {/* Text content on the right (on desktop), on mobile order-2 */}
-        <div className="md:w-3/5 w-full order-2 md:order-1">
+        <div className="md:w-3/5 w-full order-2 md:order-1 md:pl-20">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
             {(() => {
               if (!title) return null;
@@ -69,7 +69,7 @@ export function WhatMakesDifferentSection() {
           </blockquote>
         </div>
         {/* Image on the left (on desktop), on mobile hidden */}
-        <div className="md:w-2/5 w-full hidden md:flex justify-center items-center order-1 md:order-2">
+        <div className="md:w-2/5 w-full hidden md:flex justify-center items-center order-1 md:order-2 md:pr-16">
           <div className="relative w-full max-w-[36rem] aspect-[16/9] rounded-2xl overflow-hidden shadow-lg bg-executive-light-blue/40">
             <Image
               src="/images/ChatGPT_Image_Mind_Engineering.png"

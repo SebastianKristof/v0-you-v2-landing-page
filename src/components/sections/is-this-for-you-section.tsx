@@ -10,7 +10,7 @@ export function IsThisForYouSection() {
     <section id="is-this-for-you" className={`w-full py-16 scroll-mt-8 ${sectionBackgrounds.isThisForYou}`}>
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-20">
         {/* Text content on the left (on desktop), on mobile order-2 */}
-        <div className="md:w-3/5 w-full order-2 md:order-1">
+        <div className="md:w-3/5 w-full order-2 md:order-1 md:pl-12">
           <ScrollReveal className="mx-auto max-w-[800px] space-y-8 md:space-y-12">
             <div className="space-y-4">
               <h2 className="section-title text-center md:text-3xl lg:text-4xl font-bold mb-2">{t("isThisForYou.title")}</h2>
@@ -29,8 +29,8 @@ export function IsThisForYouSection() {
             </div>
             <ul className="mb-6 mx-auto max-w-xl space-y-3 list-none pl-0">
               {bullets.map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="mt-1 flex-shrink-0 w-3 h-3 rounded-full" style={{ background: 'hsl(var(--executive-gold))', display: 'inline-block' }}></span>
+                <li key={i} className="flex items-baseline gap-3">
+                  <span className="flex-shrink-0 w-3 h-3 rounded-full" style={{ background: 'hsl(var(--executive-gold))', display: 'inline-block' }}></span>
                   <span className="text-base md:text-lg text-executive-dark leading-relaxed">{item}</span>
                 </li>
               ))}
