@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogClose } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import { useToast } from "@/components/ui/toast"
 import { useLanguage } from "@/contexts/language-context"
 import { trackEvent } from "@/lib/analytics"
@@ -23,27 +22,36 @@ export function EbookModal({ open, setOpen }: { open: boolean; setOpen: (v: bool
   const { t } = useLanguage()
   const { toast } = useToast()
   const [loading, setLoading] = useState(false)
-  const [success, setSuccess] = useState(false)
   const [coverOpen, setCoverOpen] = useState(false)
   const [contentsOpen, setContentsOpen] = useState(false)
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
+  async function handlePurchase() {
     setLoading(true)
-    const form = e.currentTarget
-    const data = new FormData(form)
-    trackEvent({ action: "submit_ebook_form", category: "cta" })
-    const res = await fetch("https://formspree.io/f/xblyddja", {
-      method: "POST",
-      body: data,
-      headers: { Accept: "application/json" },
-    })
-    setLoading(false)
-    if (res.ok) {
-      setSuccess(true)
-      toast({ title: t("cta.downloadEbook"), description: t("cta.downloadEbookSuccess") })
-    } else {
-      toast({ title: t("cta.downloadEbook"), description: "Something went wrong. Please try again." })
+    trackEvent({ action: "purchase_ebook_initiated", category: "cta" })
+    try {
+      const response = await fetch("https://drkristof.com/api/create-checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ productId: "book" }),
+      })
+      
+      if (!response.ok) {
+        throw new Error("Failed to create checkout session")
+      }
+      
+      const data = await response.json()
+      if (data.url) {
+        window.location.href = data.url  // Redirects to Stripe
+      } else {
+        throw new Error("No checkout URL received")
+      }
+    } catch (error) {
+      console.error("Purchase error:", error)
+      toast({ 
+        title: t("cta.downloadEbook"), 
+        description: t("ebook.purchaseError") || "Something went wrong. Please try again." 
+      })
+      setLoading(false)
     }
   }
 
@@ -102,22 +110,16 @@ export function EbookModal({ open, setOpen }: { open: boolean; setOpen: (v: bool
           </DialogContent>
         </Dialog>
       </div>
-      {success ? (
-        <div className="py-8 text-center text-green-600 font-semibold">
-          {t("cta.downloadEbookSuccess") || "Check your inbox for the free book!"}
+      <div className="space-y-4">
+        <div className="flex gap-2 justify-end">
+          <Button onClick={handlePurchase} disabled={loading}>
+            {loading ? (t("loading") || "Loading...") : t("ebook.submit")}
+          </Button>
+          <DialogClose asChild>
+            <Button type="button" variant="outline">{t("ebook.cancel") || "Cancel"}</Button>
+          </DialogClose>
         </div>
-      ) : (
-        <form className="space-y-4" onSubmit={handleSubmit}>
-          <input type="hidden" name="source" value="ebook" />
-          <Input name="email" type="email" placeholder={t("ebook.emailPlaceholder")} required autoComplete="email" />
-          <div className="flex gap-2 justify-end">
-            <Button type="submit" disabled={loading}>{loading ? t("loading") : t("ebook.submit")}</Button>
-            <DialogClose asChild>
-              <Button type="button" variant="outline">{t("ebook.cancel") || "Cancel"}</Button>
-            </DialogClose>
-          </div>
-        </form>
-      )}
+      </div>
     </DialogContent>
   )
 } 
