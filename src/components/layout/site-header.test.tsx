@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, act } from '@testing-library/react';
 import { SiteHeader } from './site-header';
 import { LanguageProvider } from '@/contexts/language-context';
 import '@testing-library/jest-dom';
@@ -71,7 +71,9 @@ describe('MobileNav', () => {
   it('all mobile nav links point to existing section ids', async () => {
     renderWithProviders(<MobileNav />);
     const openMenuButton = screen.getByRole('button', { name: /open menu/i });
-    openMenuButton.click();
+    await act(async () => {
+      openMenuButton.click();
+    });
     for (const { href, id, key } of navLinks) {
       const section = document.createElement('section');
       section.setAttribute('id', id);
@@ -86,7 +88,9 @@ describe('MobileNav', () => {
   it('mobile nav links are in the same order as in the navigation', async () => {
     renderWithProviders(<MobileNav />);
     const openMenuButton = screen.getByRole('button', { name: /open menu/i });
-    openMenuButton.click();
+    await act(async () => {
+      openMenuButton.click();
+    });
     const links = await screen.findAllByRole('link');
     const linkTexts = links.map(link => link.textContent?.trim());
     const expectedTexts = navLinks.map(({ key }) => translations.nav[key]);

@@ -426,15 +426,16 @@
   },
   "ebook": {
     "title": "The Soul Code: Rewriting The Patterns That Run Your Life",
-    "description": "Get my actionable guide to subconscious change. No spam, just real value.",
+    "description": "Get my actionable guide to subconscious change for $9. No spam, just real value.",
     "emailPlaceholder": "Your email address",
-    "submit": "Send me the book",
-    "cancel": "Cancel"
+    "submit": "Purchase for $9",
+    "cancel": "Cancel",
+    "purchaseError": "Something went wrong. Please try again."
   },
   "cta": {
     "bookStrategyCall": "Book Your Strategy Call",
     "bookStrategyCallSuccess": "Thank you! Your request has been received. I'll be in touch soon to schedule your strategy call.",
-    "downloadEbook": "Download Free Book",
+    "downloadEbook": "Purchase Book",
     "downloadEbookSuccess": "Check your inbox for the free book!",
     "letsTalk": "Let's Talk First",
     "chooseYourPath": "Choose Your Path",
@@ -448,5 +449,6 @@
     "email": "Email",
     "message": "Details",
     "messagePlaceholder": "Please tell me more about what you'd like to work on"
-  }
+  },
+  "loading": "Loading..."
 }
