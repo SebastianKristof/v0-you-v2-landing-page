@@ -12,7 +12,7 @@ module.exports = {
     '\\.(css|sass|scss)$': 'identity-obj-proxy',
     '\\.(jpg|jpeg|png|gif|webp|svg)$': '<rootDir>/__mocks__/fileMock.js'
   },
-  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
+  testPathIgnorePatterns: ['/node_modules/', '/.next/', '/e2e/'],
   transform: {
     '^.+\\.(ts|tsx)$': ['babel-jest', { configFile: './.babelrc.js' }]
   }
