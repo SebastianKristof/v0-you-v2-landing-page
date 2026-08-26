@@ -1,30 +1,13 @@
-# SaaS landing page
+# You.v2 retired
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+The You.v2 offer has been retired.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/sebastiankristofs-projects/v0-you-v2-landing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/yO0DVbB1s4b)
+All routes on the deployed site permanently redirect to:
 
-## Overview
+https://drkristofhypnosis.com/deep-work
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+The previous source remains in this repository for history only. Do not restore the old landing page, checkout, booking, or claims without an explicit portfolio-level decision.
 
 ## Deployment
 
-Your project is live at:
-
-**[https://vercel.com/sebastiankristofs-projects/v0-you-v2-landing-page](https://vercel.com/sebastiankristofs-projects/v0-you-v2-landing-page)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/yO0DVbB1s4b](https://v0.dev/chat/projects/yO0DVbB1s4b)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Vercel reads `vercel.json` and returns a permanent redirect for every route, including old campaign and purchase URLs.
