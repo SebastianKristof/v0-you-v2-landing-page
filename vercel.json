@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://drkristofhypnosis.com/deep-work",
+      "permanent": true
+    }
+  ]
+}
