@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://drkristof.com/en",
+      "permanent": false
+    }
+  ]
+}
