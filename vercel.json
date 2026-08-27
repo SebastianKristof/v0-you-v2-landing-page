@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "destination": "https://drkristof.com/en",
+      "destination": "https://www.drkristof.com/en",
       "permanent": false
     }
   ]
